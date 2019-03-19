@@ -34,6 +34,13 @@ module.exports = {
         })
       }
     }
+  },
+  router: {
+    middleware: 'i18n'
+  },
+  plugins: ['~/plugins/i18n.js'],
+  generate: {
+    routes: ['/', '/apropos', '/en', '/en/about']
   }
 }
 

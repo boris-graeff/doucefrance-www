@@ -1,0 +1,13 @@
+{
+  "title": "Douce France",
+  "routes": {
+    "home": {
+      "url": "/",
+      "name": "Home"
+    },
+    "about": {
+      "url": "about",
+      "name": "About"
+    }
+  }
+}
