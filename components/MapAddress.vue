@@ -1,0 +1,10 @@
+<template>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1316522.7350655817!2d0.798767!3d49.873764!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0867497e49de7%3A0x9efa7fc86e521149!2s13+Rue+Dr+Pierre+Girard%2C+76980+Veules-les-Roses!5e0!3m2!1sen!2sfr!4v1553079125964"
+    width="100%"
+    height="400"
+    frameborder="0"
+    style="border:0"
+    allowfullscreen>
+  </iframe>
+</template>

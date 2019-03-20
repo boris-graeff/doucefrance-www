@@ -48,5 +48,40 @@
   "contact": {
     "email": "contact@doucefrance.fr",
     "phone": "+33235578530"
+  },
+  "plan": {
+    "fromParis": {
+      "title": "Depuis Paris",
+      "instructions": [
+        "Prendre l’autoroute A13 au pont de Saint Cloud en direction de la Normandie.",
+        "Sortir à Rouen par la voie rapide , puis prendre l’autoroute A150 direction Dieppe.",
+        "Continuer sur cette autoroute jusqu’à Barentin puis bifurquez sur la D142 en suivant Pavilly, Yerville, Saint Laurent en Caux, Fontaine-le-Dun jusqu’à Veules-les-Roses",
+        "Environ 2 heures /180 kilomètres"
+      ]
+    },
+    "fromLeHavre": {
+      "title": "Depuis Le Havre",
+      "instructions": [
+        "(En venant de Fécamp, Etretat)",
+        "Prendre la D925 en direction de Fecamp, Cany Barville.",
+        "Direction Dieppe/Saint-Valery-en-Caux puis Veules-les-Roses.",
+        "Environ 1 heure /80 kilomètres."
+      ]
+    },
+    "withTrain": {
+      "title": "Avec le train",
+      "instructions": [
+        "Gare d’ Yvetot : 35 minutes",
+        "Gare de Dieppe : 30 minutes",
+        "A savoir / La SNCF assure également des liaisons TER en bus d'Yvetot et Dieppe à Saint-Valery-en-Caux"
+      ]
+    },
+    "fromEngland": {
+      "title": "Depuis l'Angleterre",
+      "instructions": [
+        "Newhaven/ Dieppe",
+        "Portsmouth / Le Havre"
+      ]
+    }
   }
 }
