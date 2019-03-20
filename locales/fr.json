@@ -2,12 +2,36 @@
   "title": "Douce France",
   "routes": {
     "home": {
-      "url": "/",
+      "url": "",
       "name": "Accueil"
     },
-    "about": {
-      "url": "apropos",
-      "name": "À propos"
+    "plan": {
+      "url": "acces",
+      "name": "Acces"
+    },
+    "restaurant": {
+      "url": "restaurant",
+      "name": "Restaurant"
+    },
+    "rooms": {
+      "url": "chambres",
+      "name": "Chambres"
+    },
+    "seminars": {
+      "url": "seminaires",
+      "name": "Séminaires"
+    },
+    "tearoom": {
+      "url": "salondethe",
+      "name": "Salon de thé"
+    },
+    "village": {
+      "url": "village",
+      "name": "Village"
+    },
+    "lang": {
+      "fr": "FR",
+      "en": "EN"
     }
   }
 }

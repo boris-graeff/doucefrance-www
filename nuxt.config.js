@@ -40,7 +40,10 @@ module.exports = {
   },
   plugins: ['~/plugins/i18n.js'],
   generate: {
-    routes: ['/', '/apropos', '/en', '/en/about']
+    routes: [
+      '/', '/chambres', '/acces', '/salondethe', '/restaurant', '/seminaires', '/village',
+      '/en', '/en/rooms', '/en/plan', '/en/tearoom', '/en/restaurant', '/en/seminars', '/en/village'
+    ]
   }
 }
 
