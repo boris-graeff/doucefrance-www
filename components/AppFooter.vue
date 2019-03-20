@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer class="footer">
     <div>
     {{ $t('common.phone') }} :
       <a :href="`tel:${$t('contact.phone')}`">
@@ -15,3 +15,14 @@
     </div>
   </footer>
 </template>
+
+<style scoped lang="scss">
+  @import '~@/style/vars';
+
+  .footer {
+    > div {
+      max-width: $max-content-width;
+      margin: auto;
+    }
+  }
+</style>

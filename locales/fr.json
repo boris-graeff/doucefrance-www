@@ -7,7 +7,7 @@
     },
     "plan": {
       "url": "acces",
-      "name": "Acces"
+      "name": "Accès"
     },
     "restaurant": {
       "url": "restaurant",
@@ -43,11 +43,13 @@
       "contact": "Nous contacter"
     },
     "phone": "Téléphone",
-    "email": "Email"
+    "email": "Email",
+    "fax": "Fax"
   },
   "contact": {
     "email": "contact@doucefrance.fr",
-    "phone": "+33235578530"
+    "phone": "+33235578530",
+    "fax": "+33235578531"
   },
   "plan": {
     "fromParis": {
@@ -81,6 +83,32 @@
       "instructions": [
         "Newhaven/ Dieppe",
         "Portsmouth / Le Havre"
+      ]
+    }
+  },
+  "village": {
+    "title": "Veules les Roses",
+    "tourismOffice": {
+      "url": "https://www.veules-les-roses.fr",
+      "label": "Site de l'office de tourisme de la ville"
+    },
+    "intro": {
+      "title": "Un très beau village authentique du Pays de Caux",
+      "content": "Sur les pas de Victor Hugo, de Guy de Maupassant, et de nombreux autres artistes, elle vous convie à goûter aux plaisirs du silence et du repos dans un cadre marin et bucolique enchanteur dont la plupart des voies sont piétonnes. Laissez-vous séduire par l'un des plus beaux villages de Normandie qui allie, au fil des 1194 mètres de la Veules, tous les charmes de la mer et de la campagne."
+    },
+    "activities": {
+      "title": "Activités",
+      "content": [
+        "Culturelles ou sportives, la région recèle de multiples activités. Voici quelques suggestions ; bien sûr cette liste n'est pas exhaustive, loin de là.",
+        "Nous nous ferons un plaisir de vous recommander une des nombreuses tables gastronomiques de la région."
+      ],
+      "list": [
+        "Golf de Dieppe (sur la falaise dominant la mer)",
+        "Randonnées pédestres, VTT ou à cheval",
+        "Plage et sports nautiques",
+        "Tennis au village",
+        "Tourisme culturel (églises, manoirs et châteaux)",
+        "Visite de très nombreux parcs et jardins renommés"
       ]
     }
   }
