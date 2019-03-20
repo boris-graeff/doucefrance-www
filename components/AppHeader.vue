@@ -4,6 +4,11 @@
       <h1>
         {{ $t('title') }}
       </h1>
+
+      <a :href="$t('externals.booking', { lang: $i18n.locale.toUpperCase() })">
+        {{ $t('common.actions.booking') }}
+      </a>
+
       <nav class="Header__Menu">
         <NuxtLink v-for="page in $options.pages"
                   :key="page"

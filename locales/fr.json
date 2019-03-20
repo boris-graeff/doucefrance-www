@@ -33,5 +33,20 @@
       "fr": "FR",
       "en": "EN"
     }
+  },
+  "externals": {
+    "booking": "http://hotel.reservit.com/reservit/reserhotel.php?hotelid=4198&lang={lang}&fday=DD&fmonth=MM&fyear=YYYY&nbnights=NN&nbadt=ZZ"
+  },
+  "common": {
+    "actions": {
+      "booking": "Réserver maintenant",
+      "contact": "Nous contacter"
+    },
+    "phone": "Téléphone",
+    "email": "Email"
+  },
+  "contact": {
+    "email": "contact@doucefrance.fr",
+    "phone": "+33235578530"
   }
 }
