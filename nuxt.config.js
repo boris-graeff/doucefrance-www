@@ -38,7 +38,10 @@ module.exports = {
   router: {
     middleware: 'i18n'
   },
-  plugins: ['~/plugins/i18n.js'],
+  plugins: [
+    '~/plugins/i18n.js',
+    { src: '~/plugins/vue-carousel.js', ssr: false },
+  ],
   generate: {
     routes: [
       '/', '/chambres', '/acces', '/salondethe', '/restaurant', '/seminaires', '/village',
