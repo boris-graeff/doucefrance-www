@@ -7,8 +7,7 @@
         <div>
           <h2>Seminaires</h2>
 
-          <h3>Vos événements importants</h3>
-          <p>au relais hôtelier Douce France Veules  les Roses en haute Normandie</p>
+          <p><strong>Vos événements importants au relais hôtelier Douce France</strong></p>
 
           <p>Un havre de paix en Normandie dépaysant, confiné et plein de charme, tout proche de la mer, pour vos réunions d'affaires, à seulement 2 heures de Paris et de Lille, à 1 heure de Rouen et du Havre, ou même 30 kilomètres de Dieppe et Yvetot.</p>
 
@@ -95,6 +94,10 @@
 
       &:nth-child(3) {
         padding: 0;
+      }
+
+      &:last-child {
+        background: $grey-light;
       }
     }
   }

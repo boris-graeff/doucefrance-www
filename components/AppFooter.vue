@@ -34,7 +34,7 @@
       </div>
 
       <div>
-        <iframe style="width: 182px; height: 71px;" src="http://www.facebook.com/plugins/likebox.php?locale=en_US&amp;href=http://www.facebook.com/pages/Relais-Hotelier-Douce-France/115609191788659?fref=ts&amp;width=183&amp;height=101&amp;header=false&amp;show_faces=false&amp;stream=false&amp;colorscheme=light&amp;font=lucida+grande&amp;border_color=%23315C99" scrolling="no" frameborder="0"></iframe>
+        <iframe style="width: 182px; height: 71px;" src="https://www.facebook.com/plugins/likebox.php?locale=en_US&amp;href=http://www.facebook.com/pages/Relais-Hotelier-Douce-France/115609191788659?fref=ts&amp;width=183&amp;height=101&amp;header=false&amp;show_faces=false&amp;stream=false&amp;colorscheme=light&amp;font=lucida+grande&amp;border_color=%23315C99" scrolling="no" frameborder="0"></iframe>
       </div>
     </div>
   </footer>

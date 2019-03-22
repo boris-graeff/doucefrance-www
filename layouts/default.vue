@@ -96,7 +96,7 @@ export default {
 
           &:nth-child(1) {
             background: $grey-light;
-            margin-top: -100px;
+            margin-top: -110px;
           }
         }
       }
