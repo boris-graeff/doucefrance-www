@@ -5,13 +5,12 @@
     <div class="page-content">
       <div class="blocks">
         <div>
-          <h2>Bienvenue</h2>
+          <h2>Bienvenue au Douce France</h2>
           <p>
-
+            Relais Hôtel situé à Veules les Roses, village romantique et authentique de Normandie, à 500 mètres de la mer.
           </p>
         </div>
         <div>
-          <p>En Normandie, village romantique et authentique à deux heures de Paris et Lille, sur la côte d Albâtre du Pays de Caux, proche de Dieppe et Saint Valéry en Caux, Relais-Hôtel de charme à 500 mètres de la mer à Veules les Roses</p>
           <p>A deux heures de Paris et Lille, sur la Côte d'Albâtre du Pays de Caux, baignée par la lumière chère aux Impressionnistes, une petite station balnéaire a gardé son charme d'antan : Veules les Roses.</p>
           <p>Sur les pas de Victor Hugo, de Guy de Maupassant, et de nombreux autres artistes, elle vous convie à goûter aux plaisirs du silence et du repos dans un cadre marin et bucolique enchanteur dont la plupart des voies sont piétonnes.</p>
           <p>Niché au coeur de la station, cet ancien relais de poste du XVII ème siècle a été magnifiquement restauré dans la tradition du savoir faire ancestral des maitres maçons et charpentiers "Compagnons du Tour de France". Cette résidence de charme est bordée par la rivière. Elle est précédée par une belle cour fleurie, et prolongée par un jardin cloîtré propice au repos.</p>
@@ -28,23 +27,24 @@
           <p>Pour plus de détails, contactez nous au  02 35 57 85 30</p>
         </div>
 
+        <div>
+          <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000" :paginationEnabled="false">
+            <slide>
+              <img src="/images/hotel-douce-france-veules-les-roses.jpg" />
+            </slide>
+            <slide>
+              <img src="/images/hotel-douce-france-veules-les-roses.jpg" />
+            </slide>
+            <slide>
+              <img src="/images/hotel-douce-france-veules-les-roses.jpg" />
+            </slide>
+            <slide>
+              <img src="/images/hotel-douce-france-veules-les-roses.jpg" />
+            </slide>
+          </carousel>
+        </div>
       </div>
     </div>
-
-    <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000" :paginationEnabled="false">
-      <slide>
-        <img src="/images/tearoom/tea-time-douce-france.jpg" />
-      </slide>
-      <slide>
-        <img src="/images/tearoom/tea-time-douce-france.jpg" />
-      </slide>
-      <slide>
-        <img src="/images/tearoom/tea-time-douce-france.jpg" />
-      </slide>
-      <slide>
-        <img src="/images/tearoom/tea-time-douce-france.jpg" />
-      </slide>
-    </carousel>
 
   </section>
 </template>
@@ -56,5 +56,11 @@
     background-image: url('/images/hotel-douce-france-veules-les-roses.jpg');
     background-position: top 30% center;
     height: calc(100vh - 200px);
+  }
+
+  .blocks {
+    > div:nth-child(3){
+      border: 2px solid;
+    }
   }
 </style>

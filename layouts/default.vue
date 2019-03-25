@@ -109,16 +109,12 @@ export default {
       }
     }
 
-    .page-header, .page-footer {
+    .page-header {
       display: block;
       height: 300px;
       background-color: $grey-light;
       background-size: cover;
       background-position: center center;
-    }
-
-    .page-footer {
-      margin-top: -70px;
     }
   }
 </style>

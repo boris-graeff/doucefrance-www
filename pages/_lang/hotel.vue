@@ -15,7 +15,7 @@
           <p>Instant gourmand au réveil autour de notre buffet avec des produits sucrés et salés. Vous allez aimer notre salade de fruits frais maison, nos jus pressés, nos cakes maison, la charcuterie de pays, les confitures artisanales...</p>
         </div>
         <div>
-          <img src="/images/hotel/salle-restauration.jpg" />
+          <img src="/images/hotel/petit-dejeuner.jpeg" />
         </div>
       </section >
 
@@ -27,7 +27,7 @@
           <p>Au bord de la Veules, le parfum des roses et du chèvrefeuille, ainsi que le bruissement des fontaines vous aideront à retrouver un rythme de vie calme paisible et heureux.</p>
         </div>
         <div>
-          <img src="/images/hotel/salle-restauration.jpg" />
+          <img src="/images/hotel/salon-de-the.jpeg" />
         </div>
       </section>
 
@@ -54,7 +54,7 @@
           <p>Notre service de restauration légère servi en chambre est à commander à la réception avant 18h 30 pour vous être déposé dans votre suite vers 19 h30.</p>
         </div>
         <div>
-          <img src="/images/hotel/service-en-chambre.png" />
+          <img src="/images/hotel/service-en-chambre.jpeg" />
         </div>
       </section>
     </div>
@@ -69,7 +69,8 @@
     background-position: top 48% center;
   }
 
-  .page-content{
+  .page-content {
+    padding-bottom: 60px;
 
     > div:first-child {
       margin: auto;

@@ -40,8 +40,6 @@
         </div>
       </div>
     </div>
-
-    <img src="/images/tearoom/lounge-interior-douce-france.jpg" class="page-footer"/>
   </section>
 </template>
 

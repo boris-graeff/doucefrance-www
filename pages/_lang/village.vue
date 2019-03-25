@@ -42,8 +42,6 @@
         </div>
       </div>
     </div>
-
-    <div class="page-footer"></div>
   </section>
 </template>
 
@@ -53,10 +51,6 @@
   .page-header {
     background-image: url('/images/village/veules-les-roses.jpg');
     background-position: top 67% center;
-  }
-
-  .page-footer {
-    background-image: url('/images/tearoom/lounge-interior-douce-france.jpg');
   }
 
   .blocks {

@@ -40,7 +40,6 @@
   .footer {
     font-size: 14px;
     background: $grey-light;
-    margin-top: 60px;
 
     a {
       text-decoration: none;

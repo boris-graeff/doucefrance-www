@@ -62,7 +62,7 @@
       </div>
     </div>
 
-    <map-address />
+    <map-address class="map"/>
   </section>
 </template>
 
@@ -84,5 +84,9 @@
 
   h3 {
     margin-top: 40px;
+  }
+
+  .map {
+    display: block;
   }
 </style>
