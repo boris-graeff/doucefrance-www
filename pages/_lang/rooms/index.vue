@@ -5,7 +5,7 @@
     <div class="page-content">
       <div class="blocks">
         <div>
-          <h2>Chambres</h2>
+          <h2>{{ $t('routes.rooms.name') }}</h2>
           <p>
             <strong>25 Chambres, suites et appartements équipés de kitchenettes</strong>
           </p>

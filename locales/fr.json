@@ -15,15 +15,15 @@
     },
     "rooms": {
       "url": "chambres",
-      "name": "Chambres"
+      "name": "Les chambres"
     },
     "seminars": {
       "url": "seminaires",
-      "name": "Séminaires"
+      "name": "Les séminaires"
     },
     "village": {
       "url": "village",
-      "name": "Village"
+      "name": "Le village"
     },
     "lang": {
       "fr": "FR",

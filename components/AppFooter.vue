@@ -7,27 +7,27 @@
           <img src="~/assets/douce-france.svg" alt="Douce France" class="logo">
         </NuxtLink>
         <p>Relais Hôtelier à Veules Les Roses</p>
+      </div>
 
-        <div class="contact">
-          <div>
-            13 rue Dr Girard<br/>
-            76980 Veules les Roses<br/>
-            FRANCE
-          </div>
-          <div>
-            {{ $t('common.phone') }} :
-            <a :href="`tel:${$t('contact.phone')}`">
-              {{ $t('contact.phone') }}
-            </a>
-            <br/>
-            {{ $t('common.fax') }} :
-            {{ $t('contact.fax') }}
-            <br/>
-            {{ $t('common.email') }} :
-            <a :href="`mailto:${$t('contact.email')}`">
-              {{ $t('contact.email') }}
-            </a>
-          </div>
+      <div class="contact">
+        <div>
+          13 rue Dr Girard<br/>
+          76980 Veules les Roses<br/>
+          FRANCE
+        </div>
+        <div>
+          {{ $t('common.phone') }} :
+          <a :href="`tel:${$t('contact.phone')}`">
+            {{ $t('contact.phone') }}
+          </a>
+          <br/>
+          {{ $t('common.fax') }} :
+          {{ $t('contact.fax') }}
+          <br/>
+          {{ $t('common.email') }} :
+          <a :href="`mailto:${$t('contact.email')}`">
+            {{ $t('contact.email') }}
+          </a>
         </div>
       </div>
     </div>
@@ -50,6 +50,8 @@
       margin: auto;
       padding: 60px 20px;
       display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -58,7 +60,7 @@
   }
 
   .contact {
-    margin-top: 20px;
+    margin-left: 20px;
     display: flex;
 
     > div + div {

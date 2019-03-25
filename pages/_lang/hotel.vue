@@ -4,7 +4,7 @@
 
     <div class="page-content">
       <div>
-        <h2>L'Hôtel</h2>
+        <h2>{{ $t('routes.hotel.name') }}</h2>
         <p>
           Farniente, quiétude et douceur de vivre… Dans notre salon intérieur ou bien sur notre terrasse au bord de l’eau, nos petits déjeuners, notre carte de salon de thé et restauration légère.
         </p>

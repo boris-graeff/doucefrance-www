@@ -53,6 +53,10 @@
     background-position: top 67% center;
   }
 
+  .page-content {
+    padding-bottom: 60px;
+  }
+
   .blocks {
     > div {
       &:nth-child(2) {

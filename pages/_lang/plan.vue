@@ -5,7 +5,7 @@
     <div class="page-content">
       <div class="blocks">
         <div>
-          <h2>Accès</h2>
+          <h2>{{ $t('routes.plan.name') }}</h2>
 
           <p>Notre Relais Hôtelier Douce France se situe au cœur du magnifique Village de Veules les Roses, en Seine Maritime (Haute Normandie)</p>
 

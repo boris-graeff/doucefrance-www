@@ -5,7 +5,7 @@
     <div class="page-content">
       <div class="blocks">
         <div>
-          <h2>Seminaires</h2>
+          <h2>{{ $t('routes.seminars.name') }}</h2>
 
           <p><strong>Vos événements importants au relais hôtelier Douce France</strong></p>
 
@@ -14,22 +14,8 @@
           <p>Un lieu idéal pour organiser, en petit comité, avec une capacité d’accueil du 15 personnes assises autour de la table et ou 25 personnes assises en assemblée vos séminaires, assemblées générales, comités de direction, conférences, journées d'étude, réunions d'affaires, ou tout simplement une réunion ou événement familial.</p>
 
           <p>La salle est équipée d'un écran, paper board et accès Wifi illimité.</p>
-        </div>
 
-        <div>
-          <div>
-            <h3>Nos tarifs</h3>
-
-            Journée Seminaire
-
-            <ul class="list">
-              <li>Location salon 150 € TTC *</li>
-              <li>Pause 9 € par personne</li>
-              <li>Formule petite salade fraîcheur, plat, buffet de desserts (hors boissons) 27 € par personne TTC</li>
-            </ul>
-            <br/>
-            <p>* S'il s'agit d'un séminaire avec hébergement a partir de 6 suites la location de la salle est offerte</p>
-          </div>
+          <p>N'hésitez pas à nous contacter afin que nous puissions vous établir un devis personnalisé.</p>
         </div>
 
         <div>
@@ -56,17 +42,19 @@
         </div>
 
         <div>
-          <p>
-            Journée séminaire pour 15 personnes<br/>
-            (15 personnes assises autour des tables ou 25 personnes assises en assemblée)<br/><br/>
-          </p>
+          <div>
+            <p>
+              Journée séminaire pour 15 personnes<br/>
+              (15 personnes assises autour des tables ou 25 personnes assises en assemblée)<br/><br/>
+            </p>
 
-          <ul class="list">
-            <li>De 8 heures à 17 h 30</li>
-            <li>Café d’accueil ou petit déjeuner continental</li>
-            <li>Deux pauses café en journée</li>
-            <li>Formule entrée, plat, buffet de desserts (hors boissons)</li>
-          </ul>
+            <ul class="list">
+              <li>De 8 heures à 17 h 30</li>
+              <li>Café d’accueil ou petit déjeuner continental</li>
+              <li>Deux pauses café en journée</li>
+              <li>Formule entrée, plat, buffet de desserts (hors boissons)</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -78,24 +66,13 @@
 
   .blocks {
     > div {
-      &:nth-child(1) {
-
-      }
-
       &:nth-child(2) {
-
-        > div {
-          padding: 60px;
-          border: 2px solid;
-        }
-      }
-
-      &:nth-child(3) {
         padding: 0;
       }
 
-      &:last-child {
-        background: $grey-light;
+      &:last-child > div {
+        padding: 60px;
+        border: 2px solid;
       }
     }
   }
