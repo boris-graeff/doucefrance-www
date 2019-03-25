@@ -17,7 +17,12 @@
 
     <div class="page-content">
       <div class="blocks">
-        <div></div>
+        <div>
+          <h2>Bienvenue</h2>
+          <p>
+
+          </p>
+        </div>
         <div>
           <p>En Normandie, village romantique et authentique à deux heures de Paris et Lille, sur la côte d Albâtre du Pays de Caux, proche de Dieppe et Saint Valéry en Caux, Relais-Hôtel de charme à 500 mètres de la mer à Veules les Roses</p>
           <p>A deux heures de Paris et Lille, sur la Côte d'Albâtre du Pays de Caux, baignée par la lumière chère aux Impressionnistes, une petite station balnéaire a gardé son charme d'antan : Veules les Roses.</p>

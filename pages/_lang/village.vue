@@ -1,6 +1,6 @@
 <template>
   <section class="restaurant">
-    <img src="/images/village/veules-les-roses.jpg" class="page-header"/>
+    <div class="page-header"></div>
 
     <div class="page-content">
       <div class="blocks">
@@ -43,12 +43,20 @@
       </div>
     </div>
 
-    <img src="/images/tearoom/lounge-interior-douce-france.jpg" class="page-footer"/>
+    <div class="page-footer"></div>
   </section>
 </template>
 
 <style scoped lang="scss">
   @import '~@/style/vars';
+
+  .page-header {
+    background-image: url('/images/village/veules-les-roses.jpg');
+  }
+
+  .page-footer {
+    background-image: url('/images/tearoom/lounge-interior-douce-france.jpg');
+  }
 
   .blocks {
     > div {

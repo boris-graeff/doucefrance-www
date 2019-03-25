@@ -111,5 +111,15 @@
         "Visite de très nombreux parcs et jardins renommés"
       ]
     }
+  },
+  "rooms": {
+    "duplex": "Duplex pour 2 personnes",
+    "suites": "Suites pour 2 personnes",
+    "suites-large": "Suites 'Large' pour 2 ou 3 personnes",
+    "suites-grand-large": "Suites 'Grand Large' pour 2 ou 3 personnes",
+    "suite-exception": "Suite d'Exception pour 2 personnes",
+    "appartements": "Appartements familiaux pour 4 personnes",
+    "suites-sans-kitchenette": "Suites sans kitchenette",
+    "from": "À partir de {price}€"
   }
 }

@@ -1,0 +1,23 @@
+{
+  "duplex": {
+    "price": 102
+  },
+  "suites": {
+    "price": 132
+  },
+  "suites-large": {
+    "price": 132
+  },
+  "suites-grand-large": {
+    "price": 162
+  },
+  "suite-exception": {
+    "price": 182
+  },
+  "appartements": {
+    "price": 242
+  },
+  "suites-sans-kitchenette": {
+    "price": 109
+  }
+}

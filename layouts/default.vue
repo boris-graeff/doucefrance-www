@@ -33,6 +33,8 @@ export default {
     /deep/ {
       .button {
         border: 2px solid $deep-blue;
+        background: white;
+
 
         &:hover {
           background: $deep-blue;
@@ -103,6 +105,10 @@ export default {
 
       .page-header, .page-footer {
         display: block;
+        height: 300px;
+        background-color: $grey-light;
+        background-size: cover;
+        background-position: center center;
       }
 
       .page-footer {
