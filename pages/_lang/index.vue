@@ -1,19 +1,6 @@
 <template>
-  <section>
-    <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000" :paginationEnabled="false" class="page-header">
-      <slide>
-        <img src="/images/tearoom/tea-time-douce-france.jpg" />
-      </slide>
-      <slide>
-        <img src="/images/tearoom/tea-time-douce-france.jpg" />
-      </slide>
-      <slide>
-        <img src="/images/tearoom/tea-time-douce-france.jpg" />
-      </slide>
-      <slide>
-        <img src="/images/tearoom/tea-time-douce-france.jpg" />
-      </slide>
-    </carousel>
+  <section class="home">
+    <div class="page-header"></div>
 
     <div class="page-content">
       <div class="blocks">
@@ -44,11 +31,30 @@
       </div>
     </div>
 
-    <img src="/images/tearoom/lounge-interior-douce-france.jpg" class="page-footer"/>
+    <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000" :paginationEnabled="false">
+      <slide>
+        <img src="/images/tearoom/tea-time-douce-france.jpg" />
+      </slide>
+      <slide>
+        <img src="/images/tearoom/tea-time-douce-france.jpg" />
+      </slide>
+      <slide>
+        <img src="/images/tearoom/tea-time-douce-france.jpg" />
+      </slide>
+      <slide>
+        <img src="/images/tearoom/tea-time-douce-france.jpg" />
+      </slide>
+    </carousel>
+
   </section>
 </template>
 
 <style scoped lang="scss">
   @import '~@/style/vars';
 
+  .page-header {
+    background-image: url('/images/hotel-douce-france-veules-les-roses.jpg');
+    background-position: top 30% center;
+    height: calc(100vh - 200px);
+  }
 </style>

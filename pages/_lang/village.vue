@@ -1,5 +1,5 @@
 <template>
-  <section class="restaurant">
+  <section class="village">
     <div class="page-header"></div>
 
     <div class="page-content">
@@ -52,6 +52,7 @@
 
   .page-header {
     background-image: url('/images/village/veules-les-roses.jpg');
+    background-position: top 67% center;
   }
 
   .page-footer {

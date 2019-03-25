@@ -13,7 +13,7 @@
 
           <p>Un lieu idéal pour organiser, en petit comité, avec une capacité d’accueil du 15 personnes assises autour de la table et ou 25 personnes assises en assemblée vos séminaires, assemblées générales, comités de direction, conférences, journées d'étude, réunions d'affaires, ou tout simplement une réunion ou événement familial.</p>
 
-          <p>La salle est équipée d'un écran, paper board et accès Wi fi illimité.</p>
+          <p>La salle est équipée d'un écran, paper board et accès Wifi illimité.</p>
         </div>
 
         <div>

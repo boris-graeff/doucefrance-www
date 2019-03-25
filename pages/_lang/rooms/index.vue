@@ -17,7 +17,7 @@
               <img :src="`/images/rooms/${room}.jpg`" />
               <strong>{{ $t(`rooms.${room}`) }}</strong>
 
-              <NuxtLink :to="$i18n.path($t('routes.rooms.url') + '/' + room)" class="button">
+              <NuxtLink :to="$i18n.path($t('routes.rooms.url') + '/' + room)" class="button-secondary">
                 {{ $t('rooms.from', { price: $options.rooms[room].price }) }}
               </NuxtLink>
             </li>
@@ -87,9 +87,8 @@
       }
     }
 
-    .button {
-      padding: 6px;
-      text-decoration: none;
+    .button-secondary {
+      padding: 6px 12px;
     }
   }
 </style>
