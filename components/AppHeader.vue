@@ -42,7 +42,7 @@
 
 <script>
 export default {
-  pages: ['home', 'rooms', 'plan', 'tearoom', 'restaurant', 'seminars', 'village']
+  pages: ['home', 'rooms', 'hotel', 'plan', 'seminars', 'village']
 }
 </script>
 

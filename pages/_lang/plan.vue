@@ -1,6 +1,6 @@
 <template>
   <section>
-    <img src="/images/plan/veules-les-roses-plan.png" class="page-header"/>
+    <div class="page-header"></div>
 
     <div class="page-content">
       <div class="blocks">
@@ -62,7 +62,7 @@
       </div>
     </div>
 
-    <map-address class="page-footer"/>
+    <map-address />
   </section>
 </template>
 
@@ -78,6 +78,10 @@
 </script>
 
 <style scoped lang="scss">
+  .page-header {
+    background-image: url("/images/plan/veules-les-roses-plan.png");
+  }
+
   h3 {
     margin-top: 40px;
   }

@@ -44,8 +44,8 @@ module.exports = {
   ],
   generate: {
     routes: [
-      '/', '/chambres', '/acces', '/salondethe', '/restaurant', '/seminaires', '/village',
-      '/en', '/en/rooms', '/en/plan', '/en/tearoom', '/en/restaurant', '/en/seminars', '/en/village',
+      '/', '/chambres', '/hotel', '/acces', '/seminaires', '/village',
+      '/en', '/en/rooms', '/en/hotel', '/en/plan', '/en/seminars', '/en/village',
       '/chambres/duplex', '/chambres/suites', '/chambres/grandes-suites', '/chambres/tres-grandes-suites', '/chambres/suite-exception', '/chambres/appartements', '/chambres/suites-sans-kitchenette',
       '/rooms/duplex', '/rooms/suites', '/rooms/large-suites', '/rooms/extra-large-suites', '/rooms/luxury-suite', '/rooms/apartments', '/rooms/no-kitchen-suite',
     ]

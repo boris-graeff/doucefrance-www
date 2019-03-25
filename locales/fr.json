@@ -9,9 +9,9 @@
       "url": "acces",
       "name": "Accès"
     },
-    "restaurant": {
-      "url": "restaurant",
-      "name": "Restaurant"
+    "hotel": {
+      "url": "hotel",
+      "name": "L'Hôtel"
     },
     "rooms": {
       "url": "chambres",
@@ -20,10 +20,6 @@
     "seminars": {
       "url": "seminaires",
       "name": "Séminaires"
-    },
-    "tearoom": {
-      "url": "salondethe",
-      "name": "Salon de thé"
     },
     "village": {
       "url": "village",

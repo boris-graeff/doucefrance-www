@@ -91,7 +91,7 @@ export default {
         justify-content: center;
         align-items: flex-start;
 
-        > div {
+        > * {
           width: 50%;
           padding: 60px;
           background: white;
