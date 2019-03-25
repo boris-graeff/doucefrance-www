@@ -14,11 +14,13 @@
         <div>
           <ul class="rooms">
             <li v-for="room in Object.keys($options.rooms)" :key="room">
-              <img :src="`/images/rooms/${room}.jpg`" />
-              <strong>{{ $t(`rooms.${room}`) }}</strong>
+              <NuxtLink :to="$i18n.path($t('routes.rooms.url') + '/' + room)">
+                <img :src="`/images/rooms/${room}.jpg`" />
+                <strong>{{ $t(`rooms.${room}`) }}</strong>
 
-              <NuxtLink :to="$i18n.path($t('routes.rooms.url') + '/' + room)" class="button-secondary">
-                {{ $t('rooms.from', { price: $options.rooms[room].price }) }}
+                <span class="button-secondary">
+                  {{ $t('rooms.from', { price: $options.rooms[room].price }) }}
+                </span>
               </NuxtLink>
             </li>
             <li>
@@ -35,7 +37,8 @@
 
         <div>
           <p>Toutes nos suites de 20 à 45 m2 environ disposent d'un espace jour et d'un espace nuit séparés. Elles sont décorées avec le plus grand soin : le mobilier d'époque chiné chez les antiquaires se marie harmonieusement avec des pièces contemporaines. Parquets et tapis ou terres cuites, oeuvres de peintres, tissus de grands éditeurs (Braquenié, Zuber, Boussac, Sanderson...).</p>
-
+        </div>
+        <div>
           <p>Votre confort n'est pas en reste ; la literie Impérial Pullman rendra douces vos nuits. Hormis quatre chambres, toutes les suites sont pourvues de kitchenettes équipées. Nos quatre appartements familiaux de 55 à 75 m2 disposent de deux chambres séparées et d'un salon très confortable, ainsi qu'une cuisine spacieuse entièrement équipée. Ils conviennent particulièrement aux couples avec des enfants ou aux personnes qui souhaitent disposer d'un large espace.</p>
         </div>
       </div>
@@ -53,6 +56,10 @@
 
 <style scoped lang="scss">
   @import '~@/style/vars';
+
+  .page-content {
+    padding-bottom: 60px;
+  }
 
   .blocks {
     > div {
@@ -87,6 +94,18 @@
 
     .button-secondary {
       padding: 6px 12px;
+    }
+  }
+
+  @media screen and (max-width: 1000px){
+    .rooms > li {
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 750px){
+    .rooms > li {
+      width: 100%;
     }
   }
 </style>

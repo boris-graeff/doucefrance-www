@@ -16,7 +16,7 @@
       <nav class="nav">
         <ul>
           <li v-for="page in $options.pages" :key="page">
-            <NuxtLink :to="$i18n.path($t(`routes.${page}.url`))">
+            <NuxtLink :to="$i18n.path($t(`routes.${page}.url`))" :class="{'category': page === 'rooms'}">
               {{ $t(`routes.${page}.name`) }}
             </NuxtLink>
           </li>
@@ -95,7 +95,7 @@ export default {
       margin-left: 10px;
     }
 
-    .nuxt-link-exact-active {
+    .nuxt-link-exact-active, .category.nuxt-link-active {
       border-bottom: 2px solid;
     }
   }

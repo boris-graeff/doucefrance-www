@@ -117,4 +117,28 @@ export default {
       background-position: center center;
     }
   }
+
+  @media screen and (max-width: 1000px){
+    /deep/ {
+      .blocks {
+        > div {
+          padding: 20px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 750px){
+    /deep/ {
+      .blocks {
+        > * {
+          width: 100%;
+
+          &:nth-child(1) {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
 </style>
