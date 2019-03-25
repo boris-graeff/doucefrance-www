@@ -2,39 +2,40 @@
   <header class="header">
     <div>
       <div>
-        <NuxtLink :to="$i18n.locale === 'fr' ? '/' : '/en'" exact>
-          <img src="~/assets/douce-france.svg" alt="Douce France" class="logo">
+        <NuxtLink :to="$i18n.locale === 'fr' ? '/' : '/en'" class="home-link">
+          <img src="~/assets/douce-france.svg" alt="Douce France" >
         </NuxtLink>
-
-        <div class="langs">
-          <NuxtLink to="/en" exact>
-            {{ $t('routes.lang.en') }}
-          </NuxtLink>
-          <NuxtLink to="/" exact>
-            {{ $t('routes.lang.fr') }}
-          </NuxtLink>
-        </div>
+        <p>Relais Hôtelier à Veules Les Roses</p>
       </div>
 
-      <label class="menu-button" for="show-menu-button">|||</label>
+      <label class="menu-button" for="show-menu-button">
+        <img src="~/assets/icn-menu.svg" />
+      </label>
       <input type="checkbox" id="show-menu-button" />
 
       <nav class="nav">
         <ul>
-          <li>
-            <a :href="$t('externals.booking', { lang: $i18n.locale.toUpperCase() })"
-               class="button"
-               target="_blank">
-              {{ $t('common.actions.booking') }}
-            </a>
-          </li>
-
           <li v-for="page in $options.pages" :key="page">
-            <NuxtLink :to="$i18n.path($t(`routes.${page}.url`))" exact>
+            <NuxtLink :to="$i18n.path($t(`routes.${page}.url`))">
               {{ $t(`routes.${page}.name`) }}
             </NuxtLink>
           </li>
         </ul>
+
+        <div class="langs">
+          <NuxtLink to="/en" :class="{'active': $i18n.locale === 'en'}">
+            {{ $t('routes.lang.en') }}
+          </NuxtLink>
+          <NuxtLink to="/" :class="{'active': $i18n.locale === 'fr'}">
+            {{ $t('routes.lang.fr') }}
+          </NuxtLink>
+        </div>
+
+        <a :href="$t('externals.booking', { lang: $i18n.locale.toUpperCase() })"
+           class="button book-now"
+           target="_blank">
+          {{ $t('common.actions.booking') }}
+        </a>
       </nav>
     </div>
   </header>
@@ -52,32 +53,38 @@ export default {
   .header {
     a {
       text-decoration: none;
+      color: inherit;
     }
 
     > div {
+      position: relative;
       max-width: $max-content-width;
       margin: auto;
-      padding: 20px;
+      padding: 20px 20px 10px;
 
-      > div {
-        display: flex;
-        justify-content: space-between;
+      > div:first-child {
+        text-align: center;
       }
-    }
-
-    a {
-      color: inherit;
     }
   }
 
-  .logo {
-    width: 280px;
-    margin-bottom: 10px;
+  .home-link {
+    img {
+      width: 250px;
+    }
+
+    + p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
   }
 
   .nav {
+
     ul {
+      font-size: 20px;
       display: flex;
+      justify-content: center;
     }
 
     a {
@@ -88,49 +95,52 @@ export default {
       margin-left: 10px;
     }
 
-    .nuxt-link-active {
+    .nuxt-link-exact-active {
       border-bottom: 2px solid;
-    }
-
-    li:first-child {
-      margin-right: 30px;
     }
   }
 
+  .book-now {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+
   .langs {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
     a {
       padding: 2px 6px;
 
-      + a {
-        position: relative;
-
-        &:before {
-          content: '';
-          position: absolute;
-          left: -1px;
-          top: 4px;
-          bottom: 4px;
-          width: 1px;
-          background: $dark;
-        }
+      &.active {
+        border: 2px solid;
       }
     }
   }
 
   .menu-button {
     display: none;
+    position: absolute;
+    right: 20px;
+    top: 40px;
 
     + input {
       display: none;
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 700px) {
     .nav {
       display: none;
+      text-align: center;
+      background: $grey-light;
+      padding: 20px 0;
 
       ul {
         flex-direction: column;
+        align-items: center;
       }
 
       li + li {
@@ -145,6 +155,15 @@ export default {
 
     .menu-button {
       display: inline-block;
+    }
+
+    .langs, .book-now {
+      position: static;
+      margin-top: 20px;
+    }
+
+    .header > div > div:first-child {
+      text-align: left;
     }
   }
 </style>
