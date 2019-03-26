@@ -1,10 +1,13 @@
 <template>
  <div>
    <div class="page-content">
+     <rooms-header />
+
      <div>
-       <h2>Suites "Large" </h2>
-       <p>Un choix de 5 suites donnant sur la cour et sur la Veules à partir de 132 €</p>
+       <h2>{{ $t(`rooms.${room}.name`) }}</h2>
+       <p>{{ $t(`rooms.${room}.intro`) }}</p>
      </div>
+
      <section>
        <div>
          <h3>Flandre / Gascogne / Languedoc</h3>
@@ -35,18 +38,44 @@
  </div>
 </template>
 
+<script>
+  import RoomsHeader from '~/components/RoomsHeader'
+  import rooms from '~/locales/rooms'
+
+  export default {
+    data(){
+      return {
+        room: this.$route.params.id
+      }
+    },
+    components: {
+      RoomsHeader
+    }
+  }
+</script>
+
 <style scoped lang="scss">
   .page-content {
+
+    > div:nth-child(2) {
+      text-align: center;
+
+      h2:after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
     section {
       padding: 0 20px;
       display: flex;
       flex-wrap: wrap;
+      margin-top: 60px;
 
       > * {
-        width: 33%;
+        width: 50%;
 
         &:first-child {
-          width: 100%;
           padding: 60px;
         }
       }

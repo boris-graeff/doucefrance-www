@@ -1,49 +1,45 @@
 <template>
   <section>
-    <img src="/images/tearoom/tea-time-douce-france.jpg" class="page-header"/>
-
     <div class="page-content">
-      <div class="blocks">
-        <div>
-          <h2>{{ $t('routes.rooms.name') }}</h2>
-          <p>
-            <strong>25 Chambres, suites et appartements équipés de kitchenettes</strong>
-          </p>
-        </div>
+      <rooms-header />
 
-        <div>
-          <ul class="rooms">
-            <li v-for="room in Object.keys($options.rooms)" :key="room">
-              <NuxtLink :to="$i18n.path($t('routes.rooms.url') + '/' + room)">
-                <img :src="`/images/rooms/${room}.jpg`" />
-                <strong>{{ $t(`rooms.${room}`) }}</strong>
+      <ul class="rooms">
+        <li v-for="room in Object.keys($options.rooms)" :key="room">
+          <NuxtLink :to="$i18n.path($t('routes.rooms.url') + '/' + room)">
+            <img :src="`/images/rooms/${room}.jpg`" />
+            <strong>
+              {{ $t(`rooms.${room}.name`) }} - {{ $t(`rooms.size.${$options.rooms[room].size}`) }}
+            </strong>
 
-                <span class="button-secondary">
-                  {{ $t('rooms.from', { price: $options.rooms[room].price }) }}
-                </span>
-              </NuxtLink>
-            </li>
-            <li>
-              <ul class="list">
-                <li>Lit d'Appoint  15 €</li>
-                <li>Lit Bébé  10 €</li>
-                <li>Animal  15 €</li>
-                <li>Petit Dejeuner Continental  14 €</li>
-                <li>Taxe de séjour   0,65 € Par personne par jour</li>
-              </ul>
-            </li>
+            <span class="button-secondary">
+              {{ $t('rooms.from', { price: $options.rooms[room].price }) }}
+            </span>
+          </NuxtLink>
+        </li>
+        <li>
+          <ul class="list">
+            <li>Lit d'Appoint  15 €</li>
+            <li>Lit Bébé  10 €</li>
+            <li>Animal  15 €</li>
+            <li>Petit Dejeuner Continental  14 €</li>
+            <li>Taxe de séjour : Par jour et par personne, représentant 3 % du coût HT par personne de la nuitée dans la limite du tarif le plus élevé (2€)</li>
           </ul>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
+
   </section>
 </template>
 
 <script>
   import rooms from '~/locales/rooms'
+  import RoomsHeader from '~/components/RoomsHeader'
 
   export default {
-    rooms
+    rooms,
+    components: {
+      RoomsHeader
+    }
   }
 </script>
 
@@ -54,25 +50,17 @@
     padding-bottom: 60px;
   }
 
-  .blocks {
-    > div {
-      &:nth-child(2) {
-        width: 100%;
-      }
-
-      &:last-child {
-        background: $grey-light;
-      }
-    }
-  }
-
   .rooms {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -6px;
+    padding: 0 6px;
+
+    a {
+      text-decoration: none;
+    }
 
     > li {
-      width: 33%;
+      width: 33.33%;
       padding: 6px 6px 20px;
 
       strong {
@@ -81,7 +69,14 @@
       }
 
       &:last-child {
-        padding: 60px 20px 20px;
+        ul {
+          padding: 60px;
+          border: 2px solid;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+        }
       }
     }
 

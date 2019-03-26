@@ -110,13 +110,33 @@
     }
   },
   "rooms": {
-    "duplex": "Duplex pour 2 personnes",
-    "suites": "Suites pour 2 personnes",
-    "suites-large": "Suites 'Large' pour 2 ou 3 personnes",
-    "suites-grand-large": "Suites 'Grand Large' pour 2 ou 3 personnes",
-    "suite-exception": "Suite d'Exception pour 2 personnes",
-    "appartements": "Appartements familiaux pour 4 personnes",
-    "suites-sans-kitchenette": "Suites sans kitchenette",
-    "from": "À partir de {price}€"
+    "duplex": {
+      "name": "Duplex"
+    },
+    "suites": {
+      "name": "Suites"
+    },
+    "suites-large": {
+      "name": "Suites 'Large'"
+    },
+    "suites-grand-large": {
+      "name": "Suites 'Grand Large'"
+    },
+    "suite-exception": {
+      "name": "Suite d'Exception"
+    },
+    "appartements": {
+      "name": "Appartements familiaux"
+    },
+    "suites-sans-kitchenette": {
+      "name": "Suites sans kitchenette"
+    },
+
+    "from": "À partir de {price}€",
+    "size": {
+      "2": "2 personnes",
+      "23": "2 ou 3 personnes",
+      "4":"4 personnes"
+    }
   }
 }

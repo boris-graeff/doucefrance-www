@@ -30,19 +30,24 @@
               <img src="/images/hotel/hotel-veules-les-roses.jpg" />
             </slide>
             <slide>
-              <img src="/images/hotel/hotel-vue.jpg" />
+              <img src="/images/hotel/hotel-1.jpg" />
+            </slide>
+            <slide>
+              <img src="/images/hotel/hotel-2.jpg" />
             </slide>
           </carousel>
         </div>
 
         <div>
-          <h2>Vous souhaitez offrir un séjour de rêve à vos proches ?</h2>
+          <div>
+            <h2>Vous souhaitez offrir un séjour de rêve à vos proches ?</h2>
 
-          <p>Nous avons crée à cet effet la lettre cadeau-personnalisée.</p>
+            <p>Nous avons crée à cet effet la lettre cadeau-personnalisée.</p>
 
-          <p>Nous réglons avec vous à l'avance  tous les détails afin que vos invités gardent un souvenir mémorable de leur passage chez nous.</p>
+            <p>Nous réglons avec vous à l'avance  tous les détails afin que vos invités gardent un souvenir mémorable de leur passage chez nous.</p>
 
-          <p>Pour plus de détails, contactez nous au  02 35 57 85 30</p>
+            <p>Pour plus de détails, contactez nous au  02 35 57 85 30</p>
+          </div>
         </div>
 
       </div>
@@ -66,7 +71,10 @@
     }
 
     > div:nth-child(4){
-      border: 2px solid;
+      > div {
+        padding: 60px;
+        border: 2px solid;
+      }
     }
   }
 </style>

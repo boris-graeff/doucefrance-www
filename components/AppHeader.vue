@@ -3,9 +3,9 @@
     <div>
       <div>
         <NuxtLink :to="$i18n.locale === 'fr' ? '/' : '/en'" class="home-link">
+          <p>Relais Hôtelier</p>
           <img src="~/assets/douce-france.svg" alt="Douce France" >
         </NuxtLink>
-        <p>Relais Hôtelier à Veules Les Roses</p>
       </div>
 
       <label class="menu-button" for="show-menu-button">
@@ -73,13 +73,17 @@ export default {
       width: 250px;
     }
 
-    + p {
-      font-size: 14px;
-      margin-bottom: 10px;
+    p {
+      font-size: 16px;
+      position: relative;
+      left: -7px;
+      top: -3px;
+
     }
   }
 
   .nav {
+    margin: 6px 0;
 
     ul {
       font-size: 20px;
@@ -129,6 +133,12 @@ export default {
 
     + input {
       display: none;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .nav ul {
+      font-size: 18px;
     }
   }
 

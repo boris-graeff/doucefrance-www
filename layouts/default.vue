@@ -30,7 +30,7 @@ export default {
   .app {
     /deep/ {
       .button {
-        border: 2px solid;
+        border: 2px solid $grey-blue;
         background: white;
         text-decoration: none;
         font-size: 16px;
@@ -128,7 +128,7 @@ export default {
     }
   }
 
-  @media screen and (max-width: 750px){
+  @media screen and (max-width: 900px){
     /deep/ {
       .blocks {
         > * {

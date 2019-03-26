@@ -20,7 +20,7 @@
 
         <div>
           <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000" >
-            <slide v-for="index in 3" :key="index">
+            <slide v-for="index in 2" :key="index">
               <img :src="`/images/village/veules-les-roses-${index}.jpg`" />
             </slide>
           </carousel>
@@ -72,7 +72,7 @@
       }
 
       &:nth-child(3) {
-        background: $grey-light;
+        border: 2px solid;
       }
     }
 

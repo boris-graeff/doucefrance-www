@@ -3,10 +3,10 @@
     <div>
 
       <div>
-        <NuxtLink :to="$i18n.locale === 'fr' ? '/' : '/en'" exact>
-          <img src="~/assets/douce-france.svg" alt="Douce France" class="logo">
+        <NuxtLink :to="$i18n.locale === 'fr' ? '/' : '/en'" class="logo">
+          <p>Relais Hôtelier</p>
+          <img src="~/assets/douce-france.svg" alt="Douce France" />
         </NuxtLink>
-        <p>Relais Hôtelier à Veules Les Roses</p>
       </div>
 
       <div class="contact">
@@ -56,7 +56,16 @@
   }
 
   .logo {
-    max-width: 200px;
+    p {
+      text-align: center;
+      position: relative;
+      top: -3px;
+      left: -7px;
+    }
+
+    img {
+      max-width: 200px;
+    }
   }
 
   .contact {
