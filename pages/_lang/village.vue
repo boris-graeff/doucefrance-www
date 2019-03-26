@@ -20,8 +20,8 @@
 
         <div>
           <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000" >
-            <slide v-for="index in 4" :key="index">
-              <img :src="`/images/village/veules-les-roses-${index}.jpeg`" />
+            <slide v-for="index in 3" :key="index">
+              <img :src="`/images/village/veules-les-roses-${index}.jpg`" />
             </slide>
           </carousel>
         </div>
@@ -36,12 +36,15 @@
             <li>{{ $t('village.activities.list[3]') }}</li>
             <li>{{ $t('village.activities.list[4]') }}</li>
             <li>{{ $t('village.activities.list[5]') }}</li>
+            <li>{{ $t('village.activities.list[6]') }}</li>
           </ul>
           <br/>
           <p>{{ $t('village.activities.content[1]') }}</p>
         </div>
       </div>
     </div>
+
+    <div class="page-footer"></div>
   </section>
 </template>
 
@@ -51,6 +54,11 @@
   .page-header {
     background-image: url('/images/village/veules-les-roses.jpg');
     background-position: top 67% center;
+  }
+
+  .page-footer {
+    background-image: url('/images/village/veules-les-roses-couche-soleil.jpg');
+    background-position: top 55% center;
   }
 
   .page-content {

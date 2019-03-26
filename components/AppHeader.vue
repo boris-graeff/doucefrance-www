@@ -85,6 +85,7 @@ export default {
       font-size: 20px;
       display: flex;
       justify-content: center;
+      font-family: Quicksand;
     }
 
     a {

@@ -34,13 +34,6 @@
             </li>
           </ul>
         </div>
-
-        <div>
-          <p>Toutes nos suites de 20 à 45 m2 environ disposent d'un espace jour et d'un espace nuit séparés. Elles sont décorées avec le plus grand soin : le mobilier d'époque chiné chez les antiquaires se marie harmonieusement avec des pièces contemporaines. Parquets et tapis ou terres cuites, oeuvres de peintres, tissus de grands éditeurs (Braquenié, Zuber, Boussac, Sanderson...).</p>
-        </div>
-        <div>
-          <p>Votre confort n'est pas en reste ; la literie Impérial Pullman rendra douces vos nuits. Hormis quatre chambres, toutes les suites sont pourvues de kitchenettes équipées. Nos quatre appartements familiaux de 55 à 75 m2 disposent de deux chambres séparées et d'un salon très confortable, ainsi qu'une cuisine spacieuse entièrement équipée. Ils conviennent particulièrement aux couples avec des enfants ou aux personnes qui souhaitent disposer d'un large espace.</p>
-        </div>
       </div>
     </div>
   </section>

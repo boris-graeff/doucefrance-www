@@ -7,7 +7,8 @@
         <div>
           <h2>Bienvenue au Douce France</h2>
           <p>
-            Relais Hôtel situé à Veules les Roses, village romantique et authentique de Normandie, à 500 mètres de la mer.
+            Relais Hôtel situé à Veules les Roses, village romantique et authentique de Normandie, à 500 mètres de la mer.<br>
+            Classé  dans le guide officiel des plus beaux villages de France.
           </p>
         </div>
         <div>
@@ -15,6 +16,23 @@
           <p>Sur les pas de Victor Hugo, de Guy de Maupassant, et de nombreux autres artistes, elle vous convie à goûter aux plaisirs du silence et du repos dans un cadre marin et bucolique enchanteur dont la plupart des voies sont piétonnes.</p>
           <p>Niché au coeur de la station, cet ancien relais de poste du XVII ème siècle a été magnifiquement restauré dans la tradition du savoir faire ancestral des maitres maçons et charpentiers "Compagnons du Tour de France". Cette résidence de charme est bordée par la rivière. Elle est précédée par une belle cour fleurie, et prolongée par un jardin cloîtré propice au repos.</p>
           <p>Petits déjeuners, restauration légère, salon de thé, terrasse au bord de l'eau.</p>
+        </div>
+
+        <div>
+          <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000">
+            <slide>
+              <img src="/images/hotel-douce-france-veules-les-roses.jpg" />
+            </slide>
+            <slide>
+              <img src="/images/hotel/hotel-restaurant.jpg" />
+            </slide>
+            <slide>
+              <img src="/images/hotel/hotel-veules-les-roses.jpg" />
+            </slide>
+            <slide>
+              <img src="/images/hotel/hotel-vue.jpg" />
+            </slide>
+          </carousel>
         </div>
 
         <div>
@@ -27,22 +45,6 @@
           <p>Pour plus de détails, contactez nous au  02 35 57 85 30</p>
         </div>
 
-        <div>
-          <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000" :paginationEnabled="false">
-            <slide>
-              <img src="/images/hotel-douce-france-veules-les-roses.jpg" />
-            </slide>
-            <slide>
-              <img src="/images/hotel-douce-france-veules-les-roses.jpg" />
-            </slide>
-            <slide>
-              <img src="/images/hotel-douce-france-veules-les-roses.jpg" />
-            </slide>
-            <slide>
-              <img src="/images/hotel-douce-france-veules-les-roses.jpg" />
-            </slide>
-          </carousel>
-        </div>
       </div>
     </div>
 
@@ -60,6 +62,10 @@
 
   .blocks {
     > div:nth-child(3){
+      padding: 0;
+    }
+
+    > div:nth-child(4){
       border: 2px solid;
     }
   }

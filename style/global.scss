@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css?family=Cabin|Quicksand');
 @import '~@/style/reset';
 @import '~@/style/vars';
 
@@ -6,19 +6,27 @@ body {
   font-family: 'Cabin', sans-serif;
   font-size: 18px;
   line-height: 1.4;
-  color: $deep-blue;
+  color: $grey-blue;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  font-family: Quicksand;
 }
 
 h1 {
   margin: 0;
+  font-size: 30px;
 }
 
 h2 {
   margin: 0 0 30px 0;
+  font-size: 30px;
 }
 
 h3 {
   margin: 0 0 10px 0;
+  font-size: 26px;
 }
 
 a, button {

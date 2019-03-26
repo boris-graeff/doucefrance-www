@@ -30,20 +30,20 @@ export default {
   .app {
     /deep/ {
       .button {
-        border: 2px solid $deep-blue;
+        border: 2px solid;
         background: white;
         text-decoration: none;
         font-size: 16px;
         padding: 6px 12px;
 
         &:hover {
-          background: $deep-blue;
+          background: $grey-blue;
           color: white;
         }
       }
 
       .button-secondary {
-        background: $deep-blue;
+        background: $grey-blue;
         color: white;
         text-decoration: none;
         font-size: 16px;
@@ -109,7 +109,7 @@ export default {
       }
     }
 
-    .page-header {
+    .page-header, .page-footer {
       display: block;
       height: 300px;
       background-color: $grey-light;
@@ -134,7 +134,7 @@ export default {
         > * {
           width: 100%;
 
-          &:nth-child(1) {
+          &:nth-child(1)  {
             margin-top: 0;
           }
         }
