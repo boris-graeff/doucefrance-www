@@ -62,7 +62,7 @@
   .page-header {
     background-image: url('/images/hotel-douce-france-veules-les-roses.jpg');
     background-position: top 30% center;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 300px);
   }
 
   .blocks {

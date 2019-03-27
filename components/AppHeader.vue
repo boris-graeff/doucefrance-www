@@ -11,9 +11,9 @@
       <label class="menu-button" for="show-menu-button">
         <img src="~/assets/icn-menu.svg" />
       </label>
-      <input type="checkbox" id="show-menu-button" />
+      <input type="checkbox" id="show-menu-button" v-model="showMenu" />
 
-      <nav class="nav">
+      <nav class="nav" @click="showMenu = false">
         <ul>
           <li v-for="page in $options.pages" :key="page">
             <NuxtLink :to="$i18n.path($t(`routes.${page}.url`))" :class="{'category': page === 'rooms'}">
@@ -43,6 +43,11 @@
 
 <script>
 export default {
+  data () {
+    return {
+      showMenu: false
+    }
+  },
   pages: ['home', 'rooms', 'hotel', 'plan', 'seminars', 'village']
 }
 </script>
