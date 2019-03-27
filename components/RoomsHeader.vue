@@ -20,12 +20,15 @@
 </script>
 
 <style scoped lang="scss">
+  @import '~@/style/vars';
+
   .rooms-header {
     margin-top: 20px;
     margin-bottom: 30px;
     font-size: 16px;
 
     a {
+      padding: 12px;
       text-decoration: none;
     }
 
@@ -37,12 +40,15 @@
     }
 
     li {
-      padding: 12px;
-
       div:last-child {
         font-size: 12px;
       }
     }
+  }
+
+  .nuxt-link-exact-active {
+    background: $grey-blue;
+    color: white;
   }
 
   @media screen and (max-width: 1100px){

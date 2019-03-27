@@ -5,14 +5,16 @@
 
      <div>
        <h2>{{ $t(`rooms.${room}.name`) }}</h2>
-       <p>{{ $t(`rooms.${room}.intro`) }}</p>
+       <h3>{{ $t(`rooms.${room}.intro`) }}</h3>
+       <div>
+         <strong>{{ $t('rooms.from', { price: $options.rooms[room].price }) }}</strong>
+       </div>
      </div>
 
-     <section>
+     <section v-for="(_, index) in $options.rooms[room].categories" :key="index">
        <div>
-         <h3>Flandre / Gascogne / Languedoc</h3>
-         <p>Trois Suites Large avec terrasse commune surplombant la Veules</p>
-         <p>Elles se composent d’un petit salon, kitchenette, salle de douche avec wc, chambre avec literie en 140 cm</p>
+         <h3>{{ $t(`rooms.${room}.categories[${index}].title`) }}</h3>
+         <p v-html="$t(`rooms.${room}.categories[${index}].description`)"></p>
 
          <a :href="$t('externals.booking', { lang: $i18n.locale.toUpperCase() })"
             class="button-secondary"
@@ -20,17 +22,13 @@
            {{ $t('common.actions.booking') }}
          </a>
        </div>
+
        <div>
-         <img src="/images/hotel/salle-restauration.jpg" />
-         <p>Lit</p>
-       </div>
-       <div>
-         <img src="/images/hotel/salle-restauration.jpg" />
-         <p>Salle de bain</p>
-       </div>
-       <div>
-         <img src="/images/hotel/salle-restauration.jpg" />
-         <p>Pièce à vivre</p>
+         <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000" :loop="true" class="carousel">
+           <slide v-for="photo in $options.rooms[room].photos[index]" :key="photo">
+             <img :src="`/images/rooms/${room}/${room}-${index}-${photo}.jpg`" />
+           </slide>
+         </carousel>
        </div>
 
      </section>
@@ -43,6 +41,7 @@
   import rooms from '~/locales/rooms'
 
   export default {
+    rooms,
     data(){
       return {
         room: this.$route.params.id
@@ -55,7 +54,9 @@
 </script>
 
 <style scoped lang="scss">
+
   .page-content {
+    padding-bottom: 60px;
 
     > div:nth-child(2) {
       text-align: center;
@@ -89,5 +90,18 @@
   .button-secondary {
     padding: 6px 12px;
     margin-top: 20px;
+  }
+
+  .carousel {
+    img {
+      max-height: 512px;
+      width: auto;
+    }
+
+    /deep/ .VueCarousel-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 </style>

@@ -6,7 +6,7 @@
       <ul class="rooms">
         <li v-for="room in Object.keys($options.rooms)" :key="room">
           <NuxtLink :to="$i18n.path($t('routes.rooms.url') + '/' + room)">
-            <img :src="`/images/rooms/${room}.jpg`" />
+            <div class="overview" :style="{backgroundImage: `url(/images/rooms/${room}/${room}-0-1.jpg)`}"></div>
             <strong>
               {{ $t(`rooms.${room}.name`) }} - {{ $t(`rooms.size.${$options.rooms[room].size}`) }}
             </strong>
@@ -55,7 +55,15 @@
     flex-wrap: wrap;
     padding: 0 6px;
 
+    .overview {
+      height: 300px;
+      width: 100%;
+      background-size: cover;
+      background-position: center center;
+    }
+
     a {
+      display: block;
       text-decoration: none;
     }
 
