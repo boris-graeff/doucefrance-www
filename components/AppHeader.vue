@@ -53,7 +53,6 @@ export default {
   .header {
     a {
       text-decoration: none;
-      color: inherit;
     }
 
     > div {
@@ -74,7 +73,7 @@ export default {
     }
 
     p {
-      font-size: 16px;
+      font-size: 14px;
       position: relative;
       left: -7px;
       top: -3px;

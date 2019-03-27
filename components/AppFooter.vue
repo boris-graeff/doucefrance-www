@@ -38,7 +38,7 @@
   @import '~@/style/vars';
 
   .footer {
-    font-size: 14px;
+    font-size: 12px;
     background: $grey-light;
 
     a {
