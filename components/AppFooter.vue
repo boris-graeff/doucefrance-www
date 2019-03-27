@@ -69,11 +69,33 @@
   }
 
   .contact {
-    margin-left: 20px;
+    margin-left: 30px;
     display: flex;
 
     > div + div {
       margin-left: 20px;
+    }
+  }
+
+  @media screen and (max-width: 700px){
+    .footer > div {
+      flex-direction: column;
+    }
+
+    .contact {
+      margin-left: 0;
+      margin-top: 30px;
+    }
+  }
+
+  @media screen and (max-width: 450px){
+    .contact {
+      flex-direction: column;
+
+      > div + div {
+        margin-left: 0;
+        margin-top: 20px;
+      }
     }
   }
 </style>

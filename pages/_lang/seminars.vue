@@ -19,7 +19,7 @@
         </div>
 
         <div>
-          <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000" class="carousel">
+          <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000" loop="true" class="carousel">
             <slide v-for="index in 4" :key="index">
               <img :src="`/images/village/veules-les-roses-${index}.jpeg`" />
             </slide>

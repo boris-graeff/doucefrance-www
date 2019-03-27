@@ -19,7 +19,7 @@
         </div>
 
         <div>
-          <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000">
+          <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000" loop="true">
             <slide>
               <img src="/images/hotel-douce-france-veules-les-roses.jpg" />
             </slide>
