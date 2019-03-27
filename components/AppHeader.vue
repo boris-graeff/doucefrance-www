@@ -78,7 +78,7 @@ export default {
       position: relative;
       left: -7px;
       top: -3px;
-
+      text-align: center;
     }
   }
 

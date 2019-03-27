@@ -60,6 +60,7 @@
 
     > div:nth-child(2) {
       text-align: center;
+      padding: 0 20px;
 
       h2:after {
         left: 50%;
@@ -67,14 +68,13 @@
       }
     }
 
-    section {
+    > section {
       padding: 0 20px;
       display: flex;
-      flex-wrap: wrap;
       margin-top: 60px;
 
       > * {
-        width: 50%;
+        width: 100%;
 
         &:first-child {
           padding: 60px;
@@ -97,11 +97,18 @@
       max-height: 512px;
       width: auto;
     }
+  }
 
-    /deep/ .VueCarousel-slide {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  @media screen and (max-width: 750px){
+    .page-content {
+      > section {
+        flex-direction: column;
+
+        > div:first-child {
+          padding: 0;
+          margin-bottom: 20px;
+        }
+      }
     }
   }
 </style>

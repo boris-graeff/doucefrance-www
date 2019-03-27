@@ -21,72 +21,29 @@ export default {
 </script>
 
 <style lang="scss">
+  @import url('https://fonts.googleapis.com/css?family=Cabin|Quicksand');
   @import '~@/style/global';
 </style>
 
 <style scoped lang="scss">
   @import '~@/style/vars';
 
-  .app {
-    /deep/ {
-      .button {
-        border: 2px solid $grey-blue;
-        background: white;
-        text-decoration: none;
-        font-size: 16px;
-        padding: 6px 12px;
-
-        &:hover {
-          background: $grey-blue;
-          color: white;
-        }
-      }
-
-      .button-secondary {
-        background: $grey-blue;
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-        padding: 6px 12px;
-      }
-
-      .list {
-        li {
-          position: relative;
-          padding-left: 24px;
-
-          &:before {
-            content: '';
-            position: absolute;
-            border-top: 1px solid;
-            height: 4px;
-            width: 10px;
-            display: inline-block;
-            left: 4px;
-            top: 0.7em;
-          }
-        }
-      }
-    }
-  }
-
   /deep/ {
     .page-content {
       max-width: $max-content-width;
       margin: auto;
-    }
 
-    h2 {
-      font-size: 30px;
-      position: relative;
+      h2 {
+        position: relative;
 
-      &:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: -10px;
-        border-bottom: 2px solid;
-        width: 40px;
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -10px;
+          border-bottom: 2px solid;
+          width: 40px;
+        }
       }
     }
 
@@ -115,6 +72,12 @@ export default {
       background-color: $grey-light;
       background-size: cover;
       background-position: center center;
+    }
+
+    .VueCarousel-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
