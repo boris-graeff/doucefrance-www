@@ -19,6 +19,8 @@
         </div>
 
         <div>
+          <special-offer class="special-offer" />
+
           <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000" :loop="true">
             <slide>
               <img src="/images/hotel-douce-france-veules-les-roses.jpg" />
@@ -56,6 +58,16 @@
   </section>
 </template>
 
+<script>
+  import SpecialOffer from "~/components/SpecialOffer"
+
+  export default {
+    components: {
+      SpecialOffer
+    }
+  }
+</script>
+
 <style scoped lang="scss">
   @import '~@/style/vars';
 
@@ -66,15 +78,33 @@
   }
 
   .blocks {
-    > div:nth-child(3){
-      padding: 0;
-    }
-
-    > div:nth-child(4){
-      > div {
-        padding: 60px;
-        border: 2px solid;
+    > div {
+      &:nth-child(3){
+        padding: 0;
+        position: relative;
       }
+
+      &:nth-child(4){
+        > div {
+          padding: 60px;
+          border: 2px solid;
+        }
+      }
+    }
+  }
+
+  .special-offer {
+    padding: 60px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  @media screen and (max-width: 900px) {
+    .special-offer {
+      position: static;
+      padding: 20px;
     }
   }
 </style>

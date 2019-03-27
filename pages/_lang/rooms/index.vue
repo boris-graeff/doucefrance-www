@@ -17,6 +17,9 @@
           </NuxtLink>
         </li>
         <li>
+          <special-offer class="special-offer" />
+        </li>
+        <li>
           <ul class="list">
             <li>Lit d'Appoint  15 €</li>
             <li>Lit Bébé  10 €</li>
@@ -34,11 +37,13 @@
 <script>
   import rooms from '~/locales/rooms'
   import RoomsHeader from '~/components/RoomsHeader'
+  import SpecialOffer from "~/components/SpecialOffer"
 
   export default {
     rooms,
     components: {
-      RoomsHeader
+      RoomsHeader,
+      SpecialOffer
     }
   }
 </script>
@@ -78,12 +83,9 @@
 
       &:last-child {
         ul {
-          padding: 60px;
-          border: 2px solid;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
+          padding: 20px;
+          height: 300px;
+          background: $grey-light;
         }
       }
     }
@@ -91,6 +93,10 @@
     .button-secondary {
       padding: 6px 12px;
     }
+  }
+
+  .special-offer {
+    height: 300px;
   }
 
   @media screen and (max-width: 1000px){
