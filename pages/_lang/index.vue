@@ -5,9 +5,9 @@
     <div class="page-content">
       <div class="blocks">
         <div>
-          <h2>Bienvenue au Douce France</h2>
+          <h2>Bienvenue au Relais Hôtelier Douce France</h2>
           <p>
-            Relais Hôtel situé à Veules les Roses, village romantique et authentique de Normandie, à 500 mètres de la mer.<br>
+            Relais Hôtel situé à <strong>Veules les Roses</strong>, village romantique et authentique de Normandie, à 500 mètres de la mer.<br>
             Classé  dans le guide officiel des plus beaux villages de France.
           </p>
         </div>
@@ -86,7 +86,7 @@
 
       &:nth-child(4){
         > div {
-          padding: 60px;
+          padding: 50px;
           border: 2px solid;
         }
       }
@@ -96,7 +96,7 @@
   .special-offer {
     padding: 60px;
     position: absolute;
-    bottom: 100%;
+    bottom: calc(100% + 20px);
     left: 0;
     right: 0;
   }
