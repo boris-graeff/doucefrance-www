@@ -7,7 +7,7 @@
         <div>
           <h2>{{ $t('routes.plan.name') }}</h2>
 
-          <p>Notre Relais Hôtelier Douce France se situe au cœur du magnifique Village de Veules les Roses, en Seine Maritime (Haute Normandie)</p>
+          <p>{{ $t('plan.intro') }}</p>
 
           <p>
             <strong>Douce France</strong><br>
@@ -23,10 +23,10 @@
 
           <br/>
           <ul class="list">
-            <li>à 26 km de Dieppe</li>
-            <li>à 194 kms de Paris</li>
-            <li>à 2 heures de Paris et Lille </li>
-            <li>à proximité de Fécamp et Etretat</li>
+            <li>{{ $t('plan.distances[0]') }}</li>
+            <li>{{ $t('plan.distances[1]') }}</li>
+            <li>{{ $t('plan.distances[2]') }}</li>
+            <li>{{ $t('plan.distances[3]') }}</li>
           </ul>
         </div>
         <div>

@@ -6,9 +6,7 @@
       <div class="blocks">
         <div>
           <h2>{{ $t('routes.hotel.name') }}</h2>
-          <p>
-            Farniente, quiétude et douceur de vivre… Dans notre salon intérieur ou bien sur notre terrasse au bord de l’eau, nos petits déjeuners, notre carte de salon de thé et restauration légère.
-          </p>
+          <p>{{ $t('hotel.intro') }}</p>
         </div>
         <div></div>
 
@@ -16,14 +14,14 @@
           <img src="/images/hotel/petit-dejeuner.jpeg" />
         </div>
         <div>
-          <h3>Le petit déjeuner</h3>
-          <p>Instant gourmand au réveil autour de notre buffet avec des produits sucrés et salés. Vous allez aimer notre salade de fruits frais maison, nos jus pressés, nos cakes maison, la charcuterie de pays, les confitures artisanales...</p>
+          <h3>{{ $t('hotel.breakfast.title') }}</h3>
+          <p>{{ $t('hotel.breakfast.content') }}</p>
         </div>
 
         <div>
-          <h3>Salon de thé</h3>
-          <p>A l’heure du thé, sous le cloître dans la cour fleurie au bord de la Veules, ou tout simplement dans nos salons intérieurs, dégustez nos pâtisseries maison, nos crêpes, nos glaces généreuses, tout en appréciant la grande variété de nos thés de toutes origines, notre spécialité de chocolat à l'ancienne ou nos jus de fruits frais.</p>
-          <p>Au bord de la Veules, le parfum des roses et du chèvrefeuille, ainsi que le bruissement des fontaines vous aideront à retrouver un rythme de vie calme paisible et heureux.</p>
+          <h3>{{ $t('hotel.tearoom.title') }}</h3>
+          <p>{{ $t('hotel.tearoom.content[0]') }}</p>
+          <p>{{ $t('hotel.tearoom.content[1]') }}</p>
         </div>
         <div>
           <img src="/images/hotel/salon-de-the.jpeg" />
@@ -32,17 +30,18 @@
         <div>
           <img src="/images/hotel/salle-restauration.jpg" />
         </div>
+
         <div>
-          <h3>Restauration légère</h3>
-          <p>Tout au long de la journée, pour les résidents et non-résidents, une petite restauration légère et variée, vous est servie en mettant à l'honneur des produits locaux.</p>
-          <p>Elle est servie à toute heure (jusqu’à 18 heures pour les non-résidents).</p>
-          <p>Grandes salades fraicheur, soupes, plats chauds cuisinés déclinés au fils des saisons et un large choix de pâtisseries maison.</p>
+          <h3>{{ $t('hotel.lightMeals.title') }}</h3>
+          <p>{{ $t('hotel.lightMeals.content[0]') }}</p>
+          <p>{{ $t('hotel.lightMeals.content[1]') }}</p>
+          <p>{{ $t('hotel.lightMeals.content[2]') }}</p>
         </div>
 
         <div>
-          <h3>Service en chambre</h3>
-          <p>Vous n’avez pas envie de ressortir pour diner ?</p>
-          <p>Notre service de restauration légère servi en chambre est à commander à la réception avant 18h 30 pour vous être déposé dans votre suite vers 19 h30.</p>
+          <h3>{{ $t('hotel.roomService.title') }}</h3>
+          <p>{{ $t('hotel.roomService.content[0]') }}</p>
+          <p>{{ $t('hotel.roomService.content[1]') }}</p>
         </div>
         <div>
           <img src="/images/hotel/service-en-chambre.jpeg" />

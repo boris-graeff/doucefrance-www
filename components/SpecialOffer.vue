@@ -1,16 +1,9 @@
 <template>
   <div class="special-offer">
-    <span>Offre spéciale</span>
+    <span>{{ $t('specialOffer.title') }}</span>
     <div>
-      <p>
-        3 nuits consécutives payées<br>
-        4ème nuit à 50%
-      </p>
-      <p>
-        Offre non valable du 1 er mai au 30 septembre inclus<br/>
-        Une offre limitée à une période indivisible de 14 jours sous réserve de disponibilité<br/>
-        Pour pouvoir bénéficier de l'offre, <strong>prière de le signaler dès la réservation</strong>
-      </p>
+      <p v-html="$t('specialOffer.content[0]')"></p>
+      <p v-html="$t('specialOffer.content[1]')"></p>
     </div>
   </div>
 </template>

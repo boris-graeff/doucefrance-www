@@ -21,11 +21,11 @@
         </li>
         <li>
           <ul class="list">
-            <li>Lit d'Appoint  15 €</li>
-            <li>Lit Bébé  10 €</li>
-            <li>Animal  15 €</li>
-            <li>Petit Dejeuner Continental  14 €</li>
-            <li>Taxe de séjour : Par jour et par personne, représentant 3 % du coût HT par personne de la nuitée dans la limite du tarif le plus élevé (2€)</li>
+            <li>{{ $t('rooms.fees[0]') }}</li>
+            <li>{{ $t('rooms.fees[1]') }}</li>
+            <li>{{ $t('rooms.fees[2]') }}</li>
+            <li>{{ $t('rooms.fees[3]') }}</li>
+            <li>{{ $t('rooms.fees[4]') }}</li>
           </ul>
         </li>
       </ul>
