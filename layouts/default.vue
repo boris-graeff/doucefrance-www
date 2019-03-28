@@ -77,6 +77,11 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
+
+      img {
+        max-height: 512px;
+        width: auto;
+      }
     }
   }
 

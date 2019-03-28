@@ -5,30 +5,37 @@
 
       <ul class="rooms">
         <li v-for="room in Object.keys($options.rooms)" :key="room">
-          <NuxtLink :to="$i18n.path($t('routes.rooms.url') + '/' + room)">
-            <div class="overview" :style="{backgroundImage: `url(/images/rooms/${room}/${room}-0-1.jpg)`}"></div>
-            <strong>
-              {{ $t(`rooms.${room}.name`) }} - {{ $t(`rooms.size.${$options.rooms[room].size}`) }}
-            </strong>
+          <div>
+            <NuxtLink :to="$i18n.path($t('routes.rooms.url') + '/' + room)">
+              <div class="overview" :style="{backgroundImage: `url(/images/rooms/${room}/${room}-0-1.jpg)`}"></div>
+              <div>
+                <div class="name">
+                  {{ $t(`rooms.${room}.name`) }} - {{ $t(`rooms.size.${$options.rooms[room].size}`) }}
+                </div>
 
-            <span class="button-secondary">
-              {{ $t('rooms.from', { price: $options.rooms[room].price }) }}
-            </span>
-          </NuxtLink>
+                <span class="button-secondary">
+                  {{ $t('rooms.from', { price: $options.rooms[room].price }) }}
+                </span>
+              </div>
+            </NuxtLink>
+          </div>
         </li>
-        <li>
-          <special-offer class="special-offer" />
-        </li>
-        <li>
-          <ul class="list">
+      </ul>
+
+      <div>
+        <div>
+          <ul class="fees list">
             <li>{{ $t('rooms.fees[0]') }}</li>
             <li>{{ $t('rooms.fees[1]') }}</li>
             <li>{{ $t('rooms.fees[2]') }}</li>
             <li>{{ $t('rooms.fees[3]') }}</li>
             <li>{{ $t('rooms.fees[4]') }}</li>
           </ul>
-        </li>
-      </ul>
+        </div>
+        <div>
+          <special-offer class="special-offer" />
+        </div>
+      </div>
     </div>
 
   </section>
@@ -65,6 +72,10 @@
       width: 100%;
       background-size: cover;
       background-position: center center;
+
+      + div {
+        padding: 6px 6px 20px;
+      }
     }
 
     a {
@@ -74,19 +85,11 @@
 
     > li {
       width: 33.33%;
-      padding: 6px 6px 20px;
+      padding: 0 6px;
+      margin-bottom: 40px;
 
-      strong {
-        display: block;
-        margin: 10px 0;
-      }
-
-      &:last-child {
-        ul {
-          padding: 20px;
-          height: 300px;
-          background: $grey-light;
-        }
+      > div {
+        background: $grey-light;
       }
     }
 
@@ -95,8 +98,24 @@
     }
   }
 
-  .special-offer {
-    height: 300px;
+  .rooms + div {
+    display: flex;
+
+    > div {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+
+  .name {
+    font-size: 20px;
+    margin: 10px 0 20px;
+  }
+
+  .fees {
+    height: 100%;
+    padding: 20px;
+    background: $grey-light;
   }
 
   @media screen and (max-width: 1000px){
@@ -108,6 +127,10 @@
   @media screen and (max-width: 750px){
     .rooms > li {
       width: 100%;
+    }
+
+    .rooms + div {
+      flex-direction: column;
     }
   }
 </style>

@@ -6,7 +6,8 @@
       <div class="blocks">
         <div>
           <h2>{{ $t('home.welcome') }}</h2>
-          <p v-html="$t('home.intro')"></p>
+          <p v-html="$t('home.intro[0]')"></p>
+          <p v-html="$t('home.intro[1]')"></p>
         </div>
         <div>
           <p>{{ $t('home.description[0]') }}</p>
@@ -20,30 +21,20 @@
 
           <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000" :loop="true">
             <slide>
-              <img src="/images/hotel-douce-france-veules-les-roses.jpg" />
-            </slide>
-            <slide>
-              <img src="/images/hotel/hotel-restaurant.jpg" />
-            </slide>
-            <slide>
               <img src="/images/hotel/hotel-veules-les-roses.jpg" />
             </slide>
-            <slide>
-              <img src="/images/hotel/hotel-1.jpg" />
-            </slide>
-            <slide>
-              <img src="/images/hotel/hotel-2.jpg" />
+            <slide v-for="index in 7" :key="index">
+              <img :src="`/images/hotel/hotel-${index}.jpg`" />
             </slide>
           </carousel>
         </div>
 
         <div>
-          <div>
-            <h2>{{ $t('home.gift.title') }}</h2>
-            <p>{{ $t('home.gift.content[0]') }}</p>
-            <p>{{ $t('home.gift.content[1]') }}</p>
-            <p>{{ $t('home.gift.content[2]') }}</p>
-          </div>
+          <img src="/images/home/gift.svg" class="gift"/>
+          <h2>{{ $t('home.gift.title') }}</h2>
+          <p>{{ $t('home.gift.content[0]') }}</p>
+          <p>{{ $t('home.gift.content[1]') }}</p>
+          <p>{{ $t('home.gift.content[2]') }}</p>
         </div>
 
       </div>
@@ -79,23 +70,26 @@
       }
 
       &:nth-child(4){
-        > div {
-          padding: 50px;
-          border: 2px solid;
-        }
+        padding-top: 20px;
       }
     }
   }
 
+  .gift {
+    display: block;
+    width: 100px;
+    margin: 0 auto 20px;
+  }
+
   .special-offer {
-    padding: 60px;
+    padding: 30px 60px;
     position: absolute;
     bottom: calc(100% + 20px);
     left: 0;
     right: 0;
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1000px) {
     .special-offer {
       position: static;
       padding: 20px;

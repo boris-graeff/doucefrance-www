@@ -79,7 +79,8 @@
 
 <style scoped lang="scss">
   .page-header {
-    background-image: url("/images/plan/veules-les-roses-plan.png");
+    background-image: url("/images/plan/carte-normandie.jpg");
+    background-position: bottom -280px center;
   }
 
   h3 {

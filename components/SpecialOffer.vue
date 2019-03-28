@@ -16,8 +16,10 @@
     background: rgba($pink, 0.05);
 
     span {
-      font-size: 30px;
+      display: block;
+      font-size: 26px;
       color: $pink;
+      margin-bottom: 6px;
     }
 
     p:first-child {

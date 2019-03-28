@@ -48,7 +48,7 @@
     "fax": "+33235578531"
   },
   "specialOffer": {
-    "title": "Offre spéciale",
+    "title": "Offre spéciale temps de vivre",
     "content": [
       "3 nuits consécutives payées<br/>4ème nuit à 50%",
       "Offre non valable du 1 er mai au 30 septembre inclus<br/>Une offre limitée à une période indivisible de 14 jours sous réserve de disponibilité<br/>Pour pouvoir bénéficier de l'offre, <strong>prière de le signaler dès la réservation</strong>"
@@ -56,7 +56,10 @@
   },
   "home": {
     "welcome": "Bienvenue au Relais Hôtelier Douce France",
-    "intro": "Relais Hôtel situé à <strong>Veules les Roses</strong>, village romantique et authentique de Normandie, à 500 mètres de la mer.<br/>Classé  dans le guide officiel des plus beaux villages de France.",
+    "intro": [
+      "Relais Hôtel situé à <strong>Veules les Roses</strong>, village romantique et authentique de Normandie, à 500 mètres de la mer.",
+      "Classé  dans le guide officiel des plus beaux villages de France."
+    ],
     "description": [
       "A deux heures de Paris et Lille, sur la Côte d'Albâtre du Pays de Caux, baignée par la lumière chère aux Impressionnistes, une petite station balnéaire a gardé son charme d'antan : Veules les Roses.",
       "Sur les pas de Victor Hugo, de Guy de Maupassant, et de nombreux autres artistes, elle vous convie à goûter aux plaisirs du silence et du repos dans un cadre marin et bucolique enchanteur dont la plupart des voies sont piétonnes.",
@@ -66,7 +69,7 @@
     "gift": {
       "title": "Vous souhaitez offrir un séjour de rêve à vos proches ?",
       "content": [
-        "Nous avons crée à cet effet la lettre cadeau-personnalisée.",
+        "Nous avons crée à cet effet la carte cadeau-personnalisée.",
         "Nous réglons avec vous à l'avance  tous les détails afin que vos invités gardent un souvenir mémorable de leur passage chez nous.",
         "Pour plus de détails, contactez nous au  02 35 57 85 30"
       ]
@@ -149,6 +152,7 @@
       "Un havre de paix en Normandie dépaysant, confiné et plein de charme, tout proche de la mer, pour vos réunions d'affaires, à seulement 2 heures de Paris et de Lille, à 1 heure de Rouen et du Havre, ou même 30 kilomètres de Dieppe et Yvetot.",
       "Un lieu idéal pour organiser, en petit comité, avec une capacité d’accueil du 15 personnes assises autour de la table et ou 25 personnes assises en assemblée vos séminaires, assemblées générales, comités de direction, conférences, journées d'étude, réunions d'affaires, ou tout simplement une réunion ou événement familial.",
       "La salle est équipée d'un écran, paper board et accès Wifi illimité.",
+      "Entre deux séances de travail, ou en fin de journée, vous pourrez découvrir le charme, la beauté de notre village entre petit fleuve et mer. À prévoir absolument !",
       "N'hésitez pas à nous contacter afin que nous puissions vous établir un devis personnalisé.",
 
       "UN HÔTEL SÉMINAIRE permet à vos collaborateurs d'effectuer un séminaire de plus longue durée car disposant d'un hébergement",
@@ -158,9 +162,6 @@
       "Une formule comprenant une entrée, un plat, suivi d’un buffet de gourmandises sucrées ainsi que café. Ce déjeuner gourmand préparé par nos soins contribuera au succès de votre séminaire.",
       "A noter que pendant les périodes de beau temps, il vous sera possible de prolonger ce moment de détente et de calme avec vos collaborateurs, en déjeunant sur notre terrasse au bord de la Veules ( plus petit fleuve de France)."
     ],
-    "photos": {
-      "legend": "Entre deux séances de travail, ou en fin de journée, vous pourrez découvrir le charme, la beauté de notre village entre petit fleuve et mer. À prévoir absolument !"
-    },
     "planning": {
       "title": "Journée séminaire pour 15 personnes<br/>(15 personnes assises autour des tables ou 25 personnes assises en assemblée)<br/><br/>",
       "content": [
