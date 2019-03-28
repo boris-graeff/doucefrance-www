@@ -23,12 +23,15 @@
         </ul>
 
         <div class="langs">
-          <NuxtLink to="/en" :class="{'active': $i18n.locale === 'en'}">
-            {{ $t('routes.lang.en') }}
-          </NuxtLink>
           <NuxtLink to="/" :class="{'active': $i18n.locale === 'fr'}">
             {{ $t('routes.lang.fr') }}
           </NuxtLink>
+          <NuxtLink to="/en" :class="{'active': $i18n.locale === 'en'}">
+            {{ $t('routes.lang.en') }}
+          </NuxtLink>
+          <a :href="$t('contact.facebook')" target="_blank" class="social">
+            <img src="~/assets/icn-facebook.svg" />
+          </a>
         </div>
 
         <a :href="$t('externals.booking', { lang: $i18n.locale.toUpperCase() })"
@@ -119,6 +122,13 @@ export default {
     position: absolute;
     top: 20px;
     right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      display: block;
+    }
 
     a {
       padding: 2px 6px;
@@ -126,6 +136,10 @@ export default {
       &.active {
         border: 2px solid;
       }
+    }
+
+    > *:last-child {
+      margin-left: 20px;
     }
   }
 

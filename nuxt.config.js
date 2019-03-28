@@ -7,7 +7,12 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'DouceFrance hotel website' }
+      { hid: 'description', name: 'description', content: 'DouceFrance hotel website' },
+      { property: 'og:url', content: 'http://doucefrance.fr'},
+      { property: 'og:type', content: ''},
+      { property: 'og:title', content: 'Relais Hôtelier Douce France'},
+      { property: 'og:description', content: 'Relais Hôtelier Veules les Roses Normandie'},
+      { property: 'og:image', content: '/images/hotel-veules-les-roses.jpg'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

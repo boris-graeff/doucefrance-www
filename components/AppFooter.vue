@@ -30,6 +30,13 @@
           </a>
         </div>
       </div>
+
+
+      <div>
+        <a :href="$t('contact.facebook')" target="_blank">
+          <img src="~/assets/icn-facebook.svg" />
+        </a>
+      </div>
     </div>
   </footer>
 </template>
@@ -69,8 +76,8 @@
   }
 
   .contact {
-    margin-left: 30px;
     display: flex;
+    margin: 0 30px;
 
     > div + div {
       margin-left: 20px;
@@ -83,8 +90,7 @@
     }
 
     .contact {
-      margin-left: 0;
-      margin-top: 30px;
+      margin: 30px 0;
     }
   }
 
