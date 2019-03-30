@@ -17,6 +17,9 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Cabin|Quicksand' }
+    ],
+    script: [
+      { src: '//widget.customer-alliance.com/reviews/js/standard/920e76d28180477f.js', async: true }
     ]
   },
   /*
