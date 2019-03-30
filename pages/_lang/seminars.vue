@@ -54,8 +54,9 @@
   @import '~@/style/vars';
 
   .page-header {
-    background-image: url('/images/seminars/seminaires-1.jpg');
-    background-position: center top -400px;
+    background-image: url('/images/seminars/seminaires.jpg');
+    background-position: center bottom -350px;
+    transform: scaleX(-1);
   }
 
   .blocks {
