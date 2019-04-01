@@ -22,8 +22,12 @@
            {{ $t('common.actions.booking') }}
          </a>
 
-         <div class="services">
+         <div class="services desktop">
            <ul>
+             <li>
+               <img src="/images/rooms/services/surface.svg" />
+               <p>{{ category.surface }} m2</p>
+             </li>
              <li v-for="service in category.services" :key="service">
                <img :src="`/images/rooms/services/${service}.svg`" />
                <p>{{ $t(`rooms.services.${service}`) }}</p>
@@ -38,6 +42,19 @@
              <img :src="`/images/rooms/${roomId}/${category.name}-${photo}.jpg`" />
            </slide>
          </carousel>
+
+         <div class="services mobile">
+           <ul>
+             <li>
+               <img src="/images/rooms/services/surface.svg" />
+               <p>{{ category.surface }} m2</p>
+             </li>
+             <li v-for="service in category.services" :key="service">
+               <img :src="`/images/rooms/services/${service}.svg`" />
+               <p>{{ $t(`rooms.services.${service}`) }}</p>
+             </li>
+           </ul>
+         </div>
        </div>
 
      </section>
@@ -104,7 +121,7 @@
 
       h3 {
         font-weight: bold;
-        margin-bottom: 2px;
+        margin-bottom: 20px;
       }
     }
 
@@ -145,6 +162,11 @@
       width: 36px;
       display: inline-block;
     }
+
+    &.mobile {
+      display: none;
+      margin-bottom: 30px;
+    }
   }
 
   @media screen and (max-width: 750px){
@@ -156,6 +178,16 @@
           padding: 0;
           margin-bottom: 20px;
         }
+      }
+    }
+
+    .services {
+      &.mobile {
+        display: block;
+      }
+
+      &.desktop {
+        display: none;
       }
     }
   }
