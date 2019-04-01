@@ -55,7 +55,7 @@
 
   .page-header {
     background-image: url('/images/seminars/seminaires.jpg');
-    background-position: center center;
+    background-position: bottom center;
   }
 
   .blocks {

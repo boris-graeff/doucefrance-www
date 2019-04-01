@@ -75,7 +75,7 @@
 <style scoped lang="scss">
   .page-header {
     background-image: url("/images/plan/carte-normandie.jpg");
-    background-position: bottom -280px center;
+    background-position: top 60% center;
   }
 
   h3 {
