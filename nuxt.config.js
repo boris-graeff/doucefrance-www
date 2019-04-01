@@ -1,11 +1,13 @@
+import categories from './locales/categories.json'
+
 const routes = {
   fr: [
     '/', '/chambres', '/hotel', '/acces', '/seminaires', '/village',
-    '/chambres/duplex', '/chambres/suites', '/chambres/suites-large', '/chambres/suites-grand-large', '/chambres/suite-exception', '/chambres/appartements', '/chambres/suites-sans-kitchenette'
+    ...categories.fr.map(category => `/chambres/${category}`)
   ],
   en: [
     '/en', '/en/rooms', '/en/hotel', '/en/plan', '/en/seminars', '/en/village',
-    '/en/rooms/duplex', '/en/rooms/suites', '/en/rooms/large-suites', '/en/rooms/extra-large-suites', '/en/rooms/luxury-suite', '/en/rooms/apartments', '/en/rooms/no-kitchen-suite'
+    ...categories.en.map(category => `/en/rooms/${category}`)
   ]
 }
 

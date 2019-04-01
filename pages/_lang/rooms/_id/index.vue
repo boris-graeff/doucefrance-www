@@ -4,17 +4,17 @@
      <rooms-header />
 
      <div>
-       <h2>{{ $t(`rooms.${room}.name`) }}</h2>
-       <h3>{{ $t(`rooms.${room}.intro`) }}</h3>
+       <h2>{{ $t(`rooms.${roomId}.name`) }}</h2>
+       <h3>{{ $t(`rooms.${roomId}.intro`) }}</h3>
        <div>
-         <strong>{{ $t('rooms.from', { price: $options.rooms[room].price }) }}</strong>
+         <strong>{{ $t('rooms.from', { price: room.price }) }}</strong>
        </div>
      </div>
 
-     <section v-for="category in $options.rooms[room].categories" :key="category.name">
+     <section v-for="category in room.categories" :key="category.name">
        <div>
-         <h3>{{ $t(`rooms.${room}.${category.name}.title`) }}</h3>
-         <p v-html="$t(`rooms.${room}.${category.name}.description`)"></p>
+         <h3>{{ $t(`rooms.${roomId}.${category.name}.title`) }}</h3>
+         <p v-html="$t(`rooms.${roomId}.${category.name}.description`)"></p>
 
          <a :href="$t('externals.booking', { lang: $i18n.locale.toUpperCase() })"
             class="button-secondary"
@@ -35,7 +35,7 @@
        <div>
          <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000" :loop="true" class="carousel">
            <slide v-for="photo in category.photos" :key="photo">
-             <img :src="`/images/rooms/${room}/${category.name}-${photo}.jpg`" />
+             <img :src="`/images/rooms/${roomId}/${category.name}-${photo}.jpg`" />
            </slide>
          </carousel>
        </div>
@@ -48,12 +48,23 @@
 <script>
   import RoomsHeader from '~/components/RoomsHeader'
   import rooms from '~/locales/rooms'
+  import categories from '~/locales/categories'
 
   export default {
-    rooms,
-    data(){
+    data () {
       return {
-        room: this.$route.params.id
+        roomId: this.$route.params.id
+      }
+    },
+    computed: {
+      room () {
+        let roomId = this.roomId
+
+        if (this.$i18n.locale === 'en') {
+          const index = categories.en.indexOf(roomId)
+          roomId = categories.fr[index]
+        }
+        return rooms[roomId]
       }
     },
     components: {
