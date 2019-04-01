@@ -11,22 +11,31 @@
        </div>
      </div>
 
-     <section v-for="(_, index) in $options.rooms[room].categories" :key="index">
+     <section v-for="category in $options.rooms[room].categories" :key="category.name">
        <div>
-         <h3>{{ $t(`rooms.${room}.categories[${index}].title`) }}</h3>
-         <p v-html="$t(`rooms.${room}.categories[${index}].description`)"></p>
+         <h3>{{ $t(`rooms.${room}.${category.name}.title`) }}</h3>
+         <p v-html="$t(`rooms.${room}.${category.name}.description`)"></p>
 
          <a :href="$t('externals.booking', { lang: $i18n.locale.toUpperCase() })"
             class="button-secondary"
             target="_blank">
            {{ $t('common.actions.booking') }}
          </a>
+
+         <div class="services">
+           <ul>
+             <li v-for="service in category.services" :key="service">
+               <img :src="`/images/rooms/services/${service}.svg`" />
+               <p>{{ $t(`rooms.services.${service}`) }}</p>
+             </li>
+           </ul>
+         </div>
        </div>
 
        <div>
          <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000" :loop="true" class="carousel">
-           <slide v-for="photo in $options.rooms[room].photos[index]" :key="photo">
-             <img :src="`/images/rooms/${room}/${room}-${index}-${photo}.jpg`" />
+           <slide v-for="photo in category.photos" :key="photo">
+             <img :src="`/images/rooms/${room}/${category.name}-${photo}.jpg`" />
            </slide>
          </carousel>
        </div>
@@ -54,6 +63,7 @@
 </script>
 
 <style scoped lang="scss">
+  @import '~@/style/vars';
 
   .page-content {
     padding-bottom: 60px;
@@ -80,6 +90,11 @@
           padding: 60px;
         }
       }
+
+      h3 {
+        font-weight: bold;
+        margin-bottom: 2px;
+      }
     }
 
     img {
@@ -96,6 +111,28 @@
     img {
       max-height: 512px;
       width: auto;
+    }
+  }
+
+  .services {
+    margin-top: 60px;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    li {
+      padding: 10px;
+      text-align: center;
+      width: 25%;
+      font-size: 14px;
+    }
+
+    img {
+      width: 36px;
+      display: inline-block;
     }
   }
 

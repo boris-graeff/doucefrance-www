@@ -204,108 +204,94 @@
     "duplex": {
       "name": "Duplex",
       "intro": "Un choix de 4 Duplex (20m2) sur cour intérieure",
-      "categories": [
-        {
-          "title": "Champagne, Bourgogne, Picardie & Bretagne",
-          "description": "Quatre Duplex situés au 1er étage avec terrasse commune.<br/><br/>Ils se composent d’une kitchenette avec coin repas, une salle de bain avec douche et wc. A l’étage, en haut d’un escalier pentu, une chambre mansardée avec literie en 140cm."
-        }
-      ]
+      "champagne-etc": {
+        "title": "Champagne, Bourgogne, Picardie & Bretagne",
+        "description": "Quatre Duplex situés au 1er étage avec terrasse commune.<br/><br/>Ils se composent d’une kitchenette avec coin repas, une salle de bain avec douche et wc. A l’étage, en haut d’un escalier pentu, une chambre mansardée avec literie en 140cm."
+      }
     },
     "suites": {
       "name": "Suites 'Large'",
       "intro": "Un choix de 5 Suites 'Large' donnant sur la cour et sur la Veules",
-      "categories": [
-        {
-          "title": "Flandre, Gascogne & Languedoc",
-          "description": "Trois Suites situées au 1er étage, avec terrasse commune surplombant la Veules (plus petit fleuve de France).<br/><br/>Elles se composent d’un petit salon, une kitchenette, une salle de bain avec douche et wc, et une chambre à coucher avec literie en 160 cm."
-        },
-        {
-          "title": "Jacques Tati",
-          "description": "Une suite située au 1er étage avec accès côté rue, avec balcon privatif donnant sur la cour de l’établissement.<br/><br/>Elle se compose d’une chambre avec literie en 160cm, une kitchenette avec coin repas, une salle de bain avec douche et wc."
-        },
-        {
-          "title": "Marcel Carné",
-          "description": "Une suite située au 1er étage avec accès côté rue, donnant sur petite ruelle.<br/><br/>Elle se compose d’une chambre avec literie en 160cm, une kitchenette avec coin repas, une salle de bain avec douche et wc."
-        }
-      ]
+      "flandre-etc": {
+        "title": "Flandre, Gascogne & Languedoc",
+        "description": "Trois Suites situées au 1er étage, avec terrasse commune surplombant la Veules (plus petit fleuve de France).<br/><br/>Elles se composent d’un petit salon, une kitchenette, une salle de bain avec douche et wc, et une chambre à coucher avec literie en 160 cm."
+      },
+      "jacques-tati": {
+        "title": "Jacques Tati",
+        "description": "Une suite située au 1er étage avec accès côté rue, avec balcon privatif donnant sur la cour de l’établissement.<br/><br/>Elle se compose d’une chambre avec literie en 160cm, une kitchenette avec coin repas, une salle de bain avec douche et wc."
+      },
+      "marcel-carne": {
+        "title": "Marcel Carné",
+        "description": "Une suite située au 1er étage avec accès côté rue, donnant sur petite ruelle.<br/><br/>Elle se compose d’une chambre avec literie en 160cm, une kitchenette avec coin repas, une salle de bain avec douche et wc."
+      }
     },
     "suites-large": {
       "name": "Suites 'Large'",
       "intro": "Un choix de 2 Suites 'Large' pour 2 ou 3 personnes",
-      "categories": [
-        {
-          "title": "Lorraine & Provence",
-          "description": "Deux chambres au rez de chaussée donnant sur la cour de l’établissement.<br/><br/>Elles se composent d’un salon avec un lit pour une personne, une kitchenette, quelques marches, une alcôve avec literie en 140cm, une salle de bain avec baignoire ou douche et wc."
-        }
-      ]
+      "lorraine-provence": {
+        "title": "Lorraine & Provence",
+        "description": "Deux chambres au rez de chaussée donnant sur la cour de l’établissement.<br/><br/>Elles se composent d’un salon avec un lit pour une personne, une kitchenette, quelques marches, une alcôve avec literie en 140cm, une salle de bain avec baignoire ou douche et wc."
+      }
     },
     "suites-grand-large": {
       "name": "Suites 'Grand Large'",
       "intro": "Un choix de 5 Suites 'Grand Large' pour 2 ou 3 personnes",
-      "categories": [
-        {
-          "title": "Maurice Ravel",
-          "description": "Une suite située au 1er  étage avec balcon privatif donnant sur la cour de l’établissement.<br/><br/>Elle se compose d’une kitchenette avec coin repas, une salle de bain avec baignoire, un lit pour une personne, quelques marches, WC  séparés et une chambre avec literie en 160 cm."
-        },
-        {
-          "title": "Normandie",
-          "description": "Une suite située au 2ème étage sous les toits.<br/><br/>Elles se composent d’une kitchenette avec coin repas, un couloir avec un lit pour un personne ( 80 cm) desservant la salle de bain avec baignoire, WC  séparés, puis une chambre à coucher avec literie en 160 cm. Vue sur cour."
-        },
-        {
-          "title": "Ile de France & Alsace",
-          "description": "Deux suites au rez de chaussée donnant sur la cour de l’établissement. <br/><br/>Elles se composent d’un salon avec un  lit pour une personne, une kitchenette, une salle de bain avec douche ou baignoire, wc séparés, une chambre avec une literie en 160 cm ou bien deux lits jumeaux que nous pouvons rassembler. <br/><br/>Terrasse privative donnant sur la Veules."
-        },
-        {
-          "title": "Dauphiné",
-          "description": "Une suite avec accès pour les personnes à mobilité réduite au rez de chaussée donnant sur la cour de l’établissement.<br/><br/>Elle se compose d’un salon avec un lit pour une personne, une kitchenette, puis la chambre à coucher avec une literie en 160 cm, salle de bain avec douche et WC. <br/><br/>Terrasse privative donnant sur la Veules.<br/><br/>Pour réserver cette suite, nous vous remercions de bien vouloir nous contacter."
-        }
-      ]
+      "maurice-ravel": {
+        "title": "Maurice Ravel",
+        "description": "Une suite située au 1er  étage avec balcon privatif donnant sur la cour de l’établissement.<br/><br/>Elle se compose d’une kitchenette avec coin repas, une salle de bain avec baignoire, un lit pour une personne, quelques marches, WC  séparés et une chambre avec literie en 160 cm."
+      },
+      "normandie": {
+        "title": "Normandie",
+        "description": "Une suite située au 2ème étage sous les toits.<br/><br/>Elles se composent d’une kitchenette avec coin repas, un couloir avec un lit pour un personne ( 80 cm) desservant la salle de bain avec baignoire, WC  séparés, puis une chambre à coucher avec literie en 160 cm. Vue sur cour."
+      },
+      "ile-de-france-alsace": {
+        "title": "Ile de France & Alsace",
+        "description": "Deux suites au rez de chaussée donnant sur la cour de l’établissement. <br/><br/>Elles se composent d’un salon avec un  lit pour une personne, une kitchenette, une salle de bain avec douche ou baignoire, wc séparés, une chambre avec une literie en 160 cm ou bien deux lits jumeaux que nous pouvons rassembler. <br/><br/>Terrasse privative donnant sur la Veules."
+      },
+      "dauphine": {
+        "title": "Dauphiné",
+        "description": "Une suite avec accès pour les personnes à mobilité réduite au rez de chaussée donnant sur la cour de l’établissement.<br/><br/>Elle se compose d’un salon avec un lit pour une personne, une kitchenette, puis la chambre à coucher avec une literie en 160 cm, salle de bain avec douche et WC. <br/><br/>Terrasse privative donnant sur la Veules.<br/><br/>Pour réserver cette suite, nous vous remercions de bien vouloir nous contacter."
+      }
     },
     "suite-exception": {
       "name": "Suite d'Exception",
       "intro": "Une Suite d'Exception pour 2 personnes",
-      "categories": [
-        {
-          "title": "Jean Cocteau",
-          "description": "Un triplex situé au 2ème étage avec accès côté rue. (Avec vue à la fois côté rue et côté cour de l’établissement).<br/><br/>Au 1er niveau un salon avec kitchenette. Au 2ème niveau une salle de bain, WC, salon détente. Au 3ème niveau une chambre sous les toits avec une literie en 160cm."
-        }
-      ]
+      "jean-cocteau": {
+        "title": "Jean Cocteau",
+        "description": "Un triplex situé au 2ème étage avec accès côté rue. (Avec vue à la fois côté rue et côté cour de l’établissement).<br/><br/>Au 1er niveau un salon avec kitchenette. Au 2ème niveau une salle de bain, WC, salon détente. Au 3ème niveau une chambre sous les toits avec une literie en 160cm."
+      }
     },
     "appartements": {
       "name": "Appartements familiaux",
       "intro": "Un choix de 4 appartements familiaux pour 4 personnes",
-      "categories": [
-        {
-          "title": "Charles Trenet, Edith Piaf & Jacques Brel",
-          "description": "Trois appartements situés au 1er ou 2ème étage, dont un avec balcon donnant sur la cour de l’établissement.<br/><br/>Ils se composent d’un salon, une cuisine, une salle de bain avec baignoire ou douche, WC, une chambre avec une literie en 160cm et une chambre avec deux lits d’une personne.<br/><br/>Possibilité d’un lit d'appoint sur demande."
-        },
-        {
-          "title": "Guy de Maupassant",
-          "description": "Un appartement  au 2ème étage avec accès côté rue.<br/><br/>Il se compose d’un salon avec un lit pour une personne, coin repas avec kitchenette, salle de bain avec baignoire, WC. A l’étage en mezzanine un lit pour une personne et une chambre à coucher avec une literie en 160cm.<br/><br/>Possibilité d’un  lit d'appoint sur demande."
-        }
-      ]
+      "charles-trenet-etc": {
+        "title": "Charles Trenet, Edith Piaf & Jacques Brel",
+        "description": "Trois appartements situés au 1er ou 2ème étage, dont un avec balcon donnant sur la cour de l’établissement.<br/><br/>Ils se composent d’un salon, une cuisine, une salle de bain avec baignoire ou douche, WC, une chambre avec une literie en 160cm et une chambre avec deux lits d’une personne.<br/><br/>Possibilité d’un lit d'appoint sur demande."
+      },
+      "guy-de-maupassant": {
+        "title": "Guy de Maupassant",
+        "description": "Un appartement  au 2ème étage avec accès côté rue.<br/><br/>Il se compose d’un salon avec un lit pour une personne, coin repas avec kitchenette, salle de bain avec baignoire, WC. A l’étage en mezzanine un lit pour une personne et une chambre à coucher avec une literie en 160cm.<br/><br/>Possibilité d’un  lit d'appoint sur demande."
+      }
     },
     "suites-sans-kitchenette": {
       "name": "Suites sans kitchenette",
       "intro": "Un choix de 4 Suites sans kitchenettes",
-      "categories": [
-        {
-          "title": "Serge Gainsbourg",
-          "description": "Une chambre située au 3ème étage (sous les toits) :<br/><br/>Elle se compose d’un coin salle de bain avec lavabo et baignoire, donnant sur la chambre avec une literie en 160cm, W.C séparés."
-        },
-        {
-          "title": "Anna de Noailles",
-          "description": "Une chambre située au 1er étage donnant sur rue.<br/><br/>Elle se compose d’une chambre avec une literie en 160cm, une salle de bain avec douche, WC."
-        },
-        {
-          "title": "Marie Noël",
-          "description": "Une chambre située au 2ème étage (sous les toits) avec accès côté rue donnant sur la cour de l’établissement.<br/><br/>Elle se compose d’une chambre avec une literie en 160cm, une salle de bain avec baignoire et WC."
-        },
-        {
-          "title": "Colette",
-          "description": "Une chambre située au 2ème étage de l’établissement avec accès côté rue.<br/><br/>Elle se compose d’une chambre avec une literie en 160cm, salle de bain avec douche, WC et à l’étage, en mezzanine, une chambre mansardée avec un lit pour une personne. "
-        }
-      ]
+      "serge-gainsbourg": {
+        "title": "Serge Gainsbourg",
+        "description": "Une chambre située au 3ème étage (sous les toits) :<br/><br/>Elle se compose d’un coin salle de bain avec lavabo et baignoire, donnant sur la chambre avec une literie en 160cm, W.C séparés."
+      },
+      "anna-de-noailles": {
+        "title": "Anna de Noailles",
+        "description": "Une chambre située au 1er étage donnant sur rue.<br/><br/>Elle se compose d’une chambre avec une literie en 160cm, une salle de bain avec douche, WC."
+      },
+      "marie-noel": {
+        "title": "Marie Noël",
+        "description": "Une chambre située au 2ème étage (sous les toits) avec accès côté rue donnant sur la cour de l’établissement.<br/><br/>Elle se compose d’une chambre avec une literie en 160cm, une salle de bain avec baignoire et WC."
+      },
+      "colette": {
+        "title": "Colette",
+        "description": "Une chambre située au 2ème étage de l’établissement avec accès côté rue.<br/><br/>Elle se compose d’une chambre avec une literie en 160cm, salle de bain avec douche, WC et à l’étage, en mezzanine, une chambre mansardée avec un lit pour une personne. "
+      }
     },
 
     "from": "À partir de {price}€",
@@ -320,6 +306,20 @@
       "Animal  15 €",
       "Petit Dejeuner Continental  14 €",
       "Taxe de séjour : Par jour et par personne, représentant 3 % du coût HT par personne de la nuitée dans la limite du tarif le plus élevé (2€)"
-    ]
+    ],
+    "services": {
+      "wifi": "Wifi",
+      "welcome-products": "Produits d'accueil",
+      "tv": "TV",
+      "toilet": "WC",
+      "surface": "Surface",
+      "simple-bed": "Lit simple",
+      "double-bed": "Lit double",
+      "shower": "Douche",
+      "kitchen": "Kitchenette",
+      "hair-dryer": "Sèche cheveux",
+      "disabled-access": "Accès PMR",
+      "bathtub-and-shower": "Bain /   Douche"
+    }
   }
 }

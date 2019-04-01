@@ -16,11 +16,6 @@
             France<br/>
           </p>
 
-          <p>
-            Latitude: 49.873871<br>
-            Longitude: 0.798718
-          </p>
-
           <br/>
           <ul class="list">
             <li>{{ $t('plan.distances[0]') }}</li>

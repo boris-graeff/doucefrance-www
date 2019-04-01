@@ -4,17 +4,17 @@
       <rooms-header />
 
       <ul class="rooms">
-        <li v-for="room in Object.keys($options.rooms)" :key="room">
+        <li v-for="(room, key) in $options.rooms" :key="key">
           <div>
-            <NuxtLink :to="$i18n.path($t('routes.rooms.url') + '/' + room)">
-              <div class="overview" :style="{backgroundImage: `url(/images/rooms/${room}/${room}-0-1.jpg)`}"></div>
+            <NuxtLink :to="$i18n.path($t('routes.rooms.url') + '/' + key)">
+              <div class="overview" :style="{backgroundImage: `url(/images/rooms/${key}/${room.categories[0].name}-1.jpg)`}"></div>
               <div>
                 <div class="name">
-                  {{ $t(`rooms.${room}.name`) }} - {{ $t(`rooms.size.${$options.rooms[room].size}`) }}
+                  {{ $t(`rooms.${key}.name`) }} - {{ $t(`rooms.size.${room.size}`) }}
                 </div>
 
                 <span class="button-secondary">
-                  {{ $t('rooms.from', { price: $options.rooms[room].price }) }}
+                  {{ $t('rooms.from', { price: room.price }) }}
                 </span>
               </div>
             </NuxtLink>
