@@ -1,3 +1,14 @@
+const routes = {
+  fr: [
+    '/', '/chambres', '/hotel', '/acces', '/seminaires', '/village',
+    '/chambres/duplex', '/chambres/suites', '/chambres/suites-large', '/chambres/suites-grand-large', '/chambres/suite-exception', '/chambres/appartements', '/chambres/suites-sans-kitchenette'
+  ],
+  en: [
+    '/en', '/en/rooms', '/en/hotel', '/en/plan', '/en/seminars', '/en/village',
+    '/en/rooms/duplex', '/en/rooms/suites', '/en/rooms/large-suites', '/en/rooms/extra-large-suites', '/en/rooms/luxury-suite', '/en/rooms/apartments', '/en/rooms/no-kitchen-suite'
+  ]
+}
+
 module.exports = {
   /*
   ** Headers of the page
@@ -9,7 +20,7 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'DouceFrance hotel website' },
       { property: 'og:url', content: 'http://doucefrance.fr'},
-      { property: 'og:type', content: ''},
+      { property: 'og:type', content: 'website'},
       { property: 'og:title', content: 'Relais Hôtelier Douce France'},
       { property: 'og:description', content: 'Relais Hôtelier Veules les Roses Normandie'},
       { property: 'og:image', content: '/images/hotel-veules-les-roses.jpg'}
@@ -51,13 +62,30 @@ module.exports = {
     '~/plugins/i18n.js',
     { src: '~/plugins/vue-carousel.js', ssr: false },
   ],
+  modules: [
+    '@nuxtjs/sitemap'
+  ],
   generate: {
+    routes: [...routes.fr, ...routes.en]
+  },
+  sitemap: {
+    generate: true,
+    hostname: 'http://www.doucefrance.fr',
     routes: [
-      '/', '/chambres', '/hotel', '/acces', '/seminaires', '/village',
-      '/en', '/en/rooms', '/en/hotel', '/en/plan', '/en/seminars', '/en/village',
-      '/chambres/duplex', '/chambres/suites', '/chambres/grandes-suites', '/chambres/tres-grandes-suites', '/chambres/suite-exception', '/chambres/appartements', '/chambres/suites-sans-kitchenette',
-      '/rooms/duplex', '/rooms/suites', '/rooms/large-suites', '/rooms/extra-large-suites', '/rooms/luxury-suite', '/rooms/apartments', '/rooms/no-kitchen-suite',
+      ...routes.fr.map((route, index) => ({
+        url: route,
+        changefreq: 'yearly',
+        links: [
+          { lang: 'en', url: routes.en[index] }
+        ]
+      })),
+      ...routes.en.map((route, index) => ({
+        url: route,
+        changefreq: 'yearly',
+        links: [
+          { lang: 'fr', url: routes.fr[index] }
+        ]
+      }))
     ]
   }
 }
-

@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/sitemap": "^0.2.2",
     "nuxt": "^2.0.0",
     "vue-carousel": "^0.18.0-alpha",
     "vue-i18n": "^8.9.0"
