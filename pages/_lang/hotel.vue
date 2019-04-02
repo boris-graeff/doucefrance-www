@@ -11,7 +11,7 @@
         <div></div>
 
         <div>
-          <img src="/images/hotel/petit-dejeuner.jpeg" />
+          <img src="/images/hotel/petit-dejeuner.jpg" />
         </div>
         <div>
           <h3>{{ $t('hotel.breakfast.title') }}</h3>
@@ -24,7 +24,7 @@
           <p>{{ $t('hotel.tearoom.content[1]') }}</p>
         </div>
         <div>
-          <img src="/images/hotel/salon-de-the.jpeg" />
+          <img src="/images/hotel/salon-de-the.jpg" />
         </div>
 
         <div>
@@ -44,7 +44,7 @@
           <p>{{ $t('hotel.roomService.content[1]') }}</p>
         </div>
         <div>
-          <img src="/images/hotel/service-en-chambre.jpeg" />
+          <img src="/images/hotel/service-en-chambre.jpg" />
         </div>
 
       </div>

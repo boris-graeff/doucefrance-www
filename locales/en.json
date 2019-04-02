@@ -9,9 +9,9 @@
       "url": "plan",
       "name": "Plan"
     },
-    "restaurant": {
-      "url": "restaurant",
-      "name": "Restaurant"
+    "hotel": {
+      "url": "hotel",
+      "name": "Hotel"
     },
     "rooms": {
       "url": "rooms",
@@ -21,10 +21,6 @@
       "url": "seminars",
       "name": "Seminars"
     },
-    "tearoom": {
-      "url": "tearoom",
-      "name": "Tearoom"
-    },
     "village": {
       "url": "village",
       "name": "Village"
@@ -32,6 +28,305 @@
     "lang": {
       "fr": "FR",
       "en": "EN"
+    }
+  },
+  "externals": {
+    "booking": "http://hotel.reservit.com/reservit/reserhotel.php?hotelid=4198&lang={lang}&fday=DD&fmonth=MM&fyear=YYYY&nbnights=NN&nbadt=ZZ"
+  },
+  "common": {
+    "actions": {
+      "booking": "Booking now",
+      "contact": "Contact us"
+    },
+    "phone": "Phone",
+    "email": "Mail",
+    "fax": "Fax"
+  },
+  "contact": {
+    "email": "contact@doucefrance.fr",
+    "phone": "+33235578530",
+    "fax": "+33235578531",
+    "facebook": "https://www.facebook.com/relaishotelierdoucefrance/"
+  },
+  "specialOffer": {
+    "title": "Offre spéciale temps de vivre",
+    "content": [
+      "3 nuits consécutives payées<br/>4ème nuit à 50%",
+      "Offre non valable du 1 er mai au 30 septembre inclus<br/>Une offre limitée à une période indivisible de 14 jours sous réserve de disponibilité<br/>Pour pouvoir bénéficier de l'offre, <strong>prière de le signaler dès la réservation</strong>"
+    ]
+  },
+  "home": {
+    "welcome": "Bienvenue au Relais Hôtelier Douce France",
+    "intro": [
+      "Relais Hôtel situé à <strong>Veules les Roses</strong>, village romantique et authentique de Normandie, à 500 mètres de la mer.",
+      "Classé  dans le guide officiel des plus beaux villages de France."
+    ],
+    "description": [
+      "A deux heures de Paris et Lille, sur la Côte d'Albâtre du Pays de Caux, baignée par la lumière chère aux Impressionnistes, une petite station balnéaire a gardé son charme d'antan : Veules les Roses.",
+      "Sur les pas de Victor Hugo, de Guy de Maupassant, et de nombreux autres artistes, elle vous convie à goûter aux plaisirs du silence et du repos dans un cadre marin et bucolique enchanteur dont la plupart des voies sont piétonnes.",
+      "Niché au coeur de la station, cet ancien relais de poste du XVII ème siècle a été magnifiquement restauré dans la tradition du savoir faire ancestral des maitres maçons et charpentiers Compagnons du Tour de France. Cette résidence de charme est bordée par la rivière. Elle est précédée par une belle cour fleurie, et prolongée par un jardin cloîtré propice au repos.",
+      "Petits déjeuners, restauration légère, salon de thé, terrasse au bord de l'eau."
+    ],
+    "gift": {
+      "title": "Vous souhaitez offrir un séjour de rêve à vos proches ?",
+      "content": [
+        "Nous avons crée à cet effet la carte cadeau-personnalisée.",
+        "Nous réglons avec vous à l'avance  tous les détails afin que vos invités gardent un souvenir mémorable de leur passage chez nous.",
+        "Pour plus de détails, contactez nous au  02 35 57 85 30"
+      ]
+    }
+  },
+  "plan": {
+    "intro": "Notre Relais Hôtelier Douce France se situe au cœur du magnifique Village de Veules les Roses, en Seine Maritime (Haute Normandie)",
+    "distances": [
+      "à 26 km de Dieppe",
+      "à 194 kms de Paris",
+      "à 2 heures de Paris et Lille",
+      "à proximité de Fécamp et Etretat"
+    ],
+    "fromParis": {
+      "title": "Depuis Paris",
+      "instructions": [
+        "Prendre l’autoroute A13 au pont de Saint Cloud en direction de la Normandie.",
+        "Sortir à Rouen par la voie rapide , puis prendre l’autoroute A150 direction Dieppe.",
+        "Continuer sur cette autoroute jusqu’à Barentin puis bifurquez sur la D142 en suivant Pavilly, Yerville, Saint Laurent en Caux, Fontaine-le-Dun jusqu’à Veules-les-Roses",
+        "Environ 2 heures /180 kilomètres"
+      ]
+    },
+    "fromLeHavre": {
+      "title": "Depuis Le Havre",
+      "instructions": [
+        "(En venant de Fécamp, Etretat)",
+        "Prendre la D925 en direction de Fecamp, Cany Barville.",
+        "Direction Dieppe/Saint-Valery-en-Caux puis Veules-les-Roses.",
+        "Environ 1 heure /80 kilomètres."
+      ]
+    },
+    "withTrain": {
+      "title": "Avec le train",
+      "instructions": [
+        "Gare d’ Yvetot : 35 minutes",
+        "Gare de Dieppe : 30 minutes",
+        "A savoir / La SNCF assure également des liaisons TER en bus d'Yvetot et Dieppe à Saint-Valery-en-Caux"
+      ]
+    },
+    "fromEngland": {
+      "title": "Depuis l'Angleterre",
+      "instructions": [
+        "Newhaven/ Dieppe",
+        "Portsmouth / Le Havre"
+      ]
+    }
+  },
+  "hotel": {
+    "intro": "Farniente, quiétude et douceur de vivre... Dans notre salon intérieur ou bien sur notre terrasse au bord de l’eau, nos petits déjeuners, notre carte de salon de thé et restauration légère.",
+    "breakfast": {
+      "title": "Le petit déjeuner",
+      "content": "Instant gourmand au réveil autour de notre buffet avec des produits sucrés et salés. Vous allez aimer notre salade de fruits frais maison, nos jus pressés, nos cakes maison, la charcuterie de pays, les confitures artisanales..."
+    },
+    "tearoom": {
+      "title": "Salon de thé",
+      "content": [
+        "À l’heure du thé, sous le cloître dans la cour fleurie au bord de la Veules, ou tout simplement dans nos salons intérieurs, dégustez nos pâtisseries maison, nos crêpes, nos glaces généreuses, tout en appréciant la grande variété de nos thés de toutes origines, notre spécialité de chocolat à l'ancienne ou nos jus de fruits frais.",
+        "Au bord de la Veules, le parfum des roses et du chèvrefeuille, ainsi que le bruissement des fontaines vous aideront à retrouver un rythme de vie calme paisible et heureux"
+      ]
+    },
+    "lightMeals": {
+      "title": "Restauration légère",
+      "content": [
+        "Tout au long de la journée, pour les résidents et non-résidents, une petite restauration légère et variée, vous est servie en mettant à l'honneur des produits locaux.",
+        "Elle est servie à toute heure (jusqu’à 18 heures pour les non-résidents).",
+        "Grandes salades fraicheur, soupes, plats chauds cuisinés déclinés au fils des saisons et un large choix de pâtisseries maison."
+      ]
+    },
+    "roomService": {
+      "title": "Service en chambre",
+      "content": [
+        "Vous n’avez pas envie de ressortir pour diner ?",
+        "Notre service de restauration légère servi en chambre est à commander à la réception avant 18h 30 pour vous être déposé dans votre suite vers 19h30."
+      ]
+    }
+  },
+  "seminars": {
+    "intro": "Vos événements importants au relais hôtelier Douce France",
+    "content": [
+      "Un havre de paix en Normandie dépaysant, confiné et plein de charme, tout proche de la mer, pour vos réunions d'affaires, à seulement 2 heures de Paris et de Lille, à 1 heure de Rouen et du Havre, ou même 30 kilomètres de Dieppe et Yvetot.",
+      "Un lieu idéal pour organiser, en petit comité, avec une capacité d’accueil du 15 personnes assises autour de la table et ou 25 personnes assises en assemblée vos séminaires, assemblées générales, comités de direction, conférences, journées d'étude, réunions d'affaires, ou tout simplement une réunion ou événement familial.",
+      "La salle est équipée d'un écran, paper board et accès Wifi illimité.",
+      "Entre deux séances de travail, ou en fin de journée, vous pourrez découvrir le charme, la beauté de notre village entre petit fleuve et mer. À prévoir absolument !",
+      "N'hésitez pas à nous contacter afin que nous puissions vous établir un devis personnalisé.",
+
+      "UN HÔTEL SÉMINAIRE permet à vos collaborateurs d'effectuer un séminaire de plus longue durée car disposant d'un hébergement",
+      "Dès votre arrivée, pour bien commencer la journée, le café d'accueil vous est offert dans notre salon.",
+      "En milieu de matinée (ainsi que vers 16 heures), la pause avec café, thé, jus d'orange pressé, pâtisseries maison vous est servie également dans le salon.",
+      "Le déjeuner préparé par nos soins.",
+      "Une formule comprenant une entrée, un plat, suivi d’un buffet de gourmandises sucrées ainsi que café. Ce déjeuner gourmand préparé par nos soins contribuera au succès de votre séminaire.",
+      "A noter que pendant les périodes de beau temps, il vous sera possible de prolonger ce moment de détente et de calme avec vos collaborateurs, en déjeunant sur notre terrasse au bord de la Veules ( plus petit fleuve de France)."
+    ],
+    "planning": {
+      "title": "Journée séminaire pour 15 personnes<br/>(15 personnes assises autour des tables ou 25 personnes assises en assemblée)<br/><br/>",
+      "content": [
+        "De 8 heures à 17 h 30",
+        "Café d’accueil ou petit déjeuner continental",
+        "Deux pauses café en journée",
+        "Formule entrée, plat, buffet de desserts (hors boissons)"
+      ]
+    }
+  },
+  "village": {
+    "title": "Veules les Roses",
+    "links": {
+      "veules": {
+        "url": "https://www.veules-les-roses.fr",
+        "label": "Site de la ville"
+      },
+      "caux": {
+        "url": "http://www.plateaudecauxmaritime.com",
+        "label": "Office de tourisme du Plateau de Caux Maritime"
+      }
+    },
+    "intro": {
+      "title": "Un très beau village authentique du Pays de Caux",
+      "content": "Sur les pas de Victor Hugo, de Guy de Maupassant, et de nombreux autres artistes, elle vous convie à goûter aux plaisirs du silence et du repos dans un cadre marin et bucolique enchanteur dont la plupart des voies sont piétonnes. Laissez-vous séduire par l'un des plus beaux villages de Normandie qui allie, au fil des 1194 mètres de la Veules, tous les charmes de la mer et de la campagne."
+    },
+    "activities": {
+      "title": "Activités",
+      "content": [
+        "Culturelles ou sportives, la région recèle de multiples activités. Voici quelques suggestions ; bien sûr cette liste n'est pas exhaustive, loin de là.",
+        "Nous nous ferons un plaisir de vous recommander une des nombreuses tables gastronomiques de la région."
+      ],
+      "list": [
+        "Golf de Dieppe (sur la falaise dominant la mer)",
+        "Golf Normandie côte d'Albâtre à Saint Riquier ès Plains",
+        "Randonnées pédestres, VTT ou à cheval",
+        "Plage et sports nautiques",
+        "Tennis au village",
+        "Tourisme culturel (églises, manoirs et châteaux)",
+        "Visite de très nombreux parcs et jardins renommés"
+      ]
+    }
+  },
+  "rooms": {
+    "duplex": {
+      "name": "Duplex",
+      "intro": "Un choix de 4 Duplex (20m2) sur cour intérieure",
+      "champagne-etc": {
+        "title": "Champagne, Bourgogne, Picardie & Bretagne",
+        "description": "Quatre Duplex situés au 1er étage avec terrasse commune.<br/><br/>Ils se composent d’une kitchenette avec coin repas, une salle de bain avec douche et wc. A l’étage, en haut d’un escalier pentu, une chambre mansardée avec literie en 140cm."
+      }
+    },
+    "suites": {
+      "name": "Suites 'Large'",
+      "intro": "Un choix de 5 Suites 'Large' donnant sur la cour et sur la Veules",
+      "flandre-etc": {
+        "title": "Flandre, Gascogne & Languedoc",
+        "description": "Trois Suites situées au 1er étage, avec terrasse commune surplombant la Veules (plus petit fleuve de France).<br/><br/>Elles se composent d’un petit salon, une kitchenette, une salle de bain avec douche et wc, et une chambre à coucher avec literie en 160 cm."
+      },
+      "jacques-tati": {
+        "title": "Jacques Tati",
+        "description": "Une suite située au 1er étage avec accès côté rue, avec balcon privatif donnant sur la cour de l’établissement.<br/><br/>Elle se compose d’une chambre avec literie en 160cm, une kitchenette avec coin repas, une salle de bain avec douche et wc."
+      },
+      "marcel-carne": {
+        "title": "Marcel Carné",
+        "description": "Une suite située au 1er étage avec accès côté rue, donnant sur petite ruelle.<br/><br/>Elle se compose d’une chambre avec literie en 160cm, une kitchenette avec coin repas, une salle de bain avec douche et wc."
+      }
+    },
+    "suites-large": {
+      "name": "Suites 'Large'",
+      "intro": "Un choix de 2 Suites 'Large' pour 2 ou 3 personnes",
+      "lorraine-provence": {
+        "title": "Lorraine & Provence",
+        "description": "Deux chambres au rez de chaussée donnant sur la cour de l’établissement.<br/><br/>Elles se composent d’un salon avec un lit pour une personne, une kitchenette, quelques marches, une alcôve avec literie en 140cm, une salle de bain avec baignoire ou douche et wc."
+      }
+    },
+    "suites-grand-large": {
+      "name": "Suites 'Grand Large'",
+      "intro": "Un choix de 5 Suites 'Grand Large' pour 2 ou 3 personnes",
+      "maurice-ravel": {
+        "title": "Maurice Ravel",
+        "description": "Une suite située au 1er  étage avec balcon privatif donnant sur la cour de l’établissement.<br/><br/>Elle se compose d’une kitchenette avec coin repas, une salle de bain avec baignoire, un lit pour une personne, quelques marches, WC  séparés et une chambre avec literie en 160 cm."
+      },
+      "normandie": {
+        "title": "Normandie",
+        "description": "Une suite située au 2ème étage sous les toits.<br/><br/>Elles se composent d’une kitchenette avec coin repas, un couloir avec un lit pour un personne ( 80 cm) desservant la salle de bain avec baignoire, WC  séparés, puis une chambre à coucher avec literie en 160 cm. Vue sur cour."
+      },
+      "ile-de-france-alsace": {
+        "title": "Ile de France & Alsace",
+        "description": "Deux suites au rez de chaussée donnant sur la cour de l’établissement. <br/><br/>Elles se composent d’un salon avec un  lit pour une personne, une kitchenette, une salle de bain avec douche ou baignoire, wc séparés, une chambre avec une literie en 160 cm ou bien deux lits jumeaux que nous pouvons rassembler. <br/><br/>Terrasse privative donnant sur la Veules."
+      },
+      "dauphine": {
+        "title": "Dauphiné",
+        "description": "Une suite avec accès pour les personnes à mobilité réduite au rez de chaussée donnant sur la cour de l’établissement.<br/><br/>Elle se compose d’un salon avec un lit pour une personne, une kitchenette, puis la chambre à coucher avec une literie en 160 cm, salle de bain avec douche et WC. <br/><br/>Terrasse privative donnant sur la Veules.<br/><br/>Pour réserver cette suite, nous vous remercions de bien vouloir nous contacter."
+      }
+    },
+    "suite-exception": {
+      "name": "Suite d'Exception",
+      "intro": "Une Suite d'Exception pour 2 personnes",
+      "jean-cocteau": {
+        "title": "Jean Cocteau",
+        "description": "Un triplex situé au 2ème étage avec accès côté rue. (Avec vue à la fois côté rue et côté cour de l’établissement).<br/><br/>Au 1er niveau un salon avec kitchenette. Au 2ème niveau une salle de bain, WC, salon détente. Au 3ème niveau une chambre sous les toits avec une literie en 160cm."
+      }
+    },
+    "appartements": {
+      "name": "Appartements familiaux",
+      "intro": "Un choix de 4 appartements familiaux pour 4 personnes",
+      "charles-trenet-etc": {
+        "title": "Charles Trenet, Edith Piaf & Jacques Brel",
+        "description": "Trois appartements situés au 1er ou 2ème étage, dont un avec balcon donnant sur la cour de l’établissement.<br/><br/>Ils se composent d’un salon, une cuisine, une salle de bain avec baignoire ou douche, WC, une chambre avec une literie en 160cm et une chambre avec deux lits d’une personne.<br/><br/>Possibilité d’un lit d'appoint sur demande."
+      },
+      "guy-de-maupassant": {
+        "title": "Guy de Maupassant",
+        "description": "Un appartement  au 2ème étage avec accès côté rue.<br/><br/>Il se compose d’un salon avec un lit pour une personne, coin repas avec kitchenette, salle de bain avec baignoire, WC. A l’étage en mezzanine un lit pour une personne et une chambre à coucher avec une literie en 160cm.<br/><br/>Possibilité d’un  lit d'appoint sur demande."
+      }
+    },
+    "suites-sans-kitchenette": {
+      "name": "Suites sans kitchenette",
+      "intro": "Un choix de 4 Suites sans kitchenettes",
+      "serge-gainsbourg": {
+        "title": "Serge Gainsbourg",
+        "description": "Une chambre située au 3ème étage (sous les toits) :<br/><br/>Elle se compose d’un coin salle de bain avec lavabo et baignoire, donnant sur la chambre avec une literie en 160cm, W.C séparés."
+      },
+      "anna-de-noailles": {
+        "title": "Anna de Noailles",
+        "description": "Une chambre située au 1er étage donnant sur rue.<br/><br/>Elle se compose d’une chambre avec une literie en 160cm, une salle de bain avec douche, WC."
+      },
+      "marie-noel": {
+        "title": "Marie Noël",
+        "description": "Une chambre située au 2ème étage (sous les toits) avec accès côté rue donnant sur la cour de l’établissement.<br/><br/>Elle se compose d’une chambre avec une literie en 160cm, une salle de bain avec baignoire et WC."
+      },
+      "colette": {
+        "title": "Colette",
+        "description": "Une chambre située au 2ème étage de l’établissement avec accès côté rue.<br/><br/>Elle se compose d’une chambre avec une literie en 160cm, salle de bain avec douche, WC et à l’étage, en mezzanine, une chambre mansardée avec un lit pour une personne. "
+      }
+    },
+
+    "from": "À partir de {price}€",
+    "size": {
+      "2": "2 personnes",
+      "23": "2 ou 3 personnes",
+      "4":"4 personnes"
+    },
+    "fees": [
+      "Lit d'Appoint  15 €",
+      "Lit Bébé  10 €",
+      "Animal  15 €",
+      "Petit Dejeuner Continental  14 €",
+      "Taxe de séjour : Par jour et par personne, représentant 3 % du coût HT par personne de la nuitée dans la limite du tarif le plus élevé (2€)"
+    ],
+    "services": {
+      "wifi": "Wifi",
+      "welcome-products": "Produits d'accueil",
+      "tv": "TV",
+      "toilet": "WC",
+      "surface": "Surface",
+      "simple-bed": "Lit simple",
+      "two-simple-bed": "Deux lits simples",
+      "double-bed": "Lit double",
+      "shower": "Douche",
+      "kitchen": "Kitchenette",
+      "hair-dryer": "Sèche cheveux",
+      "disabled-access": "Accès PMR",
+      "bathtub-and-shower": "Bain /   Douche"
     }
   }
 }

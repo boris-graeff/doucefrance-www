@@ -2,7 +2,7 @@
   <nav class="rooms-header">
     <ul>
       <li v-for="room in Object.keys($options.rooms)" :key="room">
-        <NuxtLink :to="$i18n.path($t('routes.rooms.url') + '/' + room)">
+        <NuxtLink :to="$i18n.path($t('routes.rooms.url') + '/' + getRoomName(room))">
           <div>{{ $t(`rooms.${room}.name`) }}</div>
           <div>{{ $t(`rooms.size.${$options.rooms[room].size}`) }}</div>
         </NuxtLink>
@@ -13,9 +13,19 @@
 
 <script>
   import rooms from '~/locales/rooms'
+  import categories from '~/locales/categories'
 
   export default {
-    rooms
+    rooms,
+    methods: {
+      getRoomName(roomId) {
+        if (this.$i18n.locale === 'en') {
+          const index = categories.fr.indexOf(roomId)
+          return categories.en[index]
+        }
+        return roomId
+      }
+    }
   }
 </script>
 

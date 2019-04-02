@@ -7,9 +7,20 @@
         <div>
           <h2>{{ $t('village.title') }}</h2>
 
-          <a :href="$t('village.tourismOffice.url')" target="_blank">
-            {{ $t('village.tourismOffice.label') }}
-          </a>
+          <ul class="list">
+            <li>
+              <a :href="$t('village.links.veules.url')" target="_blank">
+                {{ $t('village.links.veules.label') }}
+              </a>
+            </li>
+            <li>
+              <a :href="$t('village.links.caux.url')" target="_blank">
+                {{ $t('village.links.caux.label') }}
+              </a>
+            </li>
+          </ul>
+
+          <br/>
 
           <div>
             <h3>{{ $t('village.intro.title') }}</h3>

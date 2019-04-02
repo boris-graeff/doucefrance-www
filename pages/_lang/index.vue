@@ -1,6 +1,6 @@
 <template>
   <section class="home">
-    <div class="page-header"></div>
+    <header-slider class="page-header"/>
 
     <div class="page-content">
       <div class="blocks">
@@ -45,10 +45,12 @@
 
 <script>
   import SpecialOffer from "~/components/SpecialOffer"
+  import HeaderSlider from "~/components/HeaderSlider"
 
   export default {
     components: {
-      SpecialOffer
+      SpecialOffer,
+      HeaderSlider
     }
   }
 </script>
@@ -57,8 +59,6 @@
   @import '~@/style/vars';
 
   .page-header {
-    background-image: url('/images/hotel-douce-france-veules-les-roses.jpg');
-    background-position: top 30% center;
     height: calc(100vh - 300px);
   }
 
@@ -93,6 +93,12 @@
     .special-offer {
       position: static;
       padding: 20px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .page-header {
+      height: 300px;
     }
   }
 </style>

@@ -175,9 +175,15 @@
   },
   "village": {
     "title": "Veules les Roses",
-    "tourismOffice": {
-      "url": "https://www.veules-les-roses.fr",
-      "label": "Site de l'office de tourisme de la ville"
+    "links": {
+      "veules": {
+        "url": "https://www.veules-les-roses.fr",
+        "label": "Site de la ville"
+      },
+      "caux": {
+        "url": "http://www.plateaudecauxmaritime.com",
+        "label": "Office de tourisme du Plateau de Caux Maritime"
+      }
     },
     "intro": {
       "title": "Un très beau village authentique du Pays de Caux",
@@ -314,7 +320,7 @@
       "toilet": "WC",
       "surface": "Surface",
       "simple-bed": "Lit simple",
-      "two-simple-bed": "Deux lits simple",
+      "two-simple-bed": "Deux lits simples",
       "double-bed": "Lit double",
       "shower": "Douche",
       "kitchen": "Kitchenette",
