@@ -3,11 +3,11 @@ import categories from './locales/categories.json'
 const routes = {
   fr: [
     '/', '/chambres', '/hotel', '/acces', '/seminaires', '/village',
-    ...categories.fr.map(category => `/chambres/${category}`)
+    ...categories.map(category => `/chambres/${category.routes.fr}`)
   ],
   en: [
     '/en', '/en/rooms', '/en/hotel', '/en/plan', '/en/seminars', '/en/village',
-    ...categories.en.map(category => `/en/rooms/${category}`)
+    ...categories.map(category => `/en/rooms/${category.routes.en}`)
   ]
 }
 
@@ -38,7 +38,7 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: '#374266' },
   /*
   ** Build configuration
   */

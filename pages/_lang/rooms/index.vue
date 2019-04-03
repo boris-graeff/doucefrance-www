@@ -4,17 +4,19 @@
       <rooms-header />
 
       <ul class="rooms">
-        <li v-for="(room, key) in $options.rooms" :key="key">
+        <li v-for="category in $options.categories" :key="category.key">
           <div>
-            <NuxtLink :to="$i18n.path($t('routes.rooms.url') + '/' + key)">
-              <div class="overview" :style="{backgroundImage: `url(/images/rooms/${key}/${room.categories[0].name}-1.jpg)`}"></div>
+            <NuxtLink :to="$i18n.path($t('routes.rooms.url') + '/' + category.routes[$i18n.locale])">
+              <div class="overview"
+                   :style="{backgroundImage: `url(/images/rooms/${category.key}/${category.rooms[0].name}-1.jpg)`}">
+              </div>
               <div>
                 <div class="name">
-                  {{ $t(`rooms.${key}.name`) }} - {{ $t(`rooms.size.${room.size}`) }}
+                  {{ $t(`rooms.${category.key}.name`) }} - {{ $t(`rooms.size.${category.size}`) }}
                 </div>
 
                 <span class="button-secondary">
-                  {{ $t('rooms.from', { price: room.price }) }}
+                  {{ $t('rooms.from', { price: category.price }) }}
                 </span>
               </div>
             </NuxtLink>
@@ -42,12 +44,12 @@
 </template>
 
 <script>
-  import rooms from '~/locales/rooms'
+  import categories from '~/locales/categories'
   import RoomsHeader from '~/components/RoomsHeader'
   import SpecialOffer from "~/components/SpecialOffer"
 
   export default {
-    rooms,
+    categories,
     components: {
       RoomsHeader,
       SpecialOffer

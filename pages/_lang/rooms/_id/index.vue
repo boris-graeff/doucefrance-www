@@ -1,87 +1,80 @@
 <template>
- <div>
-   <div class="page-content">
-     <rooms-header />
+ <div class="page-content">
+   <rooms-header />
 
+   <div>
+     <h2>{{ $t(`rooms.${category.key}.name`) }}</h2>
+     <h3>{{ $t(`rooms.${category.key}.intro`) }}</h3>
      <div>
-       <h2>{{ $t(`rooms.${roomId}.name`) }}</h2>
-       <h3>{{ $t(`rooms.${roomId}.intro`) }}</h3>
-       <div>
-         <strong>{{ $t('rooms.from', { price: room.price }) }}</strong>
+       <strong>{{ $t('rooms.from', { price: category.price }) }}</strong>
+     </div>
+   </div>
+
+   <section v-for="room in category.rooms" :key="room.name">
+     <div>
+       <h3>{{ $t(`rooms.${category.key}.${room.name}.title`) }}</h3>
+       <p v-html="$t(`rooms.${category.key}.${room.name}.description`)"></p>
+
+       <a :href="$t('externals.booking', { lang: $i18n.locale.toUpperCase() })"
+          class="button-secondary"
+          target="_blank">
+         {{ $t('common.actions.booking') }}
+       </a>
+
+       <div class="services desktop">
+         <ul>
+           <li>
+             <img src="/images/rooms/services/surface.svg" />
+             <p>{{ room.surface }} m2</p>
+           </li>
+           <li v-for="service in room.services" :key="service">
+             <img :src="`/images/rooms/services/${service}.svg`" />
+             <p>{{ $t(`rooms.services.${service}`) }}</p>
+           </li>
+         </ul>
        </div>
      </div>
 
-     <section v-for="category in room.categories" :key="category.name">
-       <div>
-         <h3>{{ $t(`rooms.${roomId}.${category.name}.title`) }}</h3>
-         <p v-html="$t(`rooms.${roomId}.${category.name}.description`)"></p>
+     <div>
+       <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000" :loop="true" class="carousel">
+         <slide v-for="photo in room.photos" :key="photo">
+           <img :src="`/images/rooms/${category.key}/${room.name}-${photo}.jpg`" />
+         </slide>
+       </carousel>
 
-         <a :href="$t('externals.booking', { lang: $i18n.locale.toUpperCase() })"
-            class="button-secondary"
-            target="_blank">
-           {{ $t('common.actions.booking') }}
-         </a>
-
-         <div class="services desktop">
-           <ul>
-             <li>
-               <img src="/images/rooms/services/surface.svg" />
-               <p>{{ category.surface }} m2</p>
-             </li>
-             <li v-for="service in category.services" :key="service">
-               <img :src="`/images/rooms/services/${service}.svg`" />
-               <p>{{ $t(`rooms.services.${service}`) }}</p>
-             </li>
-           </ul>
-         </div>
+       <div class="services mobile">
+         <ul>
+           <li>
+             <img src="/images/rooms/services/surface.svg" />
+             <p>{{ room.surface }} m2</p>
+           </li>
+           <li v-for="service in room.services" :key="service">
+             <img :src="`/images/rooms/services/${service}.svg`" />
+             <p>{{ $t(`rooms.services.${service}`) }}</p>
+           </li>
+         </ul>
        </div>
+     </div>
 
-       <div>
-         <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000" :loop="true" class="carousel">
-           <slide v-for="photo in category.photos" :key="photo">
-             <img :src="`/images/rooms/${roomId}/${category.name}-${photo}.jpg`" />
-           </slide>
-         </carousel>
-
-         <div class="services mobile">
-           <ul>
-             <li>
-               <img src="/images/rooms/services/surface.svg" />
-               <p>{{ category.surface }} m2</p>
-             </li>
-             <li v-for="service in category.services" :key="service">
-               <img :src="`/images/rooms/services/${service}.svg`" />
-               <p>{{ $t(`rooms.services.${service}`) }}</p>
-             </li>
-           </ul>
-         </div>
-       </div>
-
-     </section>
-   </div>
+   </section>
  </div>
 </template>
 
 <script>
   import RoomsHeader from '~/components/RoomsHeader'
-  import rooms from '~/locales/rooms'
   import categories from '~/locales/categories'
 
   export default {
     data () {
       return {
-        roomId: this.$route.params.id
+        category: this.getCategory()
       }
     },
-    computed: {
-      room () {
-        let roomId = this.roomId
-
-        if (this.$i18n.locale === 'en') {
-          const index = categories.en.indexOf(roomId)
-          roomId = categories.fr[index]
-        }
-        return rooms[roomId]
+    methods: {
+      getCategory(){
+        const routeId = this.$route.params.id
+        const { locale } = this.$i18n
+        return categories.find(category => category.routes[locale] === routeId)
       }
     },
     components: {

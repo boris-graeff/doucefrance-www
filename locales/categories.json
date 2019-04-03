@@ -1,4 +1,175 @@
-{
-  "fr": ["duplex", "suites", "suites-large", "suites-grand-large", "suite-exception", "appartements", "suites-sans-kitchenette"],
-  "en": ["duplex", "suites", "large-suites", "extra-large-suites", "luxury-suite", "apartments", "no-kitchen-suite"]
-}
+[
+  {
+    "key": "duplex",
+    "routes": {
+      "fr": "duplex",
+      "en": "duplex"
+    },
+    "price": 102,
+    "size": 2,
+    "rooms": [
+      {
+        "name": "champagne-etc",
+        "photos": 5,
+        "surface": 24,
+        "services": ["double-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "shower", "toilet", "tv"]
+      }
+    ]
+  },
+  {
+    "key": "suites",
+    "routes":  {
+      "fr": "suites",
+      "en": "suites"
+    },
+    "price": 132,
+    "size": 2,
+    "rooms": [
+      {
+        "name": "flandre-etc",
+        "photos": 4,
+        "surface": 26,
+        "services": ["double-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "shower", "toilet", "tv"]
+      },
+      {
+        "name": "jacques-tati",
+        "photos": 3,
+        "surface": 23,
+        "services": ["double-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "shower", "toilet", "tv"]
+      },
+      {
+        "name": "marcel-carne",
+        "photos": 3,
+        "surface": 27,
+        "services": ["double-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "shower", "toilet", "tv"]
+      }
+    ]
+  },
+  {
+    "key": "suites-large",
+    "routes": {
+      "fr": "suites-large",
+      "en": "large-suites"
+    },
+    "price": 132,
+    "size": 23,
+    "rooms": [
+      {
+        "name": "lorraine-provence",
+        "photos": 5,
+        "surface": 37,
+        "services": ["double-bed", "simple-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "bathtub-and-shower", "toilet", "tv"]
+      }
+    ]
+  },
+  {
+    "key": "suites-grand-large",
+    "routes": {
+      "fr": "suites-grand-large",
+      "en": "extra-large-suites"
+    },
+    "price": 162,
+    "size": 23,
+    "rooms": [
+      {
+        "name": "maurice-ravel",
+        "photos": 4,
+        "surface": 41,
+        "services": ["double-bed", "simple-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "bathtub-and-shower", "toilet", "tv"]
+      },
+      {
+        "name": "normandie",
+        "photos": 3,
+        "surface": 42,
+        "services": ["double-bed", "simple-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "bathtub-and-shower", "tv"]
+      },
+      {
+        "name": "ile-de-france-alsace",
+        "photos": 4,
+        "surface": 31,
+        "services": ["double-bed", "simple-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "bathtub-and-shower", "toilet", "tv"]
+      },
+      {
+        "name": "dauphine",
+        "photos": 3,
+        "surface": 39,
+        "services": ["disabled-access", "double-bed", "simple-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "shower", "toilet", "tv"]
+      }
+    ]
+  },
+  {
+    "key": "suite-exception",
+    "routes": {
+      "fr": "suite-exception",
+      "en": "luxury-suite"
+    },
+    "price": 182,
+    "size": 2,
+    "rooms": [
+      {
+        "name": "jean-cocteau",
+        "photos": 5,
+        "surface": 53,
+        "services": ["double-bed", "simple-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "shower", "toilet", "tv"]
+      }
+    ]
+  },
+  {
+    "key": "appartements",
+    "routes": {
+      "fr": "appartements",
+      "en": "apartments"
+    },
+    "price": 242,
+    "size": 4,
+    "rooms": [
+      {
+        "name": "charles-trenet-etc",
+        "photos": 6,
+        "surface": 60,
+        "services": ["double-bed", "two-simple-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "bathtub-and-shower", "toilet", "tv"]
+      },
+      {
+        "name": "guy-de-maupassant",
+        "photos": 5,
+        "surface": 57,
+        "services": ["double-bed", "two-simple-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "bathtub-and-shower", "toilet", "tv"]
+      }
+    ]
+  },
+  {
+    "key": "suites-sans-kitchenette",
+    "routes": {
+      "fr": "suites-sans-kitchenette",
+      "en": "no-kitchen-suite"
+    },
+    "price": 109,
+    "size": 23,
+    "rooms": [
+      {
+        "name": "serge-gainsbourg",
+        "photos": 3,
+        "surface": 25,
+        "services": ["double-bed", "simple-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "bathtub-and-shower", "toilet", "tv"]
+      },
+      {
+        "name": "anna-de-noailles",
+        "photos": 4,
+        "surface": 27,
+        "services": ["double-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "shower", "toilet", "tv"]
+      },
+      {
+        "name": "marie-noel",
+        "photos": 3,
+        "surface": 28,
+        "services": ["double-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "bathtub-and-shower", "toilet", "tv"]
+      },
+      {
+        "name": "colette",
+        "photos": 4,
+        "surface": 37,
+        "services": ["double-bed", "simple-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "shower", "toilet", "tv"]
+      }
+    ]
+  }
+]
