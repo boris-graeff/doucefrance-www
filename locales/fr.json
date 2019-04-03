@@ -31,7 +31,7 @@
     }
   },
   "externals": {
-    "booking": "http://hotel.reservit.com/reservit/reserhotel.php?hotelid=4198&lang={lang}&fday=DD&fmonth=MM&fyear=YYYY&nbnights=NN&nbadt=ZZ"
+    "booking": "http://hotel.reservit.com/reservit/reserhotel.php?hotelid=4198&lang=FR&fday=DD&fmonth=MM&fyear=YYYY&nbnights=NN&nbadt=ZZ"
   },
   "common": {
     "actions": {
@@ -300,17 +300,17 @@
       }
     },
 
-    "from": "À partir de {price}€",
+    "from": "À partir de {price} €",
     "size": {
       "2": "2 personnes",
       "23": "2 ou 3 personnes",
       "4":"4 personnes"
     },
     "fees": [
-      "Lit d'Appoint  15 €",
-      "Lit Bébé  10 €",
-      "Animal  15 €",
-      "Petit Dejeuner Continental  14 €",
+      "Lit d'Appoint 15 €",
+      "Lit Bébé 10 €",
+      "Animal 15 €",
+      "Petit Dejeuner Continental 14 €",
       "Taxe de séjour : Par jour et par personne, représentant 3 % du coût HT par personne de la nuitée dans la limite du tarif le plus élevé (2€)"
     ],
     "services": {

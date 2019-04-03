@@ -34,7 +34,7 @@
           </a>
         </div>
 
-        <a :href="$t('externals.booking', { lang: $i18n.locale.toUpperCase() })"
+        <a :href="$t('externals.booking')"
            class="button book-now"
            target="_blank">
           {{ $t('common.actions.booking') }}

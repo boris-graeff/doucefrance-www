@@ -15,7 +15,7 @@
        <h3>{{ $t(`rooms.${category.key}.${room.name}.title`) }}</h3>
        <p v-html="$t(`rooms.${category.key}.${room.name}.description`)"></p>
 
-       <a :href="$t('externals.booking', { lang: $i18n.locale.toUpperCase() })"
+       <a :href="$t('externals.booking')"
           class="button-secondary"
           target="_blank">
          {{ $t('common.actions.booking') }}
