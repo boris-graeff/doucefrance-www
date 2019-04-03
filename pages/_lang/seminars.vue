@@ -17,7 +17,7 @@
         </div>
 
         <div>
-          <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000" :loop="true" class="carousel">
+          <carousel :per-page="1" :autoplay="true" :autoplayTimeout="4000" :loop="true" class="carousel">
             <slide v-for="index in 4" :key="index">
               <img :src="`/images/seminars/seminaires-${index}.jpg`" />
             </slide>

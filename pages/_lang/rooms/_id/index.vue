@@ -36,7 +36,7 @@
      </div>
 
      <div>
-       <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000" :loop="true" class="carousel">
+       <carousel :per-page="1" :autoplay="true" :autoplayTimeout="4000" :loop="true" class="carousel">
          <slide v-for="photo in room.photos" :key="photo">
            <img :src="`/images/rooms/${category.key}/${room.name}-${photo}.jpg`" />
          </slide>

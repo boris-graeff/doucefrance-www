@@ -19,7 +19,7 @@
         <div>
           <special-offer class="special-offer" />
 
-          <carousel :per-page="1" :autoplay="true" :autoplayTimeout="5000" :loop="true">
+          <carousel :per-page="1" :autoplay="true" :autoplayTimeout="4000" :loop="true">
             <slide>
               <img src="/images/hotel/hotel-veules-les-roses.jpg" />
             </slide>

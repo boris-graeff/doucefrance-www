@@ -28,7 +28,7 @@
     mounted() {
       this.interval = setInterval(() => {
         this.index = (this.index + 1) % photos.length
-      }, 5000)
+      }, 3000)
 
       setTimeout(() => {
         this.images = photos
