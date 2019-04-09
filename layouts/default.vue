@@ -55,13 +55,16 @@ export default {
 
       > * {
         width: 50%;
-        padding: 60px;
-        background: white;
 
-        &:nth-child(1) {
+        &:first-child .block:first-child,
+        &:first-child.block {
           background: $grey-light;
           margin-top: -110px;
         }
+      }
+
+      .block {
+        padding: 60px;
       }
     }
 
@@ -88,7 +91,7 @@ export default {
   @media screen and (max-width: 1000px){
     /deep/ {
       .blocks {
-        > div {
+        .block {
           padding: 20px;
         }
       }
@@ -101,7 +104,8 @@ export default {
         > * {
           width: 100%;
 
-          &:nth-child(1)  {
+          &:first-child .block:first-child,
+          &:first-child.block {
             margin-top: 0;
           }
         }

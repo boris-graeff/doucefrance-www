@@ -3,6 +3,10 @@
     <div class="page-content">
       <rooms-header />
 
+      <p class="intro">
+        {{ $t('rooms.intro') }}
+      </p>
+
       <ul class="rooms">
         <li v-for="category in $options.categories" :key="category.key">
           <div>
@@ -35,7 +39,7 @@
           </ul>
         </div>
         <div>
-          <special-offer class="special-offer" />
+          <special-offer class="special-offer" :type="$options.specialOffer" />
         </div>
       </div>
     </div>
@@ -44,11 +48,13 @@
 </template>
 
 <script>
-  import categories from '~/locales/categories'
+  import categories from '~/config/categories'
+  import site from '~/config/site'
   import RoomsHeader from '~/components/RoomsHeader'
   import SpecialOffer from "~/components/SpecialOffer"
 
   export default {
+    specialOffer: site.specialOffers.custom ? 'custom' : 'longStay',
     categories,
     components: {
       RoomsHeader,
@@ -62,6 +68,13 @@
 
   .page-content {
     padding-bottom: 60px;
+  }
+
+  .intro {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0 20px;
   }
 
   .rooms {

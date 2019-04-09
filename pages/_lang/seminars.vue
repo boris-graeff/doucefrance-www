@@ -4,7 +4,7 @@
 
     <div class="page-content">
       <div class="blocks">
-        <div>
+        <div class="block">
           <h2>{{ $t('routes.seminars.name') }}</h2>
 
           <p><strong>{{ $t('seminars.intro') }}</strong></p>
@@ -16,7 +16,7 @@
           <p>{{ $t('seminars.content[4]') }}</p>
         </div>
 
-        <div>
+        <div class="block">
           <carousel :per-page="1" :autoplay="true" :autoplayTimeout="4000" :loop="true" class="carousel">
             <slide v-for="index in 4" :key="index">
               <img :src="`/images/seminars/seminaires-${index}.jpg`" />
@@ -24,7 +24,7 @@
           </carousel>
         </div>
 
-        <div>
+        <div class="block">
           <div>
             <p v-html="$t('seminars.planning.title')"></p>
 
@@ -37,7 +37,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="block">
           <p>{{ $t('seminars.content[5]') }}</p>
           <p>{{ $t('seminars.content[6]') }}</p>
           <p>{{ $t('seminars.content[7]') }}</p>
@@ -58,16 +58,14 @@
     background-position: bottom center;
   }
 
-  .blocks {
-    > div {
-      &:nth-child(2) {
-        padding: 60px 0 0;
-      }
+  .block {
+    &:nth-child(2) {
+      padding: 60px 0 0;
+    }
 
-      &:nth-child(3) > div {
-        padding: 60px;
-        border: 2px solid;
-      }
+    &:nth-child(3) > div {
+      padding: 60px;
+      border: 2px solid;
     }
   }
 

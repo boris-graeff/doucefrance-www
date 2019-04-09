@@ -4,7 +4,7 @@
 
     <div class="page-content">
       <div class="blocks">
-        <div>
+        <div class="block">
           <h2>{{ $t('routes.plan.name') }}</h2>
 
           <p>{{ $t('plan.intro') }}</p>
@@ -24,7 +24,8 @@
             <li>{{ $t('plan.distances[3]') }}</li>
           </ul>
         </div>
-        <div>
+
+        <div class="block">
           <h3>{{ $t('plan.fromParis.title') }}</h3>
           <ul class="list">
             <li>{{ $t('plan.fromParis.instructions[0]') }}</li>

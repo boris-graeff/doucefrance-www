@@ -48,12 +48,21 @@
     "fax": "+33235578531",
     "facebook": "https://www.facebook.com/relaishotelierdoucefrance/"
   },
-  "specialOffer": {
-    "title": "Offre spéciale temps de vivre",
-    "content": [
-      "3 nuits consécutives payées<br/>4ème nuit à 50%",
-      "Offre non valable du 1 er mai au 30 septembre inclus<br/>Une offre limitée à une période indivisible de 14 jours sous réserve de disponibilité<br/>Pour pouvoir bénéficier de l'offre, <strong>prière de le signaler dès la réservation</strong>"
-    ]
+  "specialOffers": {
+    "longStay": {
+      "title": "Offre spéciale temps de vivre",
+      "content": [
+        "3 nuits consécutives payées<br/>4ème nuit à 50%",
+        "Offre non valable du 1 er mai au 30 septembre inclus<br/>Une offre limitée à une période indivisible de 14 jours sous réserve de disponibilité<br/>Pour pouvoir bénéficier de l'offre, <strong>prière de le signaler dès la réservation</strong>"
+      ]
+    },
+    "custom": {
+      "title": "Offre spéciale titre",
+      "content": [
+        "Offre spéciale contenu principal",
+        "Offre spécial contenu secondaire"
+      ]
+    }
   },
   "home": {
     "welcome": "Bienvenue au Relais Hôtelier Douce France",
@@ -70,7 +79,7 @@
     "gift": {
       "title": "Vous souhaitez offrir un séjour de rêve à vos proches ?",
       "content": [
-        "Nous avons crée à cet effet la carte cadeau-personnalisée.",
+        "Nous avons créé à cet effet la carte cadeau-personnalisée.",
         "Nous réglons avec vous à l'avance  tous les détails afin que vos invités gardent un souvenir mémorable de leur passage chez nous.",
         "Pour plus de détails, contactez nous au  02 35 57 85 30"
       ]
@@ -299,6 +308,8 @@
         "description": "Une chambre située au 2ème étage de l’établissement avec accès côté rue.<br/><br/>Elle se compose d’une chambre avec une literie en 160cm, salle de bain avec douche, WC et à l’étage, en mezzanine, une chambre mansardée avec un lit pour une personne. "
       }
     },
+
+    "intro": "Meilleur tarif garanti en réservant sur notre site officiel",
 
     "from": "À partir de {price} €",
     "size": {

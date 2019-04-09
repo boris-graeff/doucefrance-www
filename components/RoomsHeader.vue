@@ -12,7 +12,7 @@
 </template>
 
 <script>
-  import categories from '~/locales/categories'
+  import categories from '~/config/categories'
 
   export default {
     categories

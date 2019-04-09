@@ -1,4 +1,4 @@
-import categories from './locales/categories.json'
+import categories from './config/categories.json'
 
 const routes = {
   fr: [

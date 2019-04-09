@@ -62,7 +62,7 @@
 
 <script>
   import RoomsHeader from '~/components/RoomsHeader'
-  import categories from '~/locales/categories'
+  import categories from '~/config/categories'
 
   export default {
     data () {

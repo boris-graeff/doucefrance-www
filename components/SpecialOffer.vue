@@ -1,12 +1,18 @@
 <template>
   <div class="special-offer">
-    <span>{{ $t('specialOffer.title') }}</span>
+    <span>{{ $t(`specialOffers.${type}.title`) }}</span>
     <div>
-      <p v-html="$t('specialOffer.content[0]')"></p>
-      <p v-html="$t('specialOffer.content[1]')"></p>
+      <p v-html="$t(`specialOffers.${type}.content[0]`)"></p>
+      <p v-html="$t(`specialOffers.${type}.content[1]`)"></p>
     </div>
   </div>
 </template>
+
+<script>
+  export default {
+    props: ['type']
+  }
+</script>
 
 <style scoped lang="scss">
   @import "~@/style/vars";
