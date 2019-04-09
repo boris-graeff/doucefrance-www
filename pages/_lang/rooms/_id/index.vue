@@ -105,7 +105,7 @@
       margin-top: 60px;
 
       > * {
-        width: 100%;
+        width: 50%;
 
         &:first-child {
           padding: 60px;
@@ -170,6 +170,10 @@
         > div:first-child {
           padding: 0;
           margin-bottom: 20px;
+        }
+
+        > * {
+          width: 100%;
         }
       }
     }
