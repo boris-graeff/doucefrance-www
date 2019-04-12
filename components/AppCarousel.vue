@@ -25,7 +25,6 @@
 
   .app-carousel {
     position: relative;
-
   }
 
   .navigation {
@@ -35,7 +34,7 @@
       height: 40px;
       width: 40px;
       border-radius: 100%;
-      background-color: rgba(white, 0.3);
+      background-color: rgba($grey-blue, 0.3);
       background-image: url('../assets/icn-arrow.svg');
       background-size: 24px;
       background-repeat: no-repeat;
