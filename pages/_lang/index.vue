@@ -1,6 +1,12 @@
 <template>
   <section class="home">
-    <header-slider class="page-header"/>
+    <app-carousel class="page-header">
+      <div v-for="image in $options.headerImages"
+           :key="image"
+           class="images"
+           :style="{backgroundImage: `url(${image})`}">
+      </div>
+    </app-carousel>
 
     <div class="page-content">
       <div class="blocks">
@@ -29,14 +35,10 @@
         </div>
 
         <div class="block">
-          <carousel :per-page="1" :autoplay="true" :autoplayTimeout="4000" :loop="true">
-            <slide>
-              <img src="/images/hotel/hotel-veules-les-roses.jpg" />
-            </slide>
-            <slide v-for="index in 7" :key="index">
-              <img :src="`/images/hotel/hotel-${index}.jpg`" />
-            </slide>
-          </carousel>
+          <app-carousel>
+            <img src="/images/hotel/hotel-veules-les-roses.jpg" />
+            <img v-for="index in 7" :key="index" :src="`/images/hotel/hotel-${index}.jpg`" />
+          </app-carousel>
         </div>
 
         <div class="block">
@@ -57,14 +59,23 @@
 
 <script>
   import SpecialOffer from "~/components/SpecialOffer"
-  import HeaderSlider from "~/components/HeaderSlider"
+  import AppCarousel from "~/components/AppCarousel";
   import site from "~/config/site"
 
+  const headerImages = [
+    '/images/hotel-douce-france-veules-les-roses.jpg',
+    '/images/home/hotel-1.jpg',
+    '/images/home/hotel-2.jpg',
+    '/images/home/hotel-3.jpg',
+    '/images/home/hotel-4.jpg'
+  ]
+
   export default {
+    headerImages,
     showCustomSpecialOffer: site.specialOffers.custom,
     components: {
-      SpecialOffer,
-      HeaderSlider
+      AppCarousel,
+      SpecialOffer
     }
   }
 </script>
@@ -74,6 +85,14 @@
 
   .page-header {
     height: calc(100vh - 300px);
+    overflow: hidden;
+
+    .images {
+      width: 100%;
+      height: calc(100vh - 300px);
+      background-size: cover;
+      background-position: center center;
+    }
   }
 
   .page-content {
@@ -106,7 +125,7 @@
   }
 
   @media screen and (max-width: 800px) {
-    .page-header {
+    .page-header, .page-header .images {
       height: 300px;
     }
   }

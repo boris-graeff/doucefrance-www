@@ -17,11 +17,9 @@
         </div>
 
         <div class="block">
-          <carousel :per-page="1" :autoplay="true" :autoplayTimeout="4000" :loop="true" class="carousel">
-            <slide v-for="index in 4" :key="index">
-              <img :src="`/images/seminars/seminaires-${index}.jpg`" />
-            </slide>
-          </carousel>
+          <app-carousel class="carousel">
+            <img v-for="index in 4" :key="index" :src="`/images/seminars/seminaires-${index}.jpg`" />
+          </app-carousel>
         </div>
 
         <div class="block">
@@ -49,6 +47,16 @@
     </div>
   </section>
 </template>
+
+<script>
+  import AppCarousel from '~/components/AppCarousel'
+
+  export default {
+    components: {
+      AppCarousel
+    }
+  }
+</script>
 
 <style scoped lang="scss">
   @import '~@/style/vars';

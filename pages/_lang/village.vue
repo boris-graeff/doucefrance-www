@@ -30,11 +30,9 @@
         </div>
 
         <div class="block">
-          <carousel :per-page="1" :autoplay="true" :autoplayTimeout="4000" :loop="true">
-            <slide v-for="index in 5" :key="index">
-              <img :src="`/images/village/veules-les-roses-${index}.jpg`" />
-            </slide>
-          </carousel>
+          <app-carousel>
+            <img v-for="index in 5" :key="index" :src="`/images/village/veules-les-roses-${index}.jpg`" />
+          </app-carousel>
         </div>
 
         <div class="block">
@@ -58,6 +56,16 @@
     <div class="page-footer"></div>
   </section>
 </template>
+
+<script>
+  import AppCarousel from '~/components/AppCarousel'
+
+  export default {
+    components: {
+      AppCarousel
+    }
+  }
+</script>
 
 <style scoped lang="scss">
   @import '~@/style/vars';

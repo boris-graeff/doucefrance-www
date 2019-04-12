@@ -36,11 +36,9 @@
      </div>
 
      <div>
-       <carousel :per-page="1" :autoplay="true" :autoplayTimeout="4000" :loop="true" class="carousel">
-         <slide v-for="photo in room.photos" :key="photo">
-           <img :src="`/images/rooms/${category.key}/${room.name}-${photo}.jpg`" />
-         </slide>
-       </carousel>
+       <app-carousel class="carousel">
+         <img v-for="photo in room.photos" :key="photo" :src="`/images/rooms/${category.key}/${room.name}-${photo}.jpg`" />
+       </app-carousel>
 
        <div class="services mobile">
          <ul>
@@ -62,6 +60,7 @@
 
 <script>
   import RoomsHeader from '~/components/RoomsHeader'
+  import AppCarousel from '~/components/AppCarousel'
   import categories from '~/config/categories'
 
   export default {
@@ -78,7 +77,8 @@
       }
     },
     components: {
-      RoomsHeader
+      RoomsHeader,
+      AppCarousel
     }
   }
 </script>
