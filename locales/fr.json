@@ -25,6 +25,10 @@
       "url": "village",
       "name": "Le village"
     },
+    "faq": {
+      "url": "faq",
+      "name": "FAQ"
+    },
     "lang": {
       "fr": "FR",
       "en": "EN"
@@ -214,6 +218,55 @@
         "Visite de très nombreux parcs et jardins renommés"
       ]
     }
+  },
+  "faq": {
+    "title": "FAQ",
+    "content": [
+      {
+        "q": "Avez vous un parking ?",
+        "a": "Nous ne disposons pas d'un parking privatif mais vous pourrez vous stationner aux abords de l'hôtel dans les rues avoisinantes ( non payant) ou sur le parking de la mairie à 50 mètres de l'hôtel"
+      },
+      {
+        "q": "Arrivée tardive ?",
+        "a": "Vous pensez arriver après 18h 30 ? Pas de soucis nous vous enverrons par mail \"un jeu de piste\" qui vous indiquera comment trouver votre suite. N'hésitez pas cependant à nous contacter afin que nous puissions vous l'expliquer également par téléphone."
+      },
+      {
+        "q": "Comment régler mon séjour ?",
+        "a": "Par carte bancaire,espèces ou chèques Nous n'acceptons pas l'American  Express, ni non plus les chèques vacances car ils sont sujets à des commissions supplémentaires."
+      },
+      {
+        "q": "Quand dois-je régler mon séjour ?",
+        "a": "vous rentrez vos coordonnées bancaires lors de la réservation. C'est donc une simple garantie et vous réglez le séjour à votre départ."
+      },
+      {
+        "q": "WIFI",
+        "a": "Nous vous remettrons à votre arrivée un code de connexion qui vous permettra un accès illimité et gratuit durant l'ensemble de votre séjour dans l'hôtel."
+      },
+      {
+        "q": "Quelles sont les conditions d'annulation?",
+        "a": "La réservation peut être annulée jusqu'à 24 heures avant votre arrivée. Passé ce délai la première nuit vous sera débitée."
+      },
+      {
+        "q": "L'établissement accepté t'il les animaux ? ",
+        "a": "Oui et cela avec un supplément de 15 € pour l'ensemble du séjour. Nous nous réservons le droit de facturer les éventuelles dégradations qui pourraient être occasionnées dans la suite."
+      },
+      {
+        "q": "À quelle heure pouvons nous prendre possession de la suite ?",
+        "a": "Les chambres et suites sont disponibles à partir de 15 heures ( au plus tard à 16 heures).\nLes chambres doivent être libérées à 12 heures maximum le jour de votre départ."
+      },
+      {
+        "q": "Y a t'il des chambres non fumeur ?",
+        "a": "Oui, l'ensemble des chambres et parties communes sont non fumeur."
+      },
+      {
+        "q": "Y a t'il un restaurant dans l'hôtel ?",
+        "a": "Nous n'avons pas de restaurant à l'interieur de l'hôtel mais nous proposons un service en chambre à commander à la réception maximum à 18 h30. Votre repas vous est déposé dans votre suite  entre 19 h et 19h30.\nPlusieurs restaurants dans le village en saison, nous vous encourageons à réserver.( N'hésitez pas à nous demander des informations à ce sujet)."
+      },
+      {
+        "q": "Autres questions ?",
+        "a": "Toute notre équipe de réception est à votre disposition pour vous répondre."
+      }
+    ]
   },
   "rooms": {
     "duplex": {

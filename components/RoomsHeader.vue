@@ -23,7 +23,6 @@
   @import '~@/style/vars';
 
   .rooms-header {
-    margin-top: 20px;
     margin-bottom: 30px;
     font-size: 16px;
 

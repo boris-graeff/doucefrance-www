@@ -44,6 +44,8 @@
       </div>
     </div>
 
+    <questions-section />
+
   </section>
 </template>
 
@@ -51,14 +53,16 @@
   import categories from '~/config/categories'
   import site from '~/config/site'
   import RoomsHeader from '~/components/RoomsHeader'
-  import SpecialOffer from "~/components/SpecialOffer"
+  import SpecialOffer from '~/components/SpecialOffer'
+  import QuestionsSection from '~/components/QuestionsSection'
 
   export default {
     specialOffer: site.specialOffers.custom ? 'custom' : 'longStay',
     categories,
     components: {
       RoomsHeader,
-      SpecialOffer
+      SpecialOffer,
+      QuestionsSection
     }
   }
 </script>

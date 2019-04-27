@@ -28,22 +28,22 @@ export default {
   @import '~@/style/vars';
 
   /deep/ {
+    h2 {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        border-bottom: 2px solid;
+        width: 40px;
+      }
+    }
+
     .page-content {
       max-width: $max-content-width;
       margin: auto;
-
-      h2 {
-        position: relative;
-
-        &:after {
-          content: '';
-          position: absolute;
-          left: 0;
-          bottom: -10px;
-          border-bottom: 2px solid;
-          width: 40px;
-        }
-      }
     }
 
     .blocks {

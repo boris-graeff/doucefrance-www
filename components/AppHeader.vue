@@ -51,7 +51,7 @@ export default {
       showMenu: false
     }
   },
-  pages: ['home', 'rooms', 'hotel', 'plan', 'seminars', 'village']
+  pages: ['home', 'rooms', 'hotel', 'plan', 'seminars', 'village', 'faq']
 }
 </script>
 
@@ -160,7 +160,7 @@ export default {
     }
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 760px) {
     .nav {
       display: none;
       text-align: center;

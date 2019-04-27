@@ -2,11 +2,11 @@ import categories from './config/categories.json'
 
 const routes = {
   fr: [
-    '/', '/chambres', '/hotel', '/acces', '/seminaires', '/village',
+    '/', '/chambres', '/hotel', '/acces', '/seminaires', '/village', '/faq',
     ...categories.map(category => `/chambres/${category.routes.fr}`)
   ],
   en: [
-    '/en', '/en/rooms', '/en/hotel', '/en/plan', '/en/seminars', '/en/village',
+    '/en', '/en/rooms', '/en/hotel', '/en/plan', '/en/seminars', '/en/village', '/en/faq',
     ...categories.map(category => `/en/rooms/${category.routes.en}`)
   ]
 }

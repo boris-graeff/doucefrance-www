@@ -1,6 +1,6 @@
 # DouceFrance hotel website
 
-Preview [here](condescending-colden-4d6351.netlify.com)
+Preview [here](https://condescending-colden-4d6351.netlify.com)
 
 Static website based on Nuxt with internationalization, auto-generated sitemap and prerendering
 

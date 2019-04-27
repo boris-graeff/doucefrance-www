@@ -1,66 +1,72 @@
 <template>
- <div class="page-content">
-   <rooms-header />
+  <div>
+    <div class="page-content">
+     <rooms-header />
 
-   <div>
-     <h2>{{ $t(`rooms.${category.key}.name`) }}</h2>
-     <h3>{{ $t(`rooms.${category.key}.intro`) }}</h3>
      <div>
-       <strong>{{ $t('rooms.from', { price: category.price }) }}</strong>
-     </div>
-   </div>
-
-   <section v-for="room in category.rooms" :key="room.name">
-     <div>
-       <h3>{{ $t(`rooms.${category.key}.${room.name}.title`) }}</h3>
-       <p v-html="$t(`rooms.${category.key}.${room.name}.description`)"></p>
-
-       <a :href="$t('externals.booking')"
-          class="button-secondary"
-          target="_blank">
-         {{ $t('common.actions.booking') }}
-       </a>
-
-       <div class="services desktop">
-         <ul>
-           <li>
-             <img src="/images/rooms/services/surface.svg" />
-             <p>{{ room.surface }} m2</p>
-           </li>
-           <li v-for="service in room.services" :key="service">
-             <img :src="`/images/rooms/services/${service}.svg`" />
-             <p>{{ $t(`rooms.services.${service}`) }}</p>
-           </li>
-         </ul>
+       <h2>{{ $t(`rooms.${category.key}.name`) }}</h2>
+       <h3>{{ $t(`rooms.${category.key}.intro`) }}</h3>
+       <div>
+         <strong>{{ $t('rooms.from', { price: category.price }) }}</strong>
        </div>
      </div>
 
-     <div>
-       <app-carousel class="carousel">
-         <img v-for="photo in room.photos" :key="photo" :src="`/images/rooms/${category.key}/${room.name}-${photo}.jpg`" />
-       </app-carousel>
+     <section v-for="room in category.rooms" :key="room.name">
+       <div>
+         <h3>{{ $t(`rooms.${category.key}.${room.name}.title`) }}</h3>
+         <p v-html="$t(`rooms.${category.key}.${room.name}.description`)"></p>
 
-       <div class="services mobile">
-         <ul>
-           <li>
-             <img src="/images/rooms/services/surface.svg" />
-             <p>{{ room.surface }} m2</p>
-           </li>
-           <li v-for="service in room.services" :key="service">
-             <img :src="`/images/rooms/services/${service}.svg`" />
-             <p>{{ $t(`rooms.services.${service}`) }}</p>
-           </li>
-         </ul>
+         <a :href="$t('externals.booking')"
+            class="button-secondary"
+            target="_blank">
+           {{ $t('common.actions.booking') }}
+         </a>
+
+         <div class="services desktop">
+           <ul>
+             <li>
+               <img src="/images/rooms/services/surface.svg" />
+               <p>{{ room.surface }} m2</p>
+             </li>
+             <li v-for="service in room.services" :key="service">
+               <img :src="`/images/rooms/services/${service}.svg`" />
+               <p>{{ $t(`rooms.services.${service}`) }}</p>
+             </li>
+           </ul>
+         </div>
        </div>
-     </div>
 
-   </section>
- </div>
+       <div>
+         <app-carousel class="carousel">
+           <img v-for="photo in room.photos" :key="photo" :src="`/images/rooms/${category.key}/${room.name}-${photo}.jpg`" />
+         </app-carousel>
+
+         <div class="services mobile">
+           <ul>
+             <li>
+               <img src="/images/rooms/services/surface.svg" />
+               <p>{{ room.surface }} m2</p>
+             </li>
+             <li v-for="service in room.services" :key="service">
+               <img :src="`/images/rooms/services/${service}.svg`" />
+               <p>{{ $t(`rooms.services.${service}`) }}</p>
+             </li>
+           </ul>
+         </div>
+       </div>
+
+     </section>
+
+    </div>
+
+    <questions-section />
+  </div>
 </template>
 
 <script>
   import RoomsHeader from '~/components/RoomsHeader'
   import AppCarousel from '~/components/AppCarousel'
+  import QuestionsSection from '~/components/QuestionsSection'
   import categories from '~/config/categories'
 
   export default {
@@ -78,7 +84,8 @@
     },
     components: {
       RoomsHeader,
-      AppCarousel
+      AppCarousel,
+      QuestionsSection
     }
   }
 </script>
@@ -87,7 +94,6 @@
   @import '~@/style/vars';
 
   .page-content {
-    padding-bottom: 60px;
 
     > div:nth-child(2) {
       text-align: center;
