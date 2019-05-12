@@ -1,12 +1,21 @@
 <template>
   <section class="home">
-    <app-carousel class="page-header">
-      <div v-for="image in $options.headerImages"
-           :key="image"
-           class="images"
-           :style="{backgroundImage: `url(${image})`}">
-      </div>
-    </app-carousel>
+    <button
+      v-if="$options.hasSpecialOffer"
+      @click="scrollToSpecialOffer"
+      class="button special-offer-button">
+      Offre spéciale
+    </button>
+
+    <div class="page-header">
+      <app-carousel class="page-header">
+        <div v-for="image in $options.headerImages"
+             :key="image"
+             class="images"
+             :style="{backgroundImage: `url(${image})`}">
+        </div>
+      </app-carousel>
+    </div>
 
     <div class="page-content">
       <div class="blocks">
@@ -23,8 +32,11 @@
             </a>
           </div>
 
-          <special-offer class="block special-offer"
-                         :type="$options.showCustomSpecialOffer ? 'custom' : 'longStay'" />
+          <div ref="specialOffer" class="block">
+            <special-offer
+              :type="$options.hasSpecialOffer ? 'custom' : 'longStay'"/>
+          </div>
+
         </div>
 
         <div class="block">
@@ -49,8 +61,7 @@
           <p>{{ $t('home.gift.content[2]') }}</p>
         </div>
 
-        <special-offer v-if="$options.showCustomSpecialOffer" class="block" type="longStay" />
-
+        <special-offer v-if="$options.hasSpecialOffer" class="block" type="longStay" />
       </div>
     </div>
 
@@ -72,7 +83,14 @@
 
   export default {
     headerImages,
-    showCustomSpecialOffer: site.specialOffers.custom,
+    hasSpecialOffer: site.specialOffers.custom,
+    methods: {
+      scrollToSpecialOffer() {
+        this.$refs.specialOffer.scrollIntoView({
+          behavior: 'smooth'
+        })
+      }
+    },
     components: {
       AppCarousel,
       SpecialOffer
@@ -83,6 +101,10 @@
 <style scoped lang="scss">
   @import '~@/style/vars';
 
+  .home {
+    position: relative;
+  }
+
   .page-header {
     height: calc(100vh - 300px);
     overflow: hidden;
@@ -92,6 +114,29 @@
       height: calc(100vh - 300px);
       background-size: cover;
       background-position: center center;
+    }
+  }
+
+  .special-offer-button {
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 40px;
+    color: $pink;
+    border-color: $pink;
+    background: white;
+    font-size: 20px;
+    font-family: Quicksand;
+    font-weight: bold;
+    box-shadow: 0 0 0 4px white;
+    white-space: nowrap;
+
+    &:hover {
+      background: $pink;
+      color: white;
+      opacity: 1;
     }
   }
 
@@ -127,6 +172,12 @@
   @media screen and (max-width: 800px) {
     .page-header, .page-header .images {
       height: 300px;
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    .special-offer-button {
+      top: 20px;
     }
   }
 </style>

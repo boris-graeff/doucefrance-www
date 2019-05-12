@@ -62,7 +62,8 @@ module.exports = {
   },
   plugins: [
     '~/plugins/i18n.js',
-    { src: '~/plugins/vue-smart-carousel.js', ssr: false }
+    { src: '~/plugins/vue-smart-carousel.js', ssr: false },
+    { src: '~/plugins/smoothscroll-polyfill.js', ssr: false },
   ],
   modules: [
     '@nuxtjs/sitemap'

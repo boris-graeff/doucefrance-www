@@ -16,7 +16,7 @@
   @import '~@/style/vars';
 
   .page-content {
-    padding: 30px 0 60px;
+    padding: 30px 20px 60px;
     width: 100%;
     max-width: 800px;
     margin: auto;

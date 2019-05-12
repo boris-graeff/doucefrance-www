@@ -190,9 +190,5 @@ export default {
       position: static;
       margin-top: 20px;
     }
-
-    .header > div > div:first-child {
-      text-align: left;
-    }
   }
 </style>
