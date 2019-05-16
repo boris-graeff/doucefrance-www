@@ -9,6 +9,8 @@
         </NuxtLink>
       </div>
 
+      <img src="~/assets/michelin-logo.png" class="michelin"/>
+
       <div class="contact">
         <div>
           13 rue Dr Girard<br/>
@@ -29,13 +31,6 @@
             {{ $t('contact.email') }}
           </a>
         </div>
-      </div>
-
-
-      <div>
-        <a :href="$t('contact.facebook')" target="_blank">
-          <img src="~/assets/icn-facebook.svg" />
-        </a>
       </div>
     </div>
   </footer>
@@ -77,11 +72,16 @@
 
   .contact {
     display: flex;
-    margin: 0 30px;
 
     > div + div {
       margin-left: 20px;
     }
+  }
+
+  .michelin {
+    width: 60px;
+    height: 60px;
+    margin: 0 30px;
   }
 
   @media screen and (max-width: 700px){
@@ -89,7 +89,7 @@
       flex-direction: column;
     }
 
-    .contact {
+    .michelin {
       margin: 30px 0;
     }
   }
