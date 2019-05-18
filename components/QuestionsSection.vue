@@ -1,17 +1,17 @@
 <template>
   <div class="questions-section">
-    <h2>Une question ?</h2>
+    <h2>{{ $t('help.title') }}</h2>
     <p>
-      Jettez un coup-d'oeil à notre
+      {{ $t('help.content[0]') }}
       <NuxtLink :to="$i18n.path($t('routes.faq.url'))">
         {{ $t('routes.faq.name') }}
       </NuxtLink>
     </p>
     <p>
-      Ou bien contactez nous au
+      {{ $t('help.content[1]') }}
       <a :href="`tel:${$t('contact.phone')}`">
         {{ $t('contact.phone') }}
-      </a> ou sur
+      </a> {{ $t('help.content[2]') }}
       <a :href="`mailto:${$t('contact.email')}`">
         {{ $t('contact.email') }}
       </a>
