@@ -39,7 +39,7 @@
   },
   "common": {
     "actions": {
-      "booking": "Booking now",
+      "booking": "Book now",
       "contact": "Contact us"
     },
     "phone": "Phone",
@@ -52,128 +52,134 @@
     "fax": "+33235578531",
     "facebook": "https://www.facebook.com/relaishotelierdoucefrance/"
   },
-  "specialOffer": {
-    "title": "Offre spéciale temps de vivre",
-    "content": [
-      "3 nuits consécutives payées<br/>4ème nuit à 50%",
-      "Offre non valable du 1 er mai au 30 septembre inclus<br/>Une offre limitée à une période indivisible de 14 jours sous réserve de disponibilité<br/>Pour pouvoir bénéficier de l'offre, <strong>prière de le signaler dès la réservation</strong>"
-    ]
+  "specialOffers": {
+    "longStay": {
+      "title": "Special offer \"Time to Live\"",
+      "content": [
+        "3 consecutive nights paid<br/>4th night at 50%",
+        "Offer not valid from May 1 to September 30 inclusive<br/>An offer limited to an indivisible period of 14 days subject to availability<br/>To be able to benefit from the offer, <strong>please notify us when booking</strong>"
+      ]
+    },
+    "custom": {
+      "title": "Offre spéciale titre",
+      "content": [
+        "Offre spéciale contenu principal",
+        "Offre spécial contenu secondaire"
+      ]
+    }
   },
   "home": {
-    "welcome": "Bienvenue au Relais Hôtelier Douce France",
+    "welcome": "Welcome to Relais Hôtelier Douce France",
     "intro": [
-      "Relais Hôtel situé à <strong>Veules les Roses</strong>, village romantique et authentique de Normandie, à 500 mètres de la mer.",
-      "Classé  dans le guide officiel des plus beaux villages de France."
+      "Relais Hôtel located in <strong>Veules les Roses</strong>, a romantic and authentic village in Normandy, 500 meters from the sea.",
+      "Listed in the official guide to the most beautiful villages in France."
     ],
     "description": [
-      "A deux heures de Paris et Lille, sur la Côte d'Albâtre du Pays de Caux, baignée par la lumière chère aux Impressionnistes, une petite station balnéaire a gardé son charme d'antan : Veules les Roses.",
-      "Sur les pas de Victor Hugo, de Guy de Maupassant, et de nombreux autres artistes, elle vous convie à goûter aux plaisirs du silence et du repos dans un cadre marin et bucolique enchanteur dont la plupart des voies sont piétonnes.",
-      "Niché au coeur de la station, cet ancien relais de poste du XVII ème siècle a été magnifiquement restauré dans la tradition du savoir faire ancestral des maitres maçons et charpentiers Compagnons du Tour de France. Cette résidence de charme est bordée par la rivière. Elle est précédée par une belle cour fleurie, et prolongée par un jardin cloîtré propice au repos.",
-      "Petits déjeuners, restauration légère, salon de thé, terrasse au bord de l'eau."
+      "Two hours from Paris and Lille, on the Albâtre Coast of the Pays de Caux, bathed in the light dear to the Impressionists, a small seaside resort has kept its former charm: Veules les Roses.",
+      "Following in the footsteps of Victor Hugo, Guy de Maupassant, and many other artists, it invites you to enjoy the pleasures of silence and rest in an enchanting marine and bucolic setting, most of whose paths are pedestrian.",
+      "Nestled in the heart of the resort, this former 17th century post house has been magnificently restored in the tradition of the ancestral know-how of the master masons and carpenters Compagnons du Tour de France. This charming residence is bordered by the river. It is preceded by a beautiful flowered courtyard, and extended by a cloistered garden conducive to rest.",
+      "Breakfasts, light meals, tea room, terrace by the water."
     ],
     "gift": {
-      "title": "Vous souhaitez offrir un séjour de rêve à vos proches ?",
+      "title": "Would you like to offer your loved ones a dream stay?",
       "content": [
-        "Nous avons crée à cet effet la carte cadeau-personnalisée.",
-        "Nous réglons avec vous à l'avance  tous les détails afin que vos invités gardent un souvenir mémorable de leur passage chez nous.",
-        "Pour plus de détails, contactez nous au  02 35 57 85 30"
+        "To this end, we have created the personalized gift card.",
+        "We will work out all the details with you in advance so that your guests will have a memorable memory of their stay with us.",
+        "For more details, contact us on +33 2 35 57 85 30"
       ]
     }
   },
   "plan": {
-    "intro": "Notre Relais Hôtelier Douce France se situe au cœur du magnifique Village de Veules les Roses, en Seine Maritime (Haute Normandie)",
+    "intro": "Our Relais Hôtelier Douce France is located in the heart of the magnificent Village of Veules les Roses, in the Seine Maritime (Upper Normandy)",
     "distances": [
-      "à 26 km de Dieppe",
-      "à 194 kms de Paris",
-      "à 2 heures de Paris et Lille",
-      "à proximité de Fécamp et Etretat"
+      "26km (16 miles) from Dieppe",
+      "194km (120 miles) from Paris",
+      "2 hours from Paris and Lille",
+      "near Fécamp and Etretat"
     ],
     "fromParis": {
-      "title": "Depuis Paris",
+      "title": "From Paris",
       "instructions": [
-        "Prendre l’autoroute A13 au pont de Saint Cloud en direction de la Normandie.",
-        "Sortir à Rouen par la voie rapide , puis prendre l’autoroute A150 direction Dieppe.",
-        "Continuer sur cette autoroute jusqu’à Barentin puis bifurquez sur la D142 en suivant Pavilly, Yerville, Saint Laurent en Caux, Fontaine-le-Dun jusqu’à Veules-les-Roses",
-        "Environ 2 heures /180 kilomètres"
+        "Take the A13 motorway at the Saint Cloud bridge towards Normandy.",
+        "Exit at Rouen by the expressway, then take the A150 motorway towards Dieppe.",
+        "Continue on this highway until Barentin then turn onto the D142 following Pavilly, Yerville, Saint Laurent en Caux, Fontaine-le-Dun until Veules-les-Roses",
+        "About 2 hours / 180 kilometres / 110 miles"
       ]
     },
     "fromLeHavre": {
-      "title": "Depuis Le Havre",
+      "title": "From Le Havre",
       "instructions": [
-        "(En venant de Fécamp, Etretat)",
-        "Prendre la D925 en direction de Fecamp, Cany Barville.",
-        "Direction Dieppe/Saint-Valery-en-Caux puis Veules-les-Roses.",
-        "Environ 1 heure /80 kilomètres."
+        "(Coming from Fécamp, Etretat)",
+        "Take the D925 towards Fecamp, Cany Barville.",
+        "Direction Dieppe/Saint-Valery-en-Caux then Veules-les-Roses.",
+        "About 1 hour / 80 kilometres / 50 miles."
       ]
     },
     "withTrain": {
-      "title": "Avec le train",
+      "title": "By train",
       "instructions": [
-        "Gare d’ Yvetot : 35 minutes",
-        "Gare de Dieppe : 30 minutes",
-        "A savoir / La SNCF assure également des liaisons TER en bus d'Yvetot et Dieppe à Saint-Valery-en-Caux"
+        "Yvetot station: 35 minutes",
+        "Dieppe Station: 30 minutes",
+        "Namely / The SNCF also provides TER bus connections from Yvetot and Dieppe to Saint-Valery-en-Caux"
       ]
     },
     "fromEngland": {
-      "title": "Depuis l'Angleterre",
-      "instructions": [
-        "Newhaven/ Dieppe",
-        "Portsmouth / Le Havre"
-      ]
+      "title": "From England",
+      "instructions": ["Newhaven/ Dieppe", "Portsmouth / Le Havre"]
     }
   },
   "hotel": {
-    "intro": "Farniente, quiétude et douceur de vivre... Dans notre salon intérieur ou bien sur notre terrasse au bord de l’eau, nos petits déjeuners, notre carte de salon de thé et restauration légère.",
+    "intro": "Laziness, tranquility and sweetness of life... In our indoor lounge or on our terrace by the water, our breakfasts, our tea room menu and light meals.",
     "breakfast": {
-      "title": "Le petit déjeuner",
-      "content": "Instant gourmand au réveil autour de notre buffet avec des produits sucrés et salés. Vous allez aimer notre salade de fruits frais maison, nos jus pressés, nos cakes maison, la charcuterie de pays, les confitures artisanales..."
+      "title": "Breakfast",
+      "content": "A gourmet moment when you wake up around our buffet with sweet and savoury products. You will love our homemade fresh fruit salad, our squeezed juices, our homemade cakes, local delicatessen, homemade jams..."
     },
     "tearoom": {
-      "title": "Salon de thé",
+      "title": "Tea room",
       "content": [
-        "À l’heure du thé, sous le cloître dans la cour fleurie au bord de la Veules, ou tout simplement dans nos salons intérieurs, dégustez nos pâtisseries maison, nos crêpes, nos glaces généreuses, tout en appréciant la grande variété de nos thés de toutes origines, notre spécialité de chocolat à l'ancienne ou nos jus de fruits frais.",
-        "Au bord de la Veules, le parfum des roses et du chèvrefeuille, ainsi que le bruissement des fontaines vous aideront à retrouver un rythme de vie calme paisible et heureux"
+        "At tea time, under the cloister in the flowered courtyard on the banks of the Veules, or simply in our interior lounges, enjoy our homemade pastries, pancakes, generous ice creams, while enjoying the wide variety of teas from all origins, our traditional chocolate speciality or our fresh fruit juices.",
+        "By the Veules, the scent of roses and honeysuckle, as well as the rustle of fountains will help you to regain a peaceful and happy calm rhythm of life."
       ]
     },
     "lightMeals": {
-      "title": "Restauration légère",
+      "title": "Light restoration",
       "content": [
-        "Tout au long de la journée, pour les résidents et non-résidents, une petite restauration légère et variée, vous est servie en mettant à l'honneur des produits locaux.",
-        "Elle est servie à toute heure (jusqu’à 18 heures pour les non-résidents).",
-        "Grandes salades fraicheur, soupes, plats chauds cuisinés déclinés au fils des saisons et un large choix de pâtisseries maison."
+        "Throughout the day, for residents and non-residents alike, a light and varied snack bar is served to you, featuring local products.",
+        "It is served at any time (up to 6 p.m. for non-residents).",
+        "Great fresh salads, soups, hot dishes cooked according to the seasons and a wide choice of homemade pastries."
       ]
     },
     "roomService": {
-      "title": "Service en chambre",
+      "title": "Room service",
       "content": [
-        "Vous n’avez pas envie de ressortir pour diner ?",
-        "Notre service de restauration légère servi en chambre est à commander à la réception avant 18h 30 pour vous être déposé dans votre suite vers 19h30."
+        "Don't you want to go out for dinner?",
+        "Our light food service served in the room must be ordered at the reception before 6:30 p.m. and dropped off in your suite around 7:30 p.m."
       ]
     }
   },
   "seminars": {
-    "intro": "Vos événements importants au relais hôtelier Douce France",
+    "intro": "Your important events at the Relais Hôtelier Douce France",
     "content": [
-      "Un havre de paix en Normandie dépaysant, confiné et plein de charme, tout proche de la mer, pour vos réunions d'affaires, à seulement 2 heures de Paris et de Lille, à 1 heure de Rouen et du Havre, ou même 30 kilomètres de Dieppe et Yvetot.",
-      "Un lieu idéal pour organiser, en petit comité, avec une capacité d’accueil du 15 personnes assises autour de la table et ou 25 personnes assises en assemblée vos séminaires, assemblées générales, comités de direction, conférences, journées d'étude, réunions d'affaires, ou tout simplement une réunion ou événement familial.",
-      "La salle est équipée d'un écran, paper board et accès Wifi illimité.",
-      "Entre deux séances de travail, ou en fin de journée, vous pourrez découvrir le charme, la beauté de notre village entre petit fleuve et mer. À prévoir absolument !",
-      "N'hésitez pas à nous contacter afin que nous puissions vous établir un devis personnalisé.",
+      "A haven of peace in Normandy, confined and full of charm, very close to the sea, for your business meetings, only 2 hours from Paris and Lille, 1 hour from Rouen and Le Havre, or even 30 kilometres from Dieppe and Yvetot.",
+      "An ideal place to organize, in small groups, with a capacity of 15 people seated around the table or 25 people seated in an assembly, your seminars, general assemblies, management committees, conferences, study days, business meetings, or simply a family meeting or event.",
+      "The room is equipped with a screen, paper board and unlimited Wifi access.",
+      "Between two working sessions, or at the end of the day, you can discover the charm and beauty of our village, between a small river and the sea. A must have!",
+      "Feel free to contact us so that we can provide you with a personalized quote.",
 
-      "UN HÔTEL SÉMINAIRE permet à vos collaborateurs d'effectuer un séminaire de plus longue durée car disposant d'un hébergement",
-      "Dès votre arrivée, pour bien commencer la journée, le café d'accueil vous est offert dans notre salon.",
-      "En milieu de matinée (ainsi que vers 16 heures), la pause avec café, thé, jus d'orange pressé, pâtisseries maison vous est servie également dans le salon.",
-      "Le déjeuner préparé par nos soins.",
-      "Une formule comprenant une entrée, un plat, suivi d’un buffet de gourmandises sucrées ainsi que café. Ce déjeuner gourmand préparé par nos soins contribuera au succès de votre séminaire.",
-      "A noter que pendant les périodes de beau temps, il vous sera possible de prolonger ce moment de détente et de calme avec vos collaborateurs, en déjeunant sur notre terrasse au bord de la Veules ( plus petit fleuve de France)."
+      "A SEMINAR HOTEL allows your employees to hold a longer seminar because they have accommodation.",
+      "As soon as you arrive, to start the day off right, you will be offered a welcome coffee in our lounge.",
+      "In the middle of the morning (as well as around 4pm) the break, with coffee, tea, pressed orange juice and homemade pastries, is also served in the lounge.",
+      "Lunch is prepared by us.",
+      "A formula including a starter, a main course, followed by a buffet of sweet delicacies and coffee is available. This gourmet lunch prepared by us will contribute to the success of your seminar.",
+      "It should be noted that during periods of good weather, it will be possible for you to prolong this moment of relaxation and calm with your colleagues, by having lunch on our terrace on the banks of the Veules (the smallest river in France)."
     ],
     "planning": {
-      "title": "Journée séminaire pour 15 personnes<br/>(15 personnes assises autour des tables ou 25 personnes assises en assemblée)<br/><br/>",
+      "title": "Seminar day for 15 people<br/>(15 people seated around tables or 25 people seated in assembly)<br/><br/>",
       "content": [
-        "De 8 heures à 17 h 30",
-        "Café d’accueil ou petit déjeuner continental",
-        "Deux pauses café en journée",
-        "Formule entrée, plat, buffet de desserts (hors boissons)"
+        "From 8:00 a. m. to 5:30 p. m.",
+        "Welcome coffee or continental breakfast.",
+        "Two coffee breaks during the day.",
+        "Starter, main course, dessert buffet (excluding drinks)"
       ]
     }
   },
@@ -182,31 +188,31 @@
     "links": {
       "veules": {
         "url": "https://www.veules-les-roses.fr",
-        "label": "Site de la ville"
+        "label": "City site"
       },
       "caux": {
         "url": "http://www.plateaudecauxmaritime.com",
-        "label": "Office de tourisme du Plateau de Caux Maritime"
+        "label": "Tourist Office of Caux Maritime Plateau"
       }
     },
     "intro": {
-      "title": "Un très beau village authentique du Pays de Caux",
-      "content": "Sur les pas de Victor Hugo, de Guy de Maupassant, et de nombreux autres artistes, elle vous convie à goûter aux plaisirs du silence et du repos dans un cadre marin et bucolique enchanteur dont la plupart des voies sont piétonnes. Laissez-vous séduire par l'un des plus beaux villages de Normandie qui allie, au fil des 1194 mètres de la Veules, tous les charmes de la mer et de la campagne."
+      "title": "A very beautiful and authentic village in the Pays de Caux",
+      "content": "Following in the footsteps of Victor Hugo, Guy de Maupassant, and many other artists, she invites you to enjoy the pleasures of silence and rest in an enchanting marine and bucolic setting, most of whose paths are pedestrian. Let yourself be seduced by one of the most beautiful villages in Normandy, which combines, along the 1194 metres of the Veules, all the charms of the sea and the countryside."
     },
     "activities": {
       "title": "Activités",
       "content": [
-        "Culturelles ou sportives, la région recèle de multiples activités. Voici quelques suggestions ; bien sûr cette liste n'est pas exhaustive, loin de là.",
-        "Nous nous ferons un plaisir de vous recommander une des nombreuses tables gastronomiques de la région."
+        "Whether cultural or sporting, the region offers a wide range of activities. Here are some suggestions; of course this list is not exhaustive, far from it.",
+        "We would be pleased to recommend one of the many gastronomic restaurants in the region."
       ],
       "list": [
-        "Golf de Dieppe (sur la falaise dominant la mer)",
-        "Golf Normandie côte d'Albâtre à Saint Riquier ès Plains",
-        "Randonnées pédestres, VTT ou à cheval",
-        "Plage et sports nautiques",
-        "Tennis au village",
-        "Tourisme culturel (églises, manoirs et châteaux)",
-        "Visite de très nombreux parcs et jardins renommés"
+        "Gulf of Dieppe (on the cliff overlooking the sea)",
+        "Gulf \"Normandie côte d'Albâtre\" in Saint-Riquier-ès-Plains",
+        "Hiking, biking or horseback riding",
+        "Beach and water sports",
+        "Tennis in the village",
+        "Cultural tourism (churches, manors and castles)",
+        "Visit to many renowned parks and gardens"
       ]
     }
   },
@@ -214,172 +220,172 @@
     "title": "FAQ",
     "content": [
       {
-        "q": "Avez vous un parking ?",
-        "a": "Nous ne disposons pas d'un parking privatif mais vous pourrez vous stationner aux abords de l'hôtel dans les rues avoisinantes ( non payant) ou sur le parking de la mairie à 50 mètres de l'hôtel"
+        "q": "Do you have a parking lot?",
+        "a": "We do not have a private parking but you can park near the hotel in the surrounding streets (free of charge) or on the parking lot of the town hall 50 meters from the hotel"
       },
       {
-        "q": "Arrivée tardive ?",
-        "a": "Vous pensez arriver après 18h 30 ? Pas de soucis nous vous enverrons par mail \"un jeu de piste\" qui vous indiquera comment trouver votre suite. N'hésitez pas cependant à nous contacter afin que nous puissions vous l'expliquer également par téléphone."
+        "q": "Late arrival?",
+        "a": "Do you think you'll arrive after 6:30? No problem, we'll send you an email with a treasure hunt that will tell you how to find your suite. Feel free to contact us, however, so that we can also explain it to you by phone."
       },
       {
-        "q": "Comment régler mon séjour ?",
-        "a": "Par carte bancaire,espèces ou chèques Nous n'acceptons pas l'American  Express, ni non plus les chèques vacances car ils sont sujets à des commissions supplémentaires."
+        "q": "How do I pay for my stay?",
+        "a": "By credit card, cash or cheques. We do not accept American Express, nor holiday vouchers (subject to additional commissions)."
       },
       {
-        "q": "Quand dois-je régler mon séjour ?",
-        "a": "vous rentrez vos coordonnées bancaires lors de la réservation. C'est donc une simple garantie et vous réglez le séjour à votre départ."
+        "q": "When do I have to pay for my stay?",
+        "a": "You can pay for your stay when you leave. Your bank details will be requested at the time of booking as a simple guarantee."
       },
       {
         "q": "WIFI",
-        "a": "Nous vous remettrons à votre arrivée un code de connexion qui vous permettra un accès illimité et gratuit durant l'ensemble de votre séjour dans l'hôtel."
+        "a": "We will give you a login code upon arrival that will allow you unlimited and free access throughout your stay in the hotel."
       },
       {
-        "q": "Quelles sont les conditions d'annulation?",
-        "a": "La réservation peut être annulée jusqu'à 24 heures avant votre arrivée. Passé ce délai la première nuit vous sera débitée."
+        "q": "What are the cancellation conditions?",
+        "a": "The reservation can be cancelled up to 24 hours before your arrival. After this period, the first night will be charged to you."
       },
       {
-        "q": "L'établissement accepté t'il les animaux ? ",
-        "a": "Oui et cela avec un supplément de 15 € pour l'ensemble du séjour. Nous nous réservons le droit de facturer les éventuelles dégradations qui pourraient être occasionnées dans la suite."
+        "q": "Does the establishment accept animals?",
+        "a": "Yes and this with a supplement of 15 € for the entire stay. We reserve the right to charge for any damage that may be caused in the future."
       },
       {
-        "q": "À quelle heure pouvons nous prendre possession de la suite ?",
-        "a": "Les chambres et suites sont disponibles à partir de 15 heures ( au plus tard à 16 heures).\nLes chambres doivent être libérées à 12 heures maximum le jour de votre départ."
+        "q": "At what time can we take possession of the suite?",
+        "a": "Rooms and suites are available from 3 pm (no later than 4 pm). Rooms must be vacated by noon on the day of your departure."
       },
       {
-        "q": "Y a t'il des chambres non fumeur ?",
-        "a": "Oui, l'ensemble des chambres et parties communes sont non fumeur."
+        "q": "Are there any smoking rooms?",
+        "a": "All rooms and common areas are NON-smoking."
       },
       {
-        "q": "Y a t'il un restaurant dans l'hôtel ?",
-        "a": "Nous n'avons pas de restaurant à l'interieur de l'hôtel mais nous proposons un service en chambre à commander à la réception maximum à 18 h30. Votre repas vous est déposé dans votre suite  entre 19 h et 19h30.\nPlusieurs restaurants dans le village en saison, nous vous encourageons à réserver.( N'hésitez pas à nous demander des informations à ce sujet)."
+        "q": "Is there a restaurant in the hotel?",
+        "a": "We do not have a restaurant inside the hotel but we offer room service to be ordered at the reception before 6:30 pm. Your meal is dropped off in your suite between 7:00 p.m. and 7:30 p.m. Several restaurants in the village are open in season, and we encourage you to book (do not hesitate to ask us for information on this subject)."
       },
       {
-        "q": "Autres questions ?",
-        "a": "Toute notre équipe de réception est à votre disposition pour vous répondre."
+        "q": "Other questions?",
+        "a": "Our entire reception team is at your disposal to answer you."
       }
     ]
   },
   "rooms": {
     "duplex": {
       "name": "Duplex",
-      "intro": "Un choix de 4 Duplex (20m2) sur cour intérieure",
+      "intro": "A choice of 4 duplexes (20m2 / 215ft2) on an inner courtyard",
       "champagne-etc": {
         "title": "Champagne, Bourgogne, Picardie & Bretagne",
-        "description": "Quatre Duplex situés au 1er étage avec terrasse commune.<br/><br/>Ils se composent d’une kitchenette avec coin repas, une salle de bain avec douche et wc. A l’étage, en haut d’un escalier pentu, une chambre mansardée avec literie en 140cm."
+        "description": "Four duplexes located on the 1st floor with a common terrace. <br/><br/>They consist of a kitchenette with dining area, a bathroom with shower and toilet. Upstairs, at the top of a steep staircase, an attic bedroom with 140cm bedding."
       }
     },
     "suites": {
       "name": "Suites 'Large'",
-      "intro": "Un choix de 5 Suites 'Large' donnant sur la cour et sur la Veules",
+      "intro": "A choice of 5 Suites \"Large\" overlooking the courtyard and the Veules",
       "flandre-etc": {
         "title": "Flandre, Gascogne & Languedoc",
-        "description": "Trois Suites situées au 1er étage, avec terrasse commune surplombant la Veules (plus petit fleuve de France).<br/><br/>Elles se composent d’un petit salon, une kitchenette, une salle de bain avec douche et wc, et une chambre à coucher avec literie en 160 cm."
+        "description": "Three Suites located on the 1st floor, with a common terrace overlooking the Veules (smallest river in France). <br/><br/>They consist of a small lounge, a kitchenette, a bathroom with shower and toilet, and a bedroom with 160 cm bedding."
       },
       "jacques-tati": {
         "title": "Jacques Tati",
-        "description": "Une suite située au 1er étage avec accès côté rue, avec balcon privatif donnant sur la cour de l’établissement.<br/><br/>Elle se compose d’une chambre avec literie en 160cm, une kitchenette avec coin repas, une salle de bain avec douche et wc."
+        "description": "A suite located on the 1st floor with street access, with private balcony overlooking the courtyard of the establishment. <br/><br/>It consists of a bedroom with 160cm bedding, a kitchenette with dining area, a bathroom with shower and toilet."
       },
       "marcel-carne": {
         "title": "Marcel Carné",
-        "description": "Une suite située au 1er étage avec accès côté rue, donnant sur petite ruelle.<br/><br/>Elle se compose d’une chambre avec literie en 160cm, une kitchenette avec coin repas, une salle de bain avec douche et wc."
+        "description": "A suite located on the 1st floor with street side access, overlooking a small alleyway. <br/><br/>It consists of a bedroom with 160cm bedding, a kitchenette with dining area, a bathroom with shower and toilet."
       }
     },
     "suites-large": {
       "name": "Suites 'Large'",
-      "intro": "Un choix de 2 Suites 'Large' pour 2 ou 3 personnes",
+      "intro": "A choice of 2 Suites \"Large\" for 2 or 3 people",
       "lorraine-provence": {
         "title": "Lorraine & Provence",
-        "description": "Deux chambres au rez de chaussée donnant sur la cour de l’établissement.<br/><br/>Elles se composent d’un salon avec un lit pour une personne, une kitchenette, quelques marches, une alcôve avec literie en 140cm, une salle de bain avec baignoire ou douche et wc."
+        "description": "Two bedrooms on the ground floor overlooking the courtyard of the establishment. <br/><br/>They consist of a living room with a single bed, a kitchenette, a few steps, an alcove with 140cm bedding, a bathroom with bath or shower and toilet."
       }
     },
     "suites-grand-large": {
       "name": "Suites 'Grand Large'",
-      "intro": "Un choix de 5 Suites 'Grand Large' pour 2 ou 3 personnes",
+      "intro": "A choice of 5 Suites \"Grand Large\" for 2 or 3 people",
       "maurice-ravel": {
         "title": "Maurice Ravel",
-        "description": "Une suite située au 1er  étage avec balcon privatif donnant sur la cour de l’établissement.<br/><br/>Elle se compose d’une kitchenette avec coin repas, une salle de bain avec baignoire, un lit pour une personne, quelques marches, WC  séparés et une chambre avec literie en 160 cm."
+        "description": "A suite located on the 1st floor with a private balcony overlooking the courtyard of the establishment. <br/><br/>It consists of a kitchenette with dining area, a bathroom with bathtub, a single bed, a few steps, separate WC and a bedroom with 160 cm bedding."
       },
       "normandie": {
         "title": "Normandie",
-        "description": "Une suite située au 2ème étage sous les toits.<br/><br/>Elles se composent d’une kitchenette avec coin repas, un couloir avec un lit pour un personne ( 80 cm) desservant la salle de bain avec baignoire, WC  séparés, puis une chambre à coucher avec literie en 160 cm. Vue sur cour."
+        "description": "A suite located on the 2nd floor under the roofs.<br/><br/>They consist of a kitchenette with dining area, a hallway with a single bed (80 cm) serving the bathroom with bathtub, separate toilet, then a bedroom with 160 cm bedding. View of the courtyard."
       },
       "ile-de-france-alsace": {
         "title": "Ile de France & Alsace",
-        "description": "Deux suites au rez de chaussée donnant sur la cour de l’établissement. <br/><br/>Elles se composent d’un salon avec un  lit pour une personne, une kitchenette, une salle de bain avec douche ou baignoire, wc séparés, une chambre avec une literie en 160 cm ou bien deux lits jumeaux que nous pouvons rassembler. <br/><br/>Terrasse privative donnant sur la Veules."
+        "description": "Two suites on the ground floor overlooking the courtyard of the establishment.<br/><br/>They consist of a living room with a single bed, a kitchenette, a bathroom with shower or bathtub, separate toilets, a bedroom with a 160 cm bedding or two twin beds that we can assemble. <br/><br/>Private terrace overlooking the Veules."
       },
       "dauphine": {
         "title": "Dauphiné",
-        "description": "Une suite avec accès pour les personnes à mobilité réduite au rez de chaussée donnant sur la cour de l’établissement.<br/><br/>Elle se compose d’un salon avec un lit pour une personne, une kitchenette, puis la chambre à coucher avec une literie en 160 cm, salle de bain avec douche et WC. <br/><br/>Terrasse privative donnant sur la Veules.<br/><br/>Pour réserver cette suite, nous vous remercions de bien vouloir nous contacter."
+        "description": "A suite with access for people with reduced mobility on the ground floor overlooking the courtyard of the establishment. <br/><br/>It consists of a living room with a single bed, a kitchenette, then the bedroom with 160 cm bedding, bathroom with shower and toilet. <br/><br/>Private terrace overlooking the Veules.<br/><br/>To book this suite, please contact us."
       }
     },
     "suite-exception": {
       "name": "Suite d'Exception",
-      "intro": "Une Suite d'Exception pour 2 personnes",
+      "intro": "An Exceptional Suite for 2 people",
       "jean-cocteau": {
         "title": "Jean Cocteau",
-        "description": "Un triplex situé au 2ème étage avec accès côté rue. (Avec vue à la fois côté rue et côté cour de l’établissement).<br/><br/>Au 1er niveau un salon avec kitchenette. Au 2ème niveau une salle de bain, WC, salon détente. Au 3ème niveau une chambre sous les toits avec une literie en 160cm."
+        "description": "A triplex located on the 2nd floor with street side access. (With view both on the street side and on the courtyard side of the establishment). <br/><br/>On the 1st level a living room with kitchenette. On the 2nd level a bathroom, WC, relaxation room. On the 3rd floor a room under the roof with a 160cm bedding."
       }
     },
     "appartements": {
-      "name": "Appartements familiaux",
-      "intro": "Un choix de 4 appartements familiaux pour 4 personnes",
+      "name": "Family apartments",
+      "intro": "A choice of 4 family apartments for 4 people",
       "charles-trenet-etc": {
         "title": "Charles Trenet, Edith Piaf & Jacques Brel",
-        "description": "Trois appartements situés au 1er ou 2ème étage, dont un avec balcon donnant sur la cour de l’établissement.<br/><br/>Ils se composent d’un salon, une cuisine, une salle de bain avec baignoire ou douche, WC, une chambre avec une literie en 160cm et une chambre avec deux lits d’une personne.<br/><br/>Possibilité d’un lit d'appoint sur demande."
+        "description": "Three apartments located on the 1st or 2nd floor, one of which has a balcony overlooking the courtyard of the establishment. <br/><br/><br/>They consist of a living room, a kitchen, a bathroom with bath or shower, WC, a bedroom with 160cm bedding and a bedroom with two single beds. <br/><br/>On request, an extra bed is available."
       },
       "guy-de-maupassant": {
         "title": "Guy de Maupassant",
-        "description": "Un appartement  au 2ème étage avec accès côté rue.<br/><br/>Il se compose d’un salon avec un lit pour une personne, coin repas avec kitchenette, salle de bain avec baignoire, WC. A l’étage en mezzanine un lit pour une personne et une chambre à coucher avec une literie en 160cm.<br/><br/>Possibilité d’un  lit d'appoint sur demande."
+        "description": "An apartment on the 2nd floor with street access. <br/><br/>It consists of a living room with a single bed, dining area with kitchenette, bathroom with bath, WC. On the mezzanine floor a single bed and a bedroom with 160cm bedding. <br/><br/><br/>Add-on bed available on request."
       }
     },
     "suites-sans-kitchenette": {
-      "name": "Suites sans kitchenette",
-      "intro": "Un choix de 4 Suites sans kitchenettes",
+      "name": "Suites without kitchenette",
+      "intro": "A choice of 4 Suites without kitchenettes",
       "serge-gainsbourg": {
         "title": "Serge Gainsbourg",
-        "description": "Une chambre située au 3ème étage (sous les toits) :<br/><br/>Elle se compose d’un coin salle de bain avec lavabo et baignoire, donnant sur la chambre avec une literie en 160cm, W.C séparés."
+        "description": "A room located on the 3rd floor (under the roofs): <br/><br/>It consists of a bathroom area with sink and bathtub, overlooking the room with 160cm bedding, separate toilet."
       },
       "anna-de-noailles": {
         "title": "Anna de Noailles",
-        "description": "Une chambre située au 1er étage donnant sur rue.<br/><br/>Elle se compose d’une chambre avec une literie en 160cm, une salle de bain avec douche, WC."
+        "description": "A room located on the 1st floor overlooking the street. <br/><br/>It consists of a room with a 160cm bedding, a bathroom with shower, WC."
       },
       "marie-noel": {
         "title": "Marie Noël",
-        "description": "Une chambre située au 2ème étage (sous les toits) avec accès côté rue donnant sur la cour de l’établissement.<br/><br/>Elle se compose d’une chambre avec une literie en 160cm, une salle de bain avec baignoire et WC."
+        "description": "A room located on the 2nd floor (under the roofs) with street side access to the courtyard of the establishment. <br/><br/>It consists of a room with a 160cm bedding, a bathroom with bath and WC."
       },
       "colette": {
         "title": "Colette",
-        "description": "Une chambre située au 2ème étage de l’établissement avec accès côté rue.<br/><br/>Elle se compose d’une chambre avec une literie en 160cm, salle de bain avec douche, WC et à l’étage, en mezzanine, une chambre mansardée avec un lit pour une personne. "
+        "description": "A room located on the 2nd floor of the establishment with street access. <br/><br/><br/>It consists of a room with a 160cm bedding, bathroom with shower, WC and on the first floor, on the mezzanine, an attic room with a single bed."
       }
     },
-
+    "intro": "Best guaranteed rate by booking on our official website",
     "from": "From {price} €",
     "size": {
       "2": "2 persons",
       "23": "2 or 3 persons",
-      "4":"4 persons"
+      "4": "4 persons"
     },
     "fees": [
-      "Lit d'Appoint 15 €",
-      "Lit Bébé 10 €",
+      "Extra bed 15 €",
+      "Baby bed 10 €",
       "Animal 15 €",
-      "Petit Dejeuner Continental 14 €",
-      "Taxe de séjour : Par jour et par personne, représentant 3 % du coût HT par personne de la nuitée dans la limite du tarif le plus élevé (2€)"
+      "Continental Breakfast 14 €",
+      "Tourist tax: Per day and per person, representing 3% of the cost excluding VAT per person per night, subject to the highest rate (€2)"
     ],
     "services": {
       "wifi": "Wifi",
-      "welcome-products": "Produits d'accueil",
+      "welcome-products": "Hospitality products",
       "tv": "TV",
       "toilet": "WC",
       "surface": "Surface",
-      "simple-bed": "Lit simple",
-      "two-simple-bed": "Deux lits simples",
-      "double-bed": "Lit double",
-      "shower": "Douche",
+      "simple-bed": "Single bed",
+      "two-simple-bed": "Two single beds",
+      "double-bed": "Double bed",
+      "shower": "Shower",
       "kitchen": "Kitchenette",
-      "hair-dryer": "Sèche cheveux",
-      "disabled-access": "Accès PMR",
-      "bathtub-and-shower": "Bain /   Douche"
+      "hair-dryer": "Hair dryer",
+      "disabled-access": "DRM acces",
+      "bathtub-and-shower": "Bathtub / Shower"
     }
   }
 }
