@@ -12,7 +12,7 @@
           <p>
             <strong>Douce France</strong><br>
             13 rue Dr Girard<br>
-            767980 Veules les Roses<br>
+            76980 Veules les Roses<br />
             France<br/>
           </p>
 
