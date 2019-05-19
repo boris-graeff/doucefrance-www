@@ -68,6 +68,14 @@
       ]
     }
   },
+  "help": {
+    "title": "",
+    "content": [
+      "",
+      "",
+      ""
+    ]
+  },
   "home": {
     "welcome": "Welcome to Relais Hôtelier Douce France",
     "intro": [

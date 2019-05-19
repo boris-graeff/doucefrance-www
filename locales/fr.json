@@ -68,6 +68,14 @@
       ]
     }
   },
+  "help": {
+    "title": "Une question ?",
+    "content": [
+      "Jettez un coup-d'oeil à notre",
+      "Ou bien contactez nous au",
+      "ou sur"
+    ]
+  },
   "home": {
     "welcome": "Bienvenue au Relais Hôtelier Douce France",
     "intro": [
