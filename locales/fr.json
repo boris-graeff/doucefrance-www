@@ -71,7 +71,7 @@
   "help": {
     "title": "Une question ?",
     "content": [
-      "Jettez un coup-d'oeil à notre",
+      "Jetez un coup-d'oeil à notre",
       "Ou bien contactez nous au",
       "ou sur"
     ]
@@ -233,7 +233,7 @@
       },
       {
         "q": "Arrivée tardive?",
-        "a": "Vous pensez arriver après 18h 30 ? Pas de soucis nous vous enverrons par mail \"un jeu de piste\" qui vous indiquera comment trouver votre suite. N'hésitez pas cependant à nous contacter afin que nous puissions vous l'expliquer également par téléphone."
+        "a": "Vous pensez arriver après 19h ? Pas de soucis, il faut impérativement nous contacter par mail ou par téléphone afin que l'on puisse vous expliquer comment accéder à votre suite par vous même."
       },
       {
         "q": "Comment régler mon séjour?",
@@ -241,7 +241,7 @@
       },
       {
         "q": "Quand dois-je régler mon séjour?",
-        "a": "Vous pouvez régler votre séjour au moment de votre départ. Vos coordonnées bancaires vous serons demandées lors de la réservation comme simple garantie."
+        "a": "Vous pouvez régler votre séjour au moment de votre départ. Vos coordonnées bancaires vous seront demandées lors de la réservation comme simple garantie."
       },
       {
         "q": "WIFI",
@@ -252,7 +252,7 @@
         "a": "La réservation peut être annulée jusqu'à 24 heures avant votre arrivée. Passé ce délai, la première nuit vous sera débitée."
       },
       {
-        "q": "L'établissement accepté t'il les animaux?",
+        "q": "L'établissement accepte t'il les animaux?",
         "a": "Oui et cela avec un supplément de 15 € pour l'ensemble du séjour. Nous nous réservons le droit de facturer les éventuelles dégradations qui pourraient être occasionnées dans la suite."
       },
       {
@@ -265,7 +265,7 @@
       },
       {
         "q": "Y a t'il un restaurant dans l'hôtel?",
-        "a": "Nous n'avons pas de restaurant à l'interieur de l'hôtel mais nous proposons un service en chambre à commander à la réception avant 18h30. Votre repas vous est déposé dans votre suite entre 19 h et 19h30. Plusieurs restaurants dans le village sont ouvert en saison, et nous vous encourageons à réserver (n'hésitez pas à nous demander des informations à ce sujet)."
+        "a": "Nous n'avons pas de restaurant à l'interieur de l'hôtel mais nous proposons un service en chambre à commander à la réception avant 18h30. Votre repas vous est déposé dans votre suite entre 19 h et 19h30. Plusieurs restaurants dans le village sont ouverts en saison, et nous vous encourageons à réserver (n'hésitez pas à nous demander des informations à ce sujet)."
       },
       {
         "q": "Autres questions?",
@@ -323,7 +323,8 @@
       },
       "dauphine": {
         "title": "Dauphiné",
-        "description": "Une suite avec accès pour les personnes à mobilité réduite au rez de chaussée donnant sur la cour de l’établissement.<br/><br/>Elle se compose d’un salon avec un lit pour une personne, une kitchenette, puis la chambre à coucher avec une literie en 160 cm, salle de bain avec douche et WC. <br/><br/>Terrasse privative donnant sur la Veules.<br/><br/>Pour réserver cette suite, nous vous remercions de bien vouloir nous contacter."
+        "description": "Une suite avec accès pour les personnes à mobilité réduite au rez de chaussée donnant sur la cour de l’établissement.<br/><br/>Elle se compose d’un salon avec un lit pour une personne, une kitchenette, puis la chambre à coucher avec une literie en 160 cm, salle de bain avec douche et WC. <br/><br/>Terrasse privative accessible par cinq marches donnant sur la Veules.<br/><br/>Pour réserver cette suite, nous vous remercions de bien vouloir nous contacter.",
+        "disableBookNowButton": true
       }
     },
     "suite-exception": {
@@ -331,7 +332,7 @@
       "intro": "Une Suite d'Exception pour 2 personnes",
       "jean-cocteau": {
         "title": "Jean Cocteau",
-        "description": "Un triplex situé au 2ème étage avec accès côté rue. (Avec vue à la fois côté rue et côté cour de l’établissement).<br/><br/>Au 1er niveau un salon avec kitchenette. Au 2ème niveau une salle de bain, WC, salon détente. Au 3ème niveau une chambre sous les toits avec une literie en 160cm."
+        "description": "Un triplex situé au 2ème étage avec accès côté rue. (Avec vue à la fois côté rue et côté cour de l’établissement).<br/><br/>Au 1er niveau un salon avec kitchenette. Au 2ème niveau une salle de bain avec baignoire, WC, salon détente. Au 3ème niveau une chambre sous les toits avec une literie en 160cm."
       }
     },
     "appartements": {

@@ -11,14 +11,23 @@
       {
         "name": "champagne-etc",
         "photos": 5,
-        "surface": 24,
-        "services": ["double-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "shower", "toilet", "tv"]
+        "surface": 20,
+        "services": [
+          "double-bed",
+          "kitchen",
+          "hair-dryer",
+          "welcome-products",
+          "wifi",
+          "shower",
+          "toilet",
+          "tv"
+        ]
       }
     ]
   },
   {
     "key": "suites",
-    "routes":  {
+    "routes": {
       "fr": "suites",
       "en": "suites"
     },
@@ -29,19 +38,46 @@
         "name": "flandre-etc",
         "photos": 4,
         "surface": 26,
-        "services": ["double-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "shower", "toilet", "tv"]
+        "services": [
+          "double-bed",
+          "kitchen",
+          "hair-dryer",
+          "welcome-products",
+          "wifi",
+          "shower",
+          "toilet",
+          "tv"
+        ]
       },
       {
         "name": "jacques-tati",
         "photos": 3,
         "surface": 23,
-        "services": ["double-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "shower", "toilet", "tv"]
+        "services": [
+          "double-bed",
+          "kitchen",
+          "hair-dryer",
+          "welcome-products",
+          "wifi",
+          "shower",
+          "toilet",
+          "tv"
+        ]
       },
       {
         "name": "marcel-carne",
         "photos": 3,
         "surface": 27,
-        "services": ["double-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "shower", "toilet", "tv"]
+        "services": [
+          "double-bed",
+          "kitchen",
+          "hair-dryer",
+          "welcome-products",
+          "wifi",
+          "shower",
+          "toilet",
+          "tv"
+        ]
       }
     ]
   },
@@ -58,7 +94,17 @@
         "name": "lorraine-provence",
         "photos": 5,
         "surface": 37,
-        "services": ["double-bed", "simple-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "bathtub-and-shower", "toilet", "tv"]
+        "services": [
+          "double-bed",
+          "simple-bed",
+          "kitchen",
+          "hair-dryer",
+          "welcome-products",
+          "wifi",
+          "bathtub-and-shower",
+          "toilet",
+          "tv"
+        ]
       }
     ]
   },
@@ -75,25 +121,65 @@
         "name": "maurice-ravel",
         "photos": 4,
         "surface": 41,
-        "services": ["double-bed", "simple-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "bathtub-and-shower", "toilet", "tv"]
+        "services": [
+          "double-bed",
+          "simple-bed",
+          "kitchen",
+          "hair-dryer",
+          "welcome-products",
+          "wifi",
+          "bathtub-and-shower",
+          "toilet",
+          "tv"
+        ]
       },
       {
         "name": "normandie",
         "photos": 3,
         "surface": 42,
-        "services": ["double-bed", "simple-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "bathtub-and-shower", "tv"]
+        "services": [
+          "double-bed",
+          "simple-bed",
+          "kitchen",
+          "hair-dryer",
+          "welcome-products",
+          "wifi",
+          "bathtub-and-shower",
+          "tv"
+        ]
       },
       {
         "name": "ile-de-france-alsace",
         "photos": 4,
         "surface": 31,
-        "services": ["double-bed", "simple-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "bathtub-and-shower", "toilet", "tv"]
+        "services": [
+          "double-bed",
+          "simple-bed",
+          "kitchen",
+          "hair-dryer",
+          "welcome-products",
+          "wifi",
+          "bathtub-and-shower",
+          "toilet",
+          "tv"
+        ]
       },
       {
         "name": "dauphine",
         "photos": 3,
         "surface": 39,
-        "services": ["disabled-access", "double-bed", "simple-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "shower", "toilet", "tv"]
+        "services": [
+          "disabled-access",
+          "double-bed",
+          "simple-bed",
+          "kitchen",
+          "hair-dryer",
+          "welcome-products",
+          "wifi",
+          "shower",
+          "toilet",
+          "tv"
+        ]
       }
     ]
   },
@@ -110,7 +196,16 @@
         "name": "jean-cocteau",
         "photos": 5,
         "surface": 53,
-        "services": ["double-bed", "simple-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "shower", "toilet", "tv"]
+        "services": [
+          "double-bed",
+          "kitchen",
+          "hair-dryer",
+          "welcome-products",
+          "wifi",
+          "shower",
+          "toilet",
+          "tv"
+        ]
       }
     ]
   },
@@ -127,13 +222,33 @@
         "name": "charles-trenet-etc",
         "photos": 6,
         "surface": 60,
-        "services": ["double-bed", "two-simple-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "bathtub-and-shower", "toilet", "tv"]
+        "services": [
+          "double-bed",
+          "two-simple-bed",
+          "kitchen",
+          "hair-dryer",
+          "welcome-products",
+          "wifi",
+          "bathtub-and-shower",
+          "toilet",
+          "tv"
+        ]
       },
       {
         "name": "guy-de-maupassant",
         "photos": 5,
         "surface": 57,
-        "services": ["double-bed", "two-simple-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "bathtub-and-shower", "toilet", "tv"]
+        "services": [
+          "double-bed",
+          "two-simple-bed",
+          "kitchen",
+          "hair-dryer",
+          "welcome-products",
+          "wifi",
+          "bathtub-and-shower",
+          "toilet",
+          "tv"
+        ]
       }
     ]
   },
@@ -150,25 +265,58 @@
         "name": "serge-gainsbourg",
         "photos": 3,
         "surface": 25,
-        "services": ["double-bed", "simple-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "bathtub-and-shower", "toilet", "tv"]
+        "services": [
+          "double-bed",
+          "hair-dryer",
+          "welcome-products",
+          "wifi",
+          "bathtub-and-shower",
+          "toilet",
+          "tv"
+        ]
       },
       {
         "name": "anna-de-noailles",
         "photos": 4,
         "surface": 27,
-        "services": ["double-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "shower", "toilet", "tv"]
+        "services": [
+          "double-bed",
+          "hair-dryer",
+          "welcome-products",
+          "wifi",
+          "shower",
+          "toilet",
+          "tv"
+        ]
       },
       {
         "name": "marie-noel",
         "photos": 3,
         "surface": 28,
-        "services": ["double-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "bathtub-and-shower", "toilet", "tv"]
+        "services": [
+          "double-bed",
+          "hair-dryer",
+          "welcome-products",
+          "wifi",
+          "bathtub-and-shower",
+          "toilet",
+          "tv"
+        ]
       },
       {
         "name": "colette",
         "photos": 4,
         "surface": 37,
-        "services": ["double-bed", "simple-bed", "kitchen", "hair-dryer", "welcome-products", "wifi", "shower", "toilet", "tv"]
+        "services": [
+          "double-bed",
+          "simple-bed",
+          "hair-dryer",
+          "welcome-products",
+          "wifi",
+          "shower",
+          "toilet",
+          "tv"
+        ]
       }
     ]
   }
