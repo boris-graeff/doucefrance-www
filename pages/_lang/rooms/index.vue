@@ -39,7 +39,7 @@
           </ul>
         </div>
         <div>
-          <special-offer class="special-offer" :type="$options.specialOffer" />
+          <special-offer v-if="$options.hasSpecialOffer || $options.hasLongStayOffer" class="special-offer" :type="$options.specialOfferType" />
         </div>
       </div>
     </div>
@@ -57,7 +57,9 @@
   import QuestionsSection from '~/components/QuestionsSection'
 
   export default {
-    specialOffer: site.specialOffers.custom ? 'custom' : 'longStay',
+    hasSpecialOffer: site.specialOffers.custom,
+    hasLongStayOffer: site.specialOffers.longStay,
+    specialOfferType: site.specialOffers.custom ? 'custom' : 'longStay',
     categories,
     components: {
       RoomsHeader,

@@ -32,7 +32,8 @@
             </a>
           </div>
 
-          <div ref="specialOffer" class="block">
+
+          <div ref="specialOffer" class="block" v-if="$options.hasSpecialOffer || $options.hasLongStayOffer">
             <special-offer
               :type="$options.hasSpecialOffer ? 'custom' : 'longStay'"/>
           </div>
@@ -84,6 +85,7 @@
   export default {
     headerImages,
     hasSpecialOffer: site.specialOffers.custom,
+    hasLongStayOffer: site.specialOffers.longStay,
     methods: {
       scrollToSpecialOffer() {
         this.$refs.specialOffer.scrollIntoView({

@@ -1,5 +1,7 @@
 {
+  "displayMichelinLogo": false,
   "specialOffers": {
-    "custom": false
+    "custom": false,
+    "longStay": false
   }
 }

@@ -9,7 +9,7 @@
         </NuxtLink>
       </div>
 
-      <img src="~/assets/michelin-logo.png" class="michelin"/>
+      <img v-if="$options.displayMichelinLogo" src="~/assets/michelin-logo.png" class="michelin"/>
 
       <div class="contact">
         <div>
@@ -35,6 +35,14 @@
     </div>
   </footer>
 </template>
+
+<script>
+  import site from "~/config/site"
+
+  export default {
+    displayMichelinLogo: site.displayMichelinLogo,
+  }
+</script>
 
 <style scoped lang="scss">
   @import '~@/style/vars';
@@ -68,6 +76,8 @@
     img {
       max-width: 200px;
     }
+
+    margin: 0 30px;
   }
 
   .contact {
