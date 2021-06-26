@@ -66,10 +66,14 @@ module.exports = {
     { src: '~/plugins/smoothscroll-polyfill.js', ssr: false },
   ],
   modules: [
+    '@nuxtjs/gtm',
     '@nuxtjs/sitemap'
   ],
   generate: {
     routes: [...routes.fr, ...routes.en]
+  },
+  gtm: {
+    id: process.env.GOOGLE_TAGMANAGER_ID
   },
   sitemap: {
     generate: true,
