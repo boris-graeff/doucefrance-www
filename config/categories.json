@@ -5,7 +5,7 @@
       "fr": "duplex",
       "en": "duplex"
     },
-    "price": 102,
+    "price": 110,
     "size": 2,
     "rooms": [
       {
@@ -31,7 +31,7 @@
       "fr": "suites",
       "en": "suites"
     },
-    "price": 132,
+    "price": 135,
     "size": 2,
     "rooms": [
       {
@@ -87,7 +87,7 @@
       "fr": "suites-large",
       "en": "large-suites"
     },
-    "price": 132,
+    "price": 140,
     "size": 23,
     "rooms": [
       {
@@ -114,7 +114,7 @@
       "fr": "suites-grand-large",
       "en": "extra-large-suites"
     },
-    "price": 162,
+    "price": 170,
     "size": 23,
     "rooms": [
       {
@@ -189,7 +189,7 @@
       "fr": "suite-exception",
       "en": "luxury-suite"
     },
-    "price": 182,
+    "price": 187,
     "size": 2,
     "rooms": [
       {
@@ -215,7 +215,7 @@
       "fr": "appartements",
       "en": "apartments"
     },
-    "price": 242,
+    "price": 250,
     "size": 4,
     "rooms": [
       {
@@ -258,7 +258,7 @@
       "fr": "suites-sans-kitchenette",
       "en": "no-kitchen-suite"
     },
-    "price": 109,
+    "price": 115,
     "size": 23,
     "rooms": [
       {
