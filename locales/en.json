@@ -264,8 +264,13 @@
         "a": "All rooms and common areas are NON-smoking."
       },
       {
+        "withFallback": "displayDining",
         "q": "Is there a restaurant in the hotel?",
-        "a": "We do not have a restaurant inside the hotel but we offer room service to be ordered at the reception before 6:30 pm. Your meal is dropped off in your suite between 7:00 p.m. and 7:30 p.m. Several restaurants in the village are open in season, and we encourage you to book (do not hesitate to ask us for information on this subject)."
+        "a": "We do not have a restaurant inside the hotel but we offer room service to be ordered at the reception before 6:30 pm. Your meal is dropped off in your suite between 7:00 p.m. and 7:30 p.m. Several restaurants in the village are open in season, and we encourage you to book (do not hesitate to ask us for information on this subject).",
+        "fallback": {
+          "q": "Is there a restaurant in the hotel?",
+          "a": "We do not have a restaurant inside the hotel. Several restaurants in the village are open in season, and we encourage you to book (do not hesitate to ask us for information on this subject)."
+        }
       },
       {
         "q": "Other questions?",

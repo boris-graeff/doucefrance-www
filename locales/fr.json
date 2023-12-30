@@ -264,8 +264,13 @@
         "a": "L'ensemble des chambres et parties communes sont NON fumeur."
       },
       {
+        "withFallback": "displayDining",
         "q": "Y a t'il un restaurant dans l'hôtel?",
-        "a": "Nous n'avons pas de restaurant à l'interieur de l'hôtel mais nous proposons un service en chambre à commander à la réception avant 18h30. Votre repas vous est déposé dans votre suite entre 19 h et 19h30. Plusieurs restaurants dans le village sont ouverts en saison, et nous vous encourageons à réserver (n'hésitez pas à nous demander des informations à ce sujet)."
+        "a": "Nous n'avons pas de restaurant à l'interieur de l'hôtel mais nous proposons un service en chambre à commander à la réception avant 18h30. Votre repas vous est déposé dans votre suite entre 19 h et 19h30. Plusieurs restaurants dans le village sont ouverts en saison, et nous vous encourageons à réserver (n'hésitez pas à nous demander des informations à ce sujet).",
+        "fallback": {
+          "q": "Y a t'il un restaurant dans l'hôtel?",
+          "a": "Nous n'avons pas de restaurant à l'interieur de l'hôtel. Plusieurs restaurants dans le village sont ouverts en saison, et nous vous encourageons à réserver (n'hésitez pas à nous demander des informations à ce sujet)."
+        }
       },
       {
         "q": "Autres questions?",

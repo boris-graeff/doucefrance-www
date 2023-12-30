@@ -1,5 +1,8 @@
 {
   "displayMichelinLogo": false,
+  "displaySeminars": false,
+  "displayDining": false,
+  "displayRoomService": false,
   "specialOffers": {
     "custom": false,
     "longStay": false
