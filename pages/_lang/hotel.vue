@@ -77,5 +77,7 @@
 
 <script>
 import options from '~/config/site'
-export default options
+export default {
+  ...options
+}
 </script>
