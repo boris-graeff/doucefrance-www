@@ -20,7 +20,7 @@
 </template>
 
 <style scoped lang="scss">
-  @import '~@/style/vars';
+  @import '@/style/vars';
 
   .questions-section {
     text-align: center;

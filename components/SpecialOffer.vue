@@ -15,7 +15,7 @@
 </script>
 
 <style scoped lang="scss">
-  @import "~@/style/vars";
+  @import "@/style/vars";
 
   .special-offer {
     padding: 20px;

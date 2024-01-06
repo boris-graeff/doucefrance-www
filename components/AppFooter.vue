@@ -45,7 +45,7 @@
 </script>
 
 <style scoped lang="scss">
-  @import '~@/style/vars';
+  @import '@/style/vars';
 
   .footer {
     font-size: 12px;
