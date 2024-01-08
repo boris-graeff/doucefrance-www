@@ -20,7 +20,7 @@
 </script>
 
 <style scoped lang="scss">
-  @import '~@/style/vars';
+  @import '@/style/vars';
 
   .rooms-header {
     margin-bottom: 30px;

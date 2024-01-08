@@ -91,7 +91,7 @@
 </script>
 
 <style scoped lang="scss">
-  @import '~@/style/vars';
+  @import '@/style/vars';
 
   .page-content {
 
